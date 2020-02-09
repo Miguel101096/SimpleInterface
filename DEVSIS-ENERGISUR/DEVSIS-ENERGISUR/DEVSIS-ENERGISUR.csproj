@@ -76,6 +76,12 @@
     <Compile Include="ConsultarCodigoProducto.Designer.cs">
       <DependentUpon>ConsultarCodigoProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarCorreoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCorreoProveedor.Designer.cs">
+      <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarNombreCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +100,23 @@
     <Compile Include="ConsultarNombreProveedor.Designer.cs">
       <DependentUpon>ConsultarNombreProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarRazonSocialProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarRazonSocialProveedor.Designer.cs">
+      <DependentUpon>ConsultarRazonSocialProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarRucProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarRucProveedor.Designer.cs">
       <DependentUpon>ConsultarRucProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarTelefonoConvProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarTelefonoConvProveedor.Designer.cs">
+      <DependentUpon>ConsultarTelefonoConvProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="CrearUsuario.cs">
       <SubType>Form</SubType>
@@ -190,6 +208,9 @@
     <EmbeddedResource Include="ConsultarCodigoProducto.resx">
       <DependentUpon>ConsultarCodigoProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCorreoProveedor.resx">
+      <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarNombreCliente.resx">
       <DependentUpon>ConsultarNombreCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,8 +220,14 @@
     <EmbeddedResource Include="ConsultarNombreProveedor.resx">
       <DependentUpon>ConsultarNombreProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarRazonSocialProveedor.resx">
+      <DependentUpon>ConsultarRazonSocialProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarRucProveedor.resx">
       <DependentUpon>ConsultarRucProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarTelefonoConvProveedor.resx">
+      <DependentUpon>ConsultarTelefonoConvProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearUsuario.resx">
       <DependentUpon>CrearUsuario.cs</DependentUpon>

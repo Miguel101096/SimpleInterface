@@ -50,6 +50,7 @@
             this.consultarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rUCDeProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +63,10 @@
             this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.correoElectrónicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.razónSocialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.númeroDeOrdenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fechaDeExpediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -233,7 +238,10 @@
             // 
             this.consultarProveedorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rUCDeProveedorToolStripMenuItem,
-            this.nombreDeProveedorToolStripMenuItem});
+            this.nombreDeProveedorToolStripMenuItem,
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem,
+            this.correoElectrónicoToolStripMenuItem,
+            this.razónSocialToolStripMenuItem});
             this.consultarProveedorToolStripMenuItem.Name = "consultarProveedorToolStripMenuItem";
             this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.consultarProveedorToolStripMenuItem.Text = "Consultar proveedor";
@@ -242,16 +250,23 @@
             // rUCDeProveedorToolStripMenuItem
             // 
             this.rUCDeProveedorToolStripMenuItem.Name = "rUCDeProveedorToolStripMenuItem";
-            this.rUCDeProveedorToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.rUCDeProveedorToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
             this.rUCDeProveedorToolStripMenuItem.Text = "RUC de proveedor";
             this.rUCDeProveedorToolStripMenuItem.Click += new System.EventHandler(this.rUCDeProveedorToolStripMenuItem_Click);
             // 
             // nombreDeProveedorToolStripMenuItem
             // 
             this.nombreDeProveedorToolStripMenuItem.Name = "nombreDeProveedorToolStripMenuItem";
-            this.nombreDeProveedorToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.nombreDeProveedorToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
             this.nombreDeProveedorToolStripMenuItem.Text = "Nombre de proveedor";
             this.nombreDeProveedorToolStripMenuItem.Click += new System.EventHandler(this.nombreDeProveedorToolStripMenuItem_Click);
+            // 
+            // númeroDeTeléfonoConvencionalToolStripMenuItem
+            // 
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem.Name = "númeroDeTeléfonoConvencionalToolStripMenuItem";
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem.Text = "Número de teléfono convencional";
+            this.númeroDeTeléfonoConvencionalToolStripMenuItem.Click += new System.EventHandler(this.númeroDeTeléfonoConvencionalToolStripMenuItem_Click);
             // 
             // eliminarProveedorToolStripMenuItem
             // 
@@ -273,7 +288,7 @@
             // generarFacturaToolStripMenuItem
             // 
             this.generarFacturaToolStripMenuItem.Name = "generarFacturaToolStripMenuItem";
-            this.generarFacturaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.generarFacturaToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.generarFacturaToolStripMenuItem.Text = "Generar factura";
             this.generarFacturaToolStripMenuItem.Click += new System.EventHandler(this.generarFacturaToolStripMenuItem_Click);
             // 
@@ -282,7 +297,7 @@
             this.consultarFacturaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fechaDeEmisiónToolStripMenuItem});
             this.consultarFacturaToolStripMenuItem.Name = "consultarFacturaToolStripMenuItem";
-            this.consultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.consultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.consultarFacturaToolStripMenuItem.Text = "Consultar factura";
             // 
             // fechaDeEmisiónToolStripMenuItem
@@ -310,7 +325,9 @@
             // consultarOrdenDeCompraToolStripMenuItem
             // 
             this.consultarOrdenDeCompraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fechaDeIncioToolStripMenuItem});
+            this.fechaDeIncioToolStripMenuItem,
+            this.númeroDeOrdenToolStripMenuItem,
+            this.fechaDeExpediciónToolStripMenuItem});
             this.consultarOrdenDeCompraToolStripMenuItem.Name = "consultarOrdenDeCompraToolStripMenuItem";
             this.consultarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
             this.consultarOrdenDeCompraToolStripMenuItem.Text = "Consultar orden de compra";
@@ -318,7 +335,7 @@
             // fechaDeIncioToolStripMenuItem
             // 
             this.fechaDeIncioToolStripMenuItem.Name = "fechaDeIncioToolStripMenuItem";
-            this.fechaDeIncioToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.fechaDeIncioToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.fechaDeIncioToolStripMenuItem.Text = "Fecha de incio";
             // 
             // administraciónToolStripMenuItem
@@ -343,6 +360,32 @@
             this.eliminarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.eliminarUsuariosToolStripMenuItem.Text = "Eliminar usuarios";
             this.eliminarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.eliminarUsuariosToolStripMenuItem_Click);
+            // 
+            // correoElectrónicoToolStripMenuItem
+            // 
+            this.correoElectrónicoToolStripMenuItem.Name = "correoElectrónicoToolStripMenuItem";
+            this.correoElectrónicoToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.correoElectrónicoToolStripMenuItem.Text = "Correo electrónico";
+            this.correoElectrónicoToolStripMenuItem.Click += new System.EventHandler(this.correoElectrónicoToolStripMenuItem_Click);
+            // 
+            // razónSocialToolStripMenuItem
+            // 
+            this.razónSocialToolStripMenuItem.Name = "razónSocialToolStripMenuItem";
+            this.razónSocialToolStripMenuItem.Size = new System.Drawing.Size(318, 26);
+            this.razónSocialToolStripMenuItem.Text = "Razón social";
+            this.razónSocialToolStripMenuItem.Click += new System.EventHandler(this.razónSocialToolStripMenuItem_Click);
+            // 
+            // númeroDeOrdenToolStripMenuItem
+            // 
+            this.númeroDeOrdenToolStripMenuItem.Name = "númeroDeOrdenToolStripMenuItem";
+            this.númeroDeOrdenToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.númeroDeOrdenToolStripMenuItem.Text = "Número de orden";
+            // 
+            // fechaDeExpediciónToolStripMenuItem
+            // 
+            this.fechaDeExpediciónToolStripMenuItem.Name = "fechaDeExpediciónToolStripMenuItem";
+            this.fechaDeExpediciónToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.fechaDeExpediciónToolStripMenuItem.Text = "Fecha de expedición";
             // 
             // MenuPrincipal
             // 
@@ -399,5 +442,10 @@
         private System.Windows.Forms.ToolStripMenuItem fechaDeEmisiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarOrdenDeCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fechaDeIncioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem númeroDeTeléfonoConvencionalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem correoElectrónicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem razónSocialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem númeroDeOrdenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fechaDeExpediciónToolStripMenuItem;
     }
 }

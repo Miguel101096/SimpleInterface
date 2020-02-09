@@ -141,5 +141,20 @@ namespace DEVSIS_ENERGISUR
         {
             new GenerarOrdenCompra().Show();
         }
+
+        private void númeroDeTeléfonoConvencionalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarTelefonoConvProveedor().Show();
+        }
+
+        private void razónSocialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarRazonSocialProveedor().Show();
+        }
+
+        private void correoElectrónicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarCorreoProveedor().Show();
+        }
     }
 }
