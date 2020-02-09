@@ -156,5 +156,20 @@ namespace DEVSIS_ENERGISUR
         {
             new ConsultarCorreoProveedor().Show();
         }
+
+        private void fechaDeIncioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarFechaFinOrdenCompra().Show();
+        }
+
+        private void númeroDeOrdenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarNumeroOrdenCompra().Show();
+        }
+
+        private void fechaDeExpediciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarFechaFinOrdenCompra().Show();
+        }
     }
 }

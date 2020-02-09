@@ -59,3 +59,6 @@ C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVS
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS-ENERGISUR.pdb
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarCorreoProveedor.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarRazonSocialProveedor.resources
+C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarFechaFinOrdenCompra.resources
+C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarFechaInicioOrdenCompra.resources
+C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNumeroOrdenCompra.resources

@@ -46,6 +46,8 @@
             this.labelCodigo = new System.Windows.Forms.Label();
             this.labelEliminarProducto = new System.Windows.Forms.Label();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
+            this.textBoxGarantia = new System.Windows.Forms.TextBox();
+            this.labelGarantía = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textNombreProducto
@@ -199,11 +201,29 @@
             this.comboBoxTipo.TabIndex = 37;
             this.comboBoxTipo.Text = "Tipo";
             // 
+            // textBoxGarantia
+            // 
+            this.textBoxGarantia.Location = new System.Drawing.Point(241, 360);
+            this.textBoxGarantia.Name = "textBoxGarantia";
+            this.textBoxGarantia.Size = new System.Drawing.Size(329, 22);
+            this.textBoxGarantia.TabIndex = 41;
+            // 
+            // labelGarantía
+            // 
+            this.labelGarantía.AutoSize = true;
+            this.labelGarantía.Location = new System.Drawing.Point(12, 360);
+            this.labelGarantía.Name = "labelGarantía";
+            this.labelGarantía.Size = new System.Drawing.Size(217, 17);
+            this.labelGarantía.TabIndex = 40;
+            this.labelGarantía.Text = "Número de garantía del producto";
+            // 
             // EliminarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.textBoxGarantia);
+            this.Controls.Add(this.labelGarantía);
             this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.textNombreProducto);
             this.Controls.Add(this.textMarca);
@@ -250,5 +270,7 @@
         private System.Windows.Forms.Label labelCodigo;
         private System.Windows.Forms.Label labelEliminarProducto;
         private System.Windows.Forms.ComboBox comboBoxTipo;
+        private System.Windows.Forms.TextBox textBoxGarantia;
+        private System.Windows.Forms.Label labelGarantía;
     }
 }

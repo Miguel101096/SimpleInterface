@@ -82,6 +82,18 @@
     <Compile Include="ConsultarCorreoProveedor.Designer.cs">
       <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarFechaFinOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFechaFinOrdenCompra.Designer.cs">
+      <DependentUpon>ConsultarFechaFinOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFechaInicioOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFechaInicioOrdenCompra.Designer.cs">
+      <DependentUpon>ConsultarFechaInicioOrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarNombreCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </Compile>
     <Compile Include="ConsultarNombreProveedor.Designer.cs">
       <DependentUpon>ConsultarNombreProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarNumeroOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarNumeroOrdenCompra.Designer.cs">
+      <DependentUpon>ConsultarNumeroOrdenCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarRazonSocialProveedor.cs">
       <SubType>Form</SubType>
@@ -211,6 +229,12 @@
     <EmbeddedResource Include="ConsultarCorreoProveedor.resx">
       <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFechaFinOrdenCompra.resx">
+      <DependentUpon>ConsultarFechaFinOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFechaInicioOrdenCompra.resx">
+      <DependentUpon>ConsultarFechaInicioOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarNombreCliente.resx">
       <DependentUpon>ConsultarNombreCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarNombreProveedor.resx">
       <DependentUpon>ConsultarNombreProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarNumeroOrdenCompra.resx">
+      <DependentUpon>ConsultarNumeroOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarRazonSocialProveedor.resx">
       <DependentUpon>ConsultarRazonSocialProveedor.cs</DependentUpon>

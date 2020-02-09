@@ -1,6 +1,6 @@
 ﻿namespace DEVSIS_ENERGISUR
 {
-    partial class ConsultarRazonSocialProveedor
+    partial class ConsultarFechaFinOrdenCompra
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textCorreoProveedor = new System.Windows.Forms.TextBox();
-            this.labelCorreoProveedor = new System.Windows.Forms.Label();
+            this.labelFechaFin = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
-            this.labelConsultarProveedor = new System.Windows.Forms.Label();
+            this.labelConsultarFIOrdenCompra = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(240, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(329, 22);
+            this.dateTimePicker1.TabIndex = 75;
             // 
             // dataGridView1
             // 
@@ -46,53 +53,46 @@
             this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
             this.dataGridView1.TabIndex = 74;
             // 
-            // textCorreoProveedor
+            // labelFechaFin
             // 
-            this.textCorreoProveedor.Location = new System.Drawing.Point(240, 40);
-            this.textCorreoProveedor.Name = "textCorreoProveedor";
-            this.textCorreoProveedor.Size = new System.Drawing.Size(329, 22);
-            this.textCorreoProveedor.TabIndex = 73;
-            // 
-            // labelCorreoProveedor
-            // 
-            this.labelCorreoProveedor.AutoSize = true;
-            this.labelCorreoProveedor.Location = new System.Drawing.Point(12, 40);
-            this.labelCorreoProveedor.Name = "labelCorreoProveedor";
-            this.labelCorreoProveedor.Size = new System.Drawing.Size(216, 17);
-            this.labelCorreoProveedor.TabIndex = 72;
-            this.labelCorreoProveedor.Text = "Correo electrónico del proveedor";
+            this.labelFechaFin.AutoSize = true;
+            this.labelFechaFin.Location = new System.Drawing.Point(12, 40);
+            this.labelFechaFin.Name = "labelFechaFin";
+            this.labelFechaFin.Size = new System.Drawing.Size(138, 17);
+            this.labelFechaFin.TabIndex = 73;
+            this.labelFechaFin.Text = "Fecha de expedición";
             // 
             // botonConsultar
             // 
             this.botonConsultar.Location = new System.Drawing.Point(240, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
-            this.botonConsultar.TabIndex = 71;
+            this.botonConsultar.TabIndex = 72;
             this.botonConsultar.Text = "Consultar";
             this.botonConsultar.UseVisualStyleBackColor = true;
             // 
-            // labelConsultarProveedor
+            // labelConsultarFIOrdenCompra
             // 
-            this.labelConsultarProveedor.AutoSize = true;
-            this.labelConsultarProveedor.Location = new System.Drawing.Point(330, 11);
-            this.labelConsultarProveedor.Name = "labelConsultarProveedor";
-            this.labelConsultarProveedor.Size = new System.Drawing.Size(137, 17);
-            this.labelConsultarProveedor.TabIndex = 70;
-            this.labelConsultarProveedor.Text = "Consultar proveedor";
+            this.labelConsultarFIOrdenCompra.AutoSize = true;
+            this.labelConsultarFIOrdenCompra.Location = new System.Drawing.Point(330, 11);
+            this.labelConsultarFIOrdenCompra.Name = "labelConsultarFIOrdenCompra";
+            this.labelConsultarFIOrdenCompra.Size = new System.Drawing.Size(180, 17);
+            this.labelConsultarFIOrdenCompra.TabIndex = 71;
+            this.labelConsultarFIOrdenCompra.Text = "Consultar orden de compra";
             // 
-            // ConsultarRazonSocialProveedor
+            // ConsultarFechaFinOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textCorreoProveedor);
-            this.Controls.Add(this.labelCorreoProveedor);
+            this.Controls.Add(this.labelFechaFin);
             this.Controls.Add(this.botonConsultar);
-            this.Controls.Add(this.labelConsultarProveedor);
-            this.Name = "ConsultarRazonSocialProveedor";
+            this.Controls.Add(this.labelConsultarFIOrdenCompra);
+            this.Name = "ConsultarFechaFinOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consultar por medio de la razón social del proveedor";
+            this.Text = "ConsultarFechaFinOrdenCompra";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,10 +101,10 @@
 
         #endregion
 
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textCorreoProveedor;
-        private System.Windows.Forms.Label labelCorreoProveedor;
+        private System.Windows.Forms.Label labelFechaFin;
         private System.Windows.Forms.Button botonConsultar;
-        private System.Windows.Forms.Label labelConsultarProveedor;
+        private System.Windows.Forms.Label labelConsultarFIOrdenCompra;
     }
 }

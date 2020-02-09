@@ -1,6 +1,6 @@
 ﻿namespace DEVSIS_ENERGISUR
 {
-    partial class ConsultarRazonSocialProveedor
+    partial class ConsultarFechaInicioOrdenCompra
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textCorreoProveedor = new System.Windows.Forms.TextBox();
-            this.labelCorreoProveedor = new System.Windows.Forms.Label();
+            this.labelFechaInicio = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
-            this.labelConsultarProveedor = new System.Windows.Forms.Label();
+            this.labelConsultarFIOrdenCompra = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,55 +44,55 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
-            this.dataGridView1.TabIndex = 74;
+            this.dataGridView1.TabIndex = 69;
             // 
-            // textCorreoProveedor
+            // labelFechaInicio
             // 
-            this.textCorreoProveedor.Location = new System.Drawing.Point(240, 40);
-            this.textCorreoProveedor.Name = "textCorreoProveedor";
-            this.textCorreoProveedor.Size = new System.Drawing.Size(329, 22);
-            this.textCorreoProveedor.TabIndex = 73;
-            // 
-            // labelCorreoProveedor
-            // 
-            this.labelCorreoProveedor.AutoSize = true;
-            this.labelCorreoProveedor.Location = new System.Drawing.Point(12, 40);
-            this.labelCorreoProveedor.Name = "labelCorreoProveedor";
-            this.labelCorreoProveedor.Size = new System.Drawing.Size(216, 17);
-            this.labelCorreoProveedor.TabIndex = 72;
-            this.labelCorreoProveedor.Text = "Correo electrónico del proveedor";
+            this.labelFechaInicio.AutoSize = true;
+            this.labelFechaInicio.Location = new System.Drawing.Point(12, 40);
+            this.labelFechaInicio.Name = "labelFechaInicio";
+            this.labelFechaInicio.Size = new System.Drawing.Size(103, 17);
+            this.labelFechaInicio.TabIndex = 67;
+            this.labelFechaInicio.Text = "Fecha de inicio";
             // 
             // botonConsultar
             // 
             this.botonConsultar.Location = new System.Drawing.Point(240, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
-            this.botonConsultar.TabIndex = 71;
+            this.botonConsultar.TabIndex = 66;
             this.botonConsultar.Text = "Consultar";
             this.botonConsultar.UseVisualStyleBackColor = true;
             // 
-            // labelConsultarProveedor
+            // labelConsultarFIOrdenCompra
             // 
-            this.labelConsultarProveedor.AutoSize = true;
-            this.labelConsultarProveedor.Location = new System.Drawing.Point(330, 11);
-            this.labelConsultarProveedor.Name = "labelConsultarProveedor";
-            this.labelConsultarProveedor.Size = new System.Drawing.Size(137, 17);
-            this.labelConsultarProveedor.TabIndex = 70;
-            this.labelConsultarProveedor.Text = "Consultar proveedor";
+            this.labelConsultarFIOrdenCompra.AutoSize = true;
+            this.labelConsultarFIOrdenCompra.Location = new System.Drawing.Point(265, 11);
+            this.labelConsultarFIOrdenCompra.Name = "labelConsultarFIOrdenCompra";
+            this.labelConsultarFIOrdenCompra.Size = new System.Drawing.Size(180, 17);
+            this.labelConsultarFIOrdenCompra.TabIndex = 65;
+            this.labelConsultarFIOrdenCompra.Text = "Consultar orden de compra";
             // 
-            // ConsultarRazonSocialProveedor
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(240, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(329, 22);
+            this.dateTimePicker1.TabIndex = 70;
+            // 
+            // ConsultarFechaInicioOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textCorreoProveedor);
-            this.Controls.Add(this.labelCorreoProveedor);
+            this.Controls.Add(this.labelFechaInicio);
             this.Controls.Add(this.botonConsultar);
-            this.Controls.Add(this.labelConsultarProveedor);
-            this.Name = "ConsultarRazonSocialProveedor";
+            this.Controls.Add(this.labelConsultarFIOrdenCompra);
+            this.Name = "ConsultarFechaInicioOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consultar por medio de la razón social del proveedor";
+            this.Text = "Consultar orden de compra mediante la fecha de inicio ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,9 +102,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textCorreoProveedor;
-        private System.Windows.Forms.Label labelCorreoProveedor;
+        private System.Windows.Forms.Label labelFechaInicio;
         private System.Windows.Forms.Button botonConsultar;
-        private System.Windows.Forms.Label labelConsultarProveedor;
+        private System.Windows.Forms.Label labelConsultarFIOrdenCompra;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

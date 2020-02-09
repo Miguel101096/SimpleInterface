@@ -91,6 +91,7 @@
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.labelConsultarProveedor);
             this.Name = "ConsultarCorreoProveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar mediante el correo electrónico del proveedor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
