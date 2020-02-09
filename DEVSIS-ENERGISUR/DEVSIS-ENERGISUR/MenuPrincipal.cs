@@ -1,0 +1,145 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DEVSIS_ENERGISUR
+{
+    public partial class MenuPrincipal : Form
+    {
+        public MenuPrincipal()
+        {
+            InitializeComponent();
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crearUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new CrearUsuario().Show();
+        }
+
+        private void eliminarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new EliminarUsuario().Show();
+        }
+
+        private void ingresarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new IngresarProducto().Show();
+        }
+
+        private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ActualizarProducto().Show();
+        }
+
+        private void consultarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eliminarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new EliminarProducto().Show();
+        }
+
+        private void ingresarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new IngresarCliente().Show();
+        }
+
+        private void actualizarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ActualizarCliente().Show();
+        }
+
+        private void consultarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eliminarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new EliminarCliente().Show();
+        }
+
+        private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new IngresarProveedor().Show();
+        }
+
+        private void actualizarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ActualizarProveedor().Show();
+        }
+
+        private void consultarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eliminarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new EliminarProveedor().Show();
+        }
+
+        private void nombreDelProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarNombreProducto().Show();
+        }
+
+        private void códigoDelProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarCodigoProducto().Show();
+        }
+
+        private void rUCDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarRucProveedor().Show();
+        }
+
+        private void nombreDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarNombreProveedor().Show();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cédulaCiudadaníaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarCedulaCliente().Show();
+        }
+
+        private void nombreDeCiudadaníaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarNombreCliente().Show();
+        }
+
+        private void generarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new GenerarFactura().Show();
+        }
+
+        private void generarOrdenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new GenerarOrdenCompra().Show();
+        }
+    }
+}
