@@ -164,6 +164,7 @@
             this.textCantidad.Size = new System.Drawing.Size(329, 22);
             this.textCantidad.TabIndex = 12;
             this.textCantidad.TextChanged += new System.EventHandler(this.textCantidad_TextChanged);
+            this.textCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textCantidad_KeyPress);
             // 
             // textAmperaje
             // 
@@ -171,6 +172,7 @@
             this.textAmperaje.Name = "textAmperaje";
             this.textAmperaje.Size = new System.Drawing.Size(329, 22);
             this.textAmperaje.TabIndex = 13;
+            this.textAmperaje.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textAmperaje_KeyPress);
             this.textAmperaje.Leave += new System.EventHandler(this.textAmperaje_Leave);
             // 
             // textVoltaje
@@ -179,6 +181,7 @@
             this.textVoltaje.Name = "textVoltaje";
             this.textVoltaje.Size = new System.Drawing.Size(329, 22);
             this.textVoltaje.TabIndex = 14;
+            this.textVoltaje.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textVoltaje_KeyPress);
             this.textVoltaje.Leave += new System.EventHandler(this.textVoltaje_Leave);
             // 
             // textMarca

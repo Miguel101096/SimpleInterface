@@ -231,5 +231,20 @@ namespace DEVSIS_ENERGISUR
                 MessageBox.Show("Formato incorrecto");
             }
         }
+
+        private void textVoltaje_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            v.Numeros(e);
+        }
+
+        private void textAmperaje_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            v.Numeros(e);
+        }
+
+        private void textCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            v.Numeros(e);
+        }
     }
 }
