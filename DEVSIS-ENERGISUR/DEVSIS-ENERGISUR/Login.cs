@@ -32,5 +32,10 @@ namespace DEVSIS_ENERGISUR
         {
 
         }
+
+        private void textCedula_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

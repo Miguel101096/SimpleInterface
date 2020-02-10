@@ -91,6 +91,7 @@
             this.textCedula.Name = "textCedula";
             this.textCedula.Size = new System.Drawing.Size(188, 22);
             this.textCedula.TabIndex = 5;
+            this.textCedula.TextChanged += new System.EventHandler(this.textCedula_TextChanged);
             this.textCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textCedula_KeyPress);
             // 
             // textContrasena

@@ -74,6 +74,8 @@
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(329, 22);
             this.textCodigo.TabIndex = 2;
+            this.textCodigo.TextChanged += new System.EventHandler(this.textCodigo_TextChanged);
+            this.textCodigo.Leave += new System.EventHandler(this.textCodigo_Leave);
             // 
             // botonIngresar
             // 
@@ -153,6 +155,7 @@
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(329, 22);
             this.textPrecio.TabIndex = 11;
+            this.textPrecio.Leave += new System.EventHandler(this.textPrecio_Leave);
             // 
             // textCantidad
             // 
@@ -160,6 +163,7 @@
             this.textCantidad.Name = "textCantidad";
             this.textCantidad.Size = new System.Drawing.Size(329, 22);
             this.textCantidad.TabIndex = 12;
+            this.textCantidad.TextChanged += new System.EventHandler(this.textCantidad_TextChanged);
             // 
             // textAmperaje
             // 
@@ -167,6 +171,7 @@
             this.textAmperaje.Name = "textAmperaje";
             this.textAmperaje.Size = new System.Drawing.Size(329, 22);
             this.textAmperaje.TabIndex = 13;
+            this.textAmperaje.Leave += new System.EventHandler(this.textAmperaje_Leave);
             // 
             // textVoltaje
             // 
@@ -174,6 +179,7 @@
             this.textVoltaje.Name = "textVoltaje";
             this.textVoltaje.Size = new System.Drawing.Size(329, 22);
             this.textVoltaje.TabIndex = 14;
+            this.textVoltaje.Leave += new System.EventHandler(this.textVoltaje_Leave);
             // 
             // textMarca
             // 
@@ -181,6 +187,7 @@
             this.textMarca.Name = "textMarca";
             this.textMarca.Size = new System.Drawing.Size(329, 22);
             this.textMarca.TabIndex = 16;
+            this.textMarca.Leave += new System.EventHandler(this.textMarca_Leave);
             // 
             // textNombreProducto
             // 
@@ -188,6 +195,9 @@
             this.textNombreProducto.Name = "textNombreProducto";
             this.textNombreProducto.Size = new System.Drawing.Size(329, 22);
             this.textNombreProducto.TabIndex = 17;
+            this.textNombreProducto.TextChanged += new System.EventHandler(this.textNombreProducto_TextChanged);
+            this.textNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textNombreProducto_KeyPress);
+            this.textNombreProducto.Leave += new System.EventHandler(this.textNombreProducto_Leave);
             // 
             // comboBoxTipo
             // 
@@ -216,6 +226,8 @@
             this.textBoxGarantia.Name = "textBoxGarantia";
             this.textBoxGarantia.Size = new System.Drawing.Size(329, 22);
             this.textBoxGarantia.TabIndex = 39;
+            this.textBoxGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxGarantia_KeyPress);
+            this.textBoxGarantia.Leave += new System.EventHandler(this.textBoxGarantia_Leave);
             // 
             // IngresarProducto
             // 
