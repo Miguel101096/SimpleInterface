@@ -58,12 +58,6 @@
     <Compile Include="ActualizarProducto.Designer.cs">
       <DependentUpon>ActualizarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActualizarProveedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ActualizarProveedor.Designer.cs">
-      <DependentUpon>ActualizarProveedor.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConsultarCedulaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ActualizarProducto.resx">
       <DependentUpon>ActualizarProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ActualizarProveedor.resx">
-      <DependentUpon>ActualizarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarCedulaCliente.resx">
       <DependentUpon>ConsultarCedulaCliente.cs</DependentUpon>

@@ -168,9 +168,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textMarca_Leave(object sender, EventArgs e)
         {
-            if (validarDireccion(textMarca.Text))
+            if (validarDireccion(textBoxMarca.Text))
             {
-                if (textMarca.TextLength > 60)
+                if (textBoxMarca.TextLength > 60)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
@@ -183,9 +183,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textCorreo_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(textCorreo.Text))
+            if (validarEmail(textBoxCorreo.Text))
             {
-                if (textCorreo.TextLength > 60)
+                if (textBoxCorreo.TextLength > 60)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
@@ -198,9 +198,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textTelefonoConvencional_Leave(object sender, EventArgs e)
         {
-            if (validarNumeros(textTelefonoConvencional.Text))
+            if (validarNumeros(textBoxTelefonoConvencional.Text))
             {
-                if (textTelefonoConvencional.TextLength == 9)
+                if (textBoxTelefonoConvencional.TextLength == 9)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
@@ -213,9 +213,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textTelefonoCelular_Leave(object sender, EventArgs e)
         {
-            if (validarNumeros(textTelefonoCelular.Text))
+            if (validarNumeros(textBoxTelefonoCelular.Text))
             {
-                if (textTelefonoCelular.TextLength == 10)
+                if (textBoxTelefonoCelular.TextLength == 10)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }

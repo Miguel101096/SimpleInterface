@@ -46,7 +46,6 @@
             this.eliminarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rUCDeProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -213,7 +212,6 @@
             // 
             this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarProveedorToolStripMenuItem,
-            this.actualizarProveedorToolStripMenuItem,
             this.consultarProveedorToolStripMenuItem,
             this.eliminarProveedorToolStripMenuItem});
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
@@ -223,16 +221,9 @@
             // ingresarProveedorToolStripMenuItem
             // 
             this.ingresarProveedorToolStripMenuItem.Name = "ingresarProveedorToolStripMenuItem";
-            this.ingresarProveedorToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.ingresarProveedorToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.ingresarProveedorToolStripMenuItem.Text = "Ingresar proveedor";
             this.ingresarProveedorToolStripMenuItem.Click += new System.EventHandler(this.ingresarProveedorToolStripMenuItem_Click);
-            // 
-            // actualizarProveedorToolStripMenuItem
-            // 
-            this.actualizarProveedorToolStripMenuItem.Name = "actualizarProveedorToolStripMenuItem";
-            this.actualizarProveedorToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
-            this.actualizarProveedorToolStripMenuItem.Text = "Actualizar proveedor";
-            this.actualizarProveedorToolStripMenuItem.Click += new System.EventHandler(this.actualizarProveedorToolStripMenuItem_Click);
             // 
             // consultarProveedorToolStripMenuItem
             // 
@@ -243,7 +234,7 @@
             this.correoElectrónicoToolStripMenuItem,
             this.razónSocialToolStripMenuItem});
             this.consultarProveedorToolStripMenuItem.Name = "consultarProveedorToolStripMenuItem";
-            this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.consultarProveedorToolStripMenuItem.Text = "Consultar proveedor";
             this.consultarProveedorToolStripMenuItem.Click += new System.EventHandler(this.consultarProveedorToolStripMenuItem_Click);
             // 
@@ -285,7 +276,7 @@
             // eliminarProveedorToolStripMenuItem
             // 
             this.eliminarProveedorToolStripMenuItem.Name = "eliminarProveedorToolStripMenuItem";
-            this.eliminarProveedorToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.eliminarProveedorToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.eliminarProveedorToolStripMenuItem.Text = "Eliminar proveedor";
             this.eliminarProveedorToolStripMenuItem.Click += new System.EventHandler(this.eliminarProveedorToolStripMenuItem_Click);
             // 
@@ -426,7 +417,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarProveedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarProveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarProveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compToolStripMenuItem;

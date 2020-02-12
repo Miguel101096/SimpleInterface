@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textMarca = new System.Windows.Forms.TextBox();
-            this.textTelefonoConvencional = new System.Windows.Forms.TextBox();
-            this.textCorreo = new System.Windows.Forms.TextBox();
+            this.textBoxMarca = new System.Windows.Forms.TextBox();
+            this.textBoxTelefonoConvencional = new System.Windows.Forms.TextBox();
+            this.textBoxCorreo = new System.Windows.Forms.TextBox();
             this.labelCorreo = new System.Windows.Forms.Label();
             this.labelTelefonoConvencional = new System.Windows.Forms.Label();
             this.labelDirección = new System.Windows.Forms.Label();
             this.botonIngresar = new System.Windows.Forms.Button();
-            this.textRuc = new System.Windows.Forms.TextBox();
+            this.textBoxRuc = new System.Windows.Forms.TextBox();
             this.labelRuc = new System.Windows.Forms.Label();
             this.labelIngresarProveedor = new System.Windows.Forms.Label();
             this.textBoxRazonSocial = new System.Windows.Forms.TextBox();
             this.labelRazonSocial = new System.Windows.Forms.Label();
-            this.textTelefonoCelular = new System.Windows.Forms.TextBox();
+            this.textBoxTelefonoCelular = new System.Windows.Forms.TextBox();
             this.labelTelefonoCelular = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textMarca
+            // textBoxMarca
             // 
-            this.textMarca.Location = new System.Drawing.Point(241, 120);
-            this.textMarca.Name = "textMarca";
-            this.textMarca.Size = new System.Drawing.Size(329, 22);
-            this.textMarca.TabIndex = 48;
-            this.textMarca.Leave += new System.EventHandler(this.textMarca_Leave);
+            this.textBoxMarca.Location = new System.Drawing.Point(241, 120);
+            this.textBoxMarca.Name = "textBoxMarca";
+            this.textBoxMarca.Size = new System.Drawing.Size(329, 22);
+            this.textBoxMarca.TabIndex = 48;
+            this.textBoxMarca.Leave += new System.EventHandler(this.textMarca_Leave);
             // 
-            // textTelefonoConvencional
+            // textBoxTelefonoConvencional
             // 
-            this.textTelefonoConvencional.Location = new System.Drawing.Point(241, 200);
-            this.textTelefonoConvencional.Name = "textTelefonoConvencional";
-            this.textTelefonoConvencional.Size = new System.Drawing.Size(329, 22);
-            this.textTelefonoConvencional.TabIndex = 47;
-            this.textTelefonoConvencional.Leave += new System.EventHandler(this.textTelefonoConvencional_Leave);
+            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(241, 200);
+            this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
+            this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(329, 22);
+            this.textBoxTelefonoConvencional.TabIndex = 47;
+            this.textBoxTelefonoConvencional.Leave += new System.EventHandler(this.textTelefonoConvencional_Leave);
             // 
-            // textCorreo
+            // textBoxCorreo
             // 
-            this.textCorreo.Location = new System.Drawing.Point(241, 160);
-            this.textCorreo.Name = "textCorreo";
-            this.textCorreo.Size = new System.Drawing.Size(329, 22);
-            this.textCorreo.TabIndex = 46;
-            this.textCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
+            this.textBoxCorreo.Location = new System.Drawing.Point(241, 160);
+            this.textBoxCorreo.Name = "textBoxCorreo";
+            this.textBoxCorreo.Size = new System.Drawing.Size(329, 22);
+            this.textBoxCorreo.TabIndex = 46;
+            this.textBoxCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
             // 
             // labelCorreo
             // 
@@ -104,13 +104,13 @@
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
             // 
-            // textRuc
+            // textBoxRuc
             // 
-            this.textRuc.Location = new System.Drawing.Point(241, 41);
-            this.textRuc.Name = "textRuc";
-            this.textRuc.Size = new System.Drawing.Size(329, 22);
-            this.textRuc.TabIndex = 38;
-            this.textRuc.Leave += new System.EventHandler(this.textRuc_Leave);
+            this.textBoxRuc.Location = new System.Drawing.Point(241, 41);
+            this.textBoxRuc.Name = "textBoxRuc";
+            this.textBoxRuc.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRuc.TabIndex = 38;
+            this.textBoxRuc.Leave += new System.EventHandler(this.textRuc_Leave);
             // 
             // labelRuc
             // 
@@ -148,13 +148,13 @@
             this.labelRazonSocial.TabIndex = 51;
             this.labelRazonSocial.Text = "Razón social";
             // 
-            // textTelefonoCelular
+            // textBoxTelefonoCelular
             // 
-            this.textTelefonoCelular.Location = new System.Drawing.Point(241, 240);
-            this.textTelefonoCelular.Name = "textTelefonoCelular";
-            this.textTelefonoCelular.Size = new System.Drawing.Size(329, 22);
-            this.textTelefonoCelular.TabIndex = 53;
-            this.textTelefonoCelular.Leave += new System.EventHandler(this.textTelefonoCelular_Leave);
+            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(241, 240);
+            this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
+            this.textBoxTelefonoCelular.Size = new System.Drawing.Size(329, 22);
+            this.textBoxTelefonoCelular.TabIndex = 53;
+            this.textBoxTelefonoCelular.Leave += new System.EventHandler(this.textTelefonoCelular_Leave);
             // 
             // labelTelefonoCelular
             // 
@@ -170,18 +170,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
-            this.Controls.Add(this.textTelefonoCelular);
+            this.Controls.Add(this.textBoxTelefonoCelular);
             this.Controls.Add(this.labelTelefonoCelular);
             this.Controls.Add(this.labelRazonSocial);
             this.Controls.Add(this.textBoxRazonSocial);
-            this.Controls.Add(this.textMarca);
-            this.Controls.Add(this.textTelefonoConvencional);
-            this.Controls.Add(this.textCorreo);
+            this.Controls.Add(this.textBoxMarca);
+            this.Controls.Add(this.textBoxTelefonoConvencional);
+            this.Controls.Add(this.textBoxCorreo);
             this.Controls.Add(this.labelCorreo);
             this.Controls.Add(this.labelTelefonoConvencional);
             this.Controls.Add(this.labelDirección);
             this.Controls.Add(this.botonIngresar);
-            this.Controls.Add(this.textRuc);
+            this.Controls.Add(this.textBoxRuc);
             this.Controls.Add(this.labelRuc);
             this.Controls.Add(this.labelIngresarProveedor);
             this.Name = "IngresarProveedor";
@@ -193,19 +193,19 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textMarca;
-        private System.Windows.Forms.TextBox textTelefonoConvencional;
-        private System.Windows.Forms.TextBox textCorreo;
+        private System.Windows.Forms.TextBox textBoxMarca;
+        private System.Windows.Forms.TextBox textBoxTelefonoConvencional;
+        private System.Windows.Forms.TextBox textBoxCorreo;
         private System.Windows.Forms.Label labelCorreo;
         private System.Windows.Forms.Label labelTelefonoConvencional;
         private System.Windows.Forms.Label labelDirección;
         private System.Windows.Forms.Button botonIngresar;
-        private System.Windows.Forms.TextBox textRuc;
+        private System.Windows.Forms.TextBox textBoxRuc;
         private System.Windows.Forms.Label labelRuc;
         private System.Windows.Forms.Label labelIngresarProveedor;
         private System.Windows.Forms.TextBox textBoxRazonSocial;
         private System.Windows.Forms.Label labelRazonSocial;
-        private System.Windows.Forms.TextBox textTelefonoCelular;
+        private System.Windows.Forms.TextBox textBoxTelefonoCelular;
         private System.Windows.Forms.Label labelTelefonoCelular;
     }
 }
