@@ -58,11 +58,6 @@ namespace DEVSIS_ENERGISUR
             v.Numeros(e);
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         
 
         private void textCedula_Leave(object sender, EventArgs e)
@@ -71,21 +66,43 @@ namespace DEVSIS_ENERGISUR
             {
                 
             }
+            else if (textCedula.Text == String.Empty)
+            {
+                MessageBox.Show("Entrada de número cédula vacía");
+                //textContrasena.Enabled = false;
+                //comboBox1.Enabled = false;
+            }
+            //else if (textCedula.Text != String.Empty)
+            //{
+            //    textContrasena.Enabled = true;
+            //    comboBox1.Enabled = true;
+            //}
             else if (textCedula.TextLength < 10)
             {
                 MessageBox.Show("Número de cédula incompleto");
+                //textContrasena.Enabled = false;
+                //comboBox1.Enabled = false;
             }
+            //else if (textCedula.TextLength == 10)
+            //{
+            //    textContrasena.Enabled = true;
+            //    comboBox1.Enabled = true;
+            //}
             else
             {
                 MessageBox.Show("Número de cédula no válido");
+
             }
+            
+            
         }
 
         private void textContrasena_Leave(object sender, EventArgs e)
         {
             if (textContrasena.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de contraseña vacio");
+                MessageBox.Show("Entrada de contraseña vacía");
+                //comboBox1.Enabled = false;
             }
         }
     }

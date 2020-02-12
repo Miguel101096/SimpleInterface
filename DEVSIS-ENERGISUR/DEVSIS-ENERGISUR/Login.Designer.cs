@@ -134,7 +134,6 @@
             this.comboBox1.Size = new System.Drawing.Size(188, 24);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "Tipo de usuario";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Login
             // 

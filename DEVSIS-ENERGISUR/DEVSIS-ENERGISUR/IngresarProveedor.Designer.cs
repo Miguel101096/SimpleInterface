@@ -47,67 +47,64 @@
             // 
             // textBoxDireccion
             // 
-            this.textBoxDireccion.Location = new System.Drawing.Point(181, 98);
-            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDireccion.Location = new System.Drawing.Point(241, 121);
+            this.textBoxDireccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDireccion.Name = "textBoxDireccion";
-            this.textBoxDireccion.Size = new System.Drawing.Size(248, 20);
+            this.textBoxDireccion.Size = new System.Drawing.Size(329, 22);
             this.textBoxDireccion.TabIndex = 48;
             this.textBoxDireccion.Leave += new System.EventHandler(this.textMarca_Leave);
             // 
             // textBoxTelefonoConvencional
             // 
-            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(181, 162);
-            this.textBoxTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(241, 199);
+            this.textBoxTelefonoConvencional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
-            this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(248, 20);
+            this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(329, 22);
             this.textBoxTelefonoConvencional.TabIndex = 47;
             this.textBoxTelefonoConvencional.Leave += new System.EventHandler(this.textTelefonoConvencional_Leave);
             // 
             // textBoxCorreo
             // 
-            this.textBoxCorreo.Location = new System.Drawing.Point(181, 130);
-            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCorreo.Location = new System.Drawing.Point(241, 160);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(248, 20);
+            this.textBoxCorreo.Size = new System.Drawing.Size(329, 22);
             this.textBoxCorreo.TabIndex = 46;
             this.textBoxCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
             // 
             // labelCorreo
             // 
             this.labelCorreo.AutoSize = true;
-            this.labelCorreo.Location = new System.Drawing.Point(9, 130);
-            this.labelCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCorreo.Location = new System.Drawing.Point(12, 160);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(93, 13);
+            this.labelCorreo.Size = new System.Drawing.Size(124, 17);
             this.labelCorreo.TabIndex = 43;
             this.labelCorreo.Text = "Correo electrónico";
             // 
             // labelTelefonoConvencional
             // 
             this.labelTelefonoConvencional.AutoSize = true;
-            this.labelTelefonoConvencional.Location = new System.Drawing.Point(9, 162);
-            this.labelTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTelefonoConvencional.Location = new System.Drawing.Point(12, 199);
             this.labelTelefonoConvencional.Name = "labelTelefonoConvencional";
-            this.labelTelefonoConvencional.Size = new System.Drawing.Size(116, 13);
+            this.labelTelefonoConvencional.Size = new System.Drawing.Size(151, 17);
             this.labelTelefonoConvencional.TabIndex = 42;
             this.labelTelefonoConvencional.Text = "Teléfono convencional";
             // 
             // labelDirección
             // 
             this.labelDirección.AutoSize = true;
-            this.labelDirección.Location = new System.Drawing.Point(9, 98);
-            this.labelDirección.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDirección.Location = new System.Drawing.Point(12, 121);
             this.labelDirección.Name = "labelDirección";
-            this.labelDirección.Size = new System.Drawing.Size(52, 13);
+            this.labelDirección.Size = new System.Drawing.Size(67, 17);
             this.labelDirección.TabIndex = 41;
             this.labelDirección.Text = "Dirección";
             // 
             // botonIngresar
             // 
-            this.botonIngresar.Location = new System.Drawing.Point(207, 418);
-            this.botonIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonIngresar.Location = new System.Drawing.Point(276, 514);
+            this.botonIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botonIngresar.Name = "botonIngresar";
-            this.botonIngresar.Size = new System.Drawing.Size(220, 22);
+            this.botonIngresar.Size = new System.Drawing.Size(293, 27);
             this.botonIngresar.TabIndex = 39;
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
@@ -115,87 +112,85 @@
             // 
             // textBoxRuc
             // 
-            this.textBoxRuc.Location = new System.Drawing.Point(181, 33);
-            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRuc.Location = new System.Drawing.Point(241, 41);
+            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRuc.Name = "textBoxRuc";
-            this.textBoxRuc.Size = new System.Drawing.Size(248, 20);
+            this.textBoxRuc.Size = new System.Drawing.Size(329, 22);
             this.textBoxRuc.TabIndex = 38;
+            this.textBoxRuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRuc_KeyPress);
             this.textBoxRuc.Leave += new System.EventHandler(this.textRuc_Leave);
             // 
             // labelRuc
             // 
             this.labelRuc.AutoSize = true;
-            this.labelRuc.Location = new System.Drawing.Point(9, 33);
-            this.labelRuc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRuc.Location = new System.Drawing.Point(12, 41);
             this.labelRuc.Name = "labelRuc";
-            this.labelRuc.Size = new System.Drawing.Size(30, 13);
+            this.labelRuc.Size = new System.Drawing.Size(37, 17);
             this.labelRuc.TabIndex = 37;
             this.labelRuc.Text = "RUC";
             // 
             // labelIngresarProveedor
             // 
             this.labelIngresarProveedor.AutoSize = true;
-            this.labelIngresarProveedor.Location = new System.Drawing.Point(150, 9);
-            this.labelIngresarProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelIngresarProveedor.Location = new System.Drawing.Point(200, 11);
             this.labelIngresarProveedor.Name = "labelIngresarProveedor";
-            this.labelIngresarProveedor.Size = new System.Drawing.Size(96, 13);
+            this.labelIngresarProveedor.Size = new System.Drawing.Size(129, 17);
             this.labelIngresarProveedor.TabIndex = 36;
             this.labelIngresarProveedor.Text = "Ingresar proveedor";
             // 
             // textBoxRazonSocial
             // 
-            this.textBoxRazonSocial.Location = new System.Drawing.Point(181, 65);
-            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRazonSocial.Location = new System.Drawing.Point(241, 80);
+            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
-            this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
+            this.textBoxRazonSocial.Size = new System.Drawing.Size(329, 22);
             this.textBoxRazonSocial.TabIndex = 50;
             this.textBoxRazonSocial.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxRazonSocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRazonSocial_KeyPress);
             this.textBoxRazonSocial.Leave += new System.EventHandler(this.textBoxRazonSocial_Leave);
             // 
             // labelRazonSocial
             // 
             this.labelRazonSocial.AutoSize = true;
-            this.labelRazonSocial.Location = new System.Drawing.Point(9, 65);
-            this.labelRazonSocial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRazonSocial.Location = new System.Drawing.Point(12, 80);
             this.labelRazonSocial.Name = "labelRazonSocial";
-            this.labelRazonSocial.Size = new System.Drawing.Size(68, 13);
+            this.labelRazonSocial.Size = new System.Drawing.Size(89, 17);
             this.labelRazonSocial.TabIndex = 51;
             this.labelRazonSocial.Text = "Razón social";
             // 
             // textBoxTelefonoCelular
             // 
-            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(181, 195);
-            this.textBoxTelefonoCelular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(241, 240);
+            this.textBoxTelefonoCelular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
-            this.textBoxTelefonoCelular.Size = new System.Drawing.Size(248, 20);
+            this.textBoxTelefonoCelular.Size = new System.Drawing.Size(329, 22);
             this.textBoxTelefonoCelular.TabIndex = 53;
             this.textBoxTelefonoCelular.Leave += new System.EventHandler(this.textTelefonoCelular_Leave);
             // 
             // labelTelefonoCelular
             // 
             this.labelTelefonoCelular.AutoSize = true;
-            this.labelTelefonoCelular.Location = new System.Drawing.Point(9, 195);
-            this.labelTelefonoCelular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTelefonoCelular.Location = new System.Drawing.Point(12, 240);
             this.labelTelefonoCelular.Name = "labelTelefonoCelular";
-            this.labelTelefonoCelular.Size = new System.Drawing.Size(83, 13);
+            this.labelTelefonoCelular.Size = new System.Drawing.Size(110, 17);
             this.labelTelefonoCelular.TabIndex = 52;
             this.labelTelefonoCelular.Text = "Teléfono celular";
             // 
             // botonRegresar
             // 
-            this.botonRegresar.Location = new System.Drawing.Point(9, 418);
-            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonRegresar.Location = new System.Drawing.Point(12, 514);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botonRegresar.Name = "botonRegresar";
-            this.botonRegresar.Size = new System.Drawing.Size(194, 22);
+            this.botonRegresar.Size = new System.Drawing.Size(259, 27);
             this.botonRegresar.TabIndex = 69;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
             // 
             // IngresarProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 449);
+            this.ClientSize = new System.Drawing.Size(581, 553);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxTelefonoCelular);
             this.Controls.Add(this.labelTelefonoCelular);
@@ -211,7 +206,7 @@
             this.Controls.Add(this.textBoxRuc);
             this.Controls.Add(this.labelRuc);
             this.Controls.Add(this.labelIngresarProveedor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "IngresarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresarProveedor";
