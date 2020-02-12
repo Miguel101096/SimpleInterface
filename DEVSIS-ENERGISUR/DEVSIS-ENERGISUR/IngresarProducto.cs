@@ -246,5 +246,10 @@ namespace DEVSIS_ENERGISUR
         {
             v.Numeros(e);
         }
+
+        private void textAmperaje_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

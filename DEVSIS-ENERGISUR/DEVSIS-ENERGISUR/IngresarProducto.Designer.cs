@@ -172,6 +172,7 @@
             this.textAmperaje.Name = "textAmperaje";
             this.textAmperaje.Size = new System.Drawing.Size(329, 22);
             this.textAmperaje.TabIndex = 13;
+            this.textAmperaje.TextChanged += new System.EventHandler(this.textAmperaje_TextChanged);
             this.textAmperaje.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textAmperaje_KeyPress);
             this.textAmperaje.Leave += new System.EventHandler(this.textAmperaje_Leave);
             // 
