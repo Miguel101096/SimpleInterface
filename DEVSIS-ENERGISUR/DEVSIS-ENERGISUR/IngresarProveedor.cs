@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class IngresarProveedor : Form
     {
+        private controlProveedor cp = new controlProveedor();
+
         public IngresarProveedor()
         {
             InitializeComponent();
@@ -168,9 +171,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textMarca_Leave(object sender, EventArgs e)
         {
-            if (validarDireccion(textBoxMarca.Text))
+            if (validarDireccion(textBoxDireccion.Text))
             {
-                if (textBoxMarca.TextLength > 60)
+                if (textBoxDireccion.TextLength > 60)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
@@ -239,6 +242,19 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Formato incorrecto");
             }
+        }
+
+
+        private void botonIngresar_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            String ruc = this.textBoxRuc.Text;
+            String razonSocial = this.textBoxRazonSocial.Text;
+            String direccion = this.textBoxDireccion.Text;
+            String correo = this.textBoxCorreo.Text;
+            String telfconv = this.textBoxTelefonoConvencional.Text;
+            String telfCel = this.textBoxTelefonoCelular.Text;
+            controlProveedor cp = new controlProveedor();
+            cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
         }
     }
 }

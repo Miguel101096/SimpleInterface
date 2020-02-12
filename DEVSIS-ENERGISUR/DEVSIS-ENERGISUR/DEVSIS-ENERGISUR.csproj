@@ -130,6 +130,8 @@
     <Compile Include="ConsultarTelefonoConvProveedor.Designer.cs">
       <DependentUpon>ConsultarTelefonoConvProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="control\controlProveedor.cs" />
+    <Compile Include="control\Conexion.cs" />
     <Compile Include="CrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
