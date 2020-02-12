@@ -33,7 +33,6 @@ C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVS
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS-ENERGISUR.csprojAssemblyReference.cache
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ActualizarCliente.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ActualizarProducto.resources
-C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ActualizarProveedor.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarCedulaCliente.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarCodigoProducto.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNombreCliente.resources
