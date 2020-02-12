@@ -228,9 +228,9 @@ namespace DEVSIS_ENERGISUR
 
         private void textRuc_Leave(object sender, EventArgs e)
         {
-            if (RucPersonaNatural(textBoxRazonSocial.Text))
+            if (RucPersonaNatural(textBoxRuc.Text))
             {
-                if (textBoxRazonSocial.TextLength > 14)
+                if (textBoxRuc.TextLength > 14)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
