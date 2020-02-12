@@ -286,6 +286,7 @@ namespace DEVSIS_ENERGISUR
             String telfCel = this.textBoxTelefonoCelular.Text;
             controlProveedor cp = new controlProveedor();
             cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
+            MessageBox.Show("Proveedor registrado correctamente");
         }
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
@@ -312,6 +313,11 @@ namespace DEVSIS_ENERGISUR
         private void textBoxTelefonoCelular_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
+        }
+
+        private void botonIngresar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

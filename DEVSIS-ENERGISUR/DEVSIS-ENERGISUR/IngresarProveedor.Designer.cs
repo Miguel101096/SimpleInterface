@@ -109,6 +109,7 @@
             this.botonIngresar.TabIndex = 39;
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
+            this.botonIngresar.Click += new System.EventHandler(this.botonIngresar_Click);
             this.botonIngresar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.botonIngresar_MouseClick_1);
             // 
             // textBoxRuc
