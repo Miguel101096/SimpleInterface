@@ -105,7 +105,6 @@
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.productosToolStripMenuItem.Text = "Productos";
-            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
             // ingresarProductoToolStripMenuItem
             // 
@@ -127,9 +126,8 @@
             this.nombreDelProductoToolStripMenuItem,
             this.códigoDelProductoToolStripMenuItem});
             this.consultarProductoToolStripMenuItem.Name = "consultarProductoToolStripMenuItem";
-            this.consultarProductoToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.consultarProductoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.consultarProductoToolStripMenuItem.Text = "Consultar producto";
-            this.consultarProductoToolStripMenuItem.Click += new System.EventHandler(this.consultarProductoToolStripMenuItem_Click);
             // 
             // nombreDelProductoToolStripMenuItem
             // 
@@ -183,9 +181,8 @@
             this.cédulaCiudadaníaToolStripMenuItem,
             this.nombreDeCiudadaníaToolStripMenuItem});
             this.consultarClienteToolStripMenuItem.Name = "consultarClienteToolStripMenuItem";
-            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.consultarClienteToolStripMenuItem.Text = "Consultar cliente";
-            this.consultarClienteToolStripMenuItem.Click += new System.EventHandler(this.consultarClienteToolStripMenuItem_Click);
             // 
             // cédulaCiudadaníaToolStripMenuItem
             // 
@@ -236,7 +233,6 @@
             this.consultarProveedorToolStripMenuItem.Name = "consultarProveedorToolStripMenuItem";
             this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.consultarProveedorToolStripMenuItem.Text = "Consultar proveedor";
-            this.consultarProveedorToolStripMenuItem.Click += new System.EventHandler(this.consultarProveedorToolStripMenuItem_Click);
             // 
             // rUCDeProveedorToolStripMenuItem
             // 
@@ -288,7 +284,6 @@
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
             this.facturaToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.facturaToolStripMenuItem.Text = "Factura";
-            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // generarFacturaToolStripMenuItem
             // 
@@ -392,7 +387,6 @@
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu principal";
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

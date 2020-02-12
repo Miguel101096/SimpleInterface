@@ -17,11 +17,6 @@ namespace DEVSIS_ENERGISUR
             InitializeComponent();
         }
 
-        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void crearUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new CrearUsuario().Show();
@@ -42,11 +37,6 @@ namespace DEVSIS_ENERGISUR
             new ActualizarProducto().Show();
         }
 
-        private void consultarProductoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void eliminarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new EliminarProducto().Show();
@@ -62,11 +52,6 @@ namespace DEVSIS_ENERGISUR
             new ActualizarCliente().Show();
         }
 
-        private void consultarClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void eliminarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new EliminarCliente().Show();
@@ -75,16 +60,6 @@ namespace DEVSIS_ENERGISUR
         private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new IngresarProveedor().Show();
-        }
-
-        private void actualizarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new ActualizarProveedor().Show();
-        }
-
-        private void consultarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void eliminarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -110,16 +85,6 @@ namespace DEVSIS_ENERGISUR
         private void nombreDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarNombreProveedor().Show();
-        }
-
-        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuPrincipal_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void cédulaCiudadaníaToolStripMenuItem_Click(object sender, EventArgs e)
