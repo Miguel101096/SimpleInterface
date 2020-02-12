@@ -60,6 +60,7 @@ namespace DEVSIS_ENERGISUR
         private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new IngresarProveedor().Show();
+            this.Visible = false;
         }
 
         private void eliminarProveedorToolStripMenuItem_Click(object sender, EventArgs e)

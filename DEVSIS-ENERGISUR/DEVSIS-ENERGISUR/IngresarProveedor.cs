@@ -44,7 +44,7 @@ namespace DEVSIS_ENERGISUR
 
         public static bool validarDireccion(String cadena)
         {
-            String rx = "^[a-zA-Z0-9_\\-]+( [a-zA-Z0-9_]+)*$";
+            String rx = "^[a-zA-Z0-9_\\-\\,\\.]+( [a-zA-Z0-9_\\-\\.\\,]+)*$";
             if (Regex.IsMatch(cadena, rx))
             {
                 if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
@@ -159,7 +159,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarNombre(textBoxRazonSocial.Text))
             {
-                
+
             }
             else if (textBoxRazonSocial.Text == String.Empty)
             {
@@ -179,19 +179,19 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarDireccion(textBoxDireccion.Text))
             {
-                
+
             }
             else if (textBoxDireccion.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de la marca vacía");
+                MessageBox.Show("Entrada de la dirección vacía");
             }
             else if (textBoxDireccion.TextLength > 60)
             {
-                MessageBox.Show("La marca excede el límite de caracteres");
+                MessageBox.Show("La dirección excede el límite de caracteres");
             }
             else
             {
-                MessageBox.Show("La marca no cumple con el formato");
+                MessageBox.Show("La dirección no cumple con el formato");
             }
         }
 
@@ -199,7 +199,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarEmail(textBoxCorreo.Text))
             {
-                
+
             }
             else if (textBoxCorreo.Text == String.Empty)
             {
@@ -219,7 +219,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarNumeros(textBoxTelefonoConvencional.Text))
             {
-                
+
             }
             else if (textBoxTelefonoConvencional.Text == String.Empty)
             {
@@ -239,7 +239,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarNumeros(textBoxTelefonoCelular.Text))
             {
-                
+
             }
             else if (textBoxTelefonoCelular.Text == String.Empty)
             {
@@ -259,7 +259,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (RucPersonaNatural(textBoxRuc.Text))
             {
-                
+
             }
             else if (textBoxRuc.Text == String.Empty)
             {
@@ -268,6 +268,11 @@ namespace DEVSIS_ENERGISUR
             else if (textBoxRuc.TextLength < 13)
             {
                 MessageBox.Show("Número de RUC incompleto");
+                textBoxTelefonoCelular.Enabled = false;
+                textBoxTelefonoConvencional.Enabled = false;
+                textBoxRazonSocial.Enabled = false;
+                textBoxCorreo.Enabled = false;
+                textBoxDireccion.Enabled = false;
             }
             else
             {
@@ -286,7 +291,13 @@ namespace DEVSIS_ENERGISUR
             String telfCel = this.textBoxTelefonoCelular.Text;
             controlProveedor cp = new controlProveedor();
             cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
-            MessageBox.Show("Proveedor registrado correctamente");
+            // MessageBox.Show("Proveedor registrado correctamente");
+            textBoxCorreo.Text = "";
+            textBoxRazonSocial.Text = "";
+            textBoxDireccion.Text = "";
+            textBoxRuc.Text = "";
+            textBoxTelefonoCelular.Text = "";
+            textBoxTelefonoConvencional.Text = "";
         }
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)

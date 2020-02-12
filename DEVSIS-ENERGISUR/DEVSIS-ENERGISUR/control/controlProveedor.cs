@@ -23,7 +23,7 @@ namespace DEVSIS_ENERGISUR.control
                 this.c = new Conexion();
                 c.ejecutarSQL("EXECUTE Ingresar_Proveedor '" + RUC + "', '" + razons + "', '"
                     + direcc + "', '" + correo + "', '" + telfconv + "', '" + telfcel + "'");
-                MessageBox.Show("Proveedor ingresado correctamente.");
+                MessageBox.Show("Proveedor registrado correctamente.");
             }
             catch (Exception error)
             {
