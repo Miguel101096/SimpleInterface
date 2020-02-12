@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textCorreoProveedor = new System.Windows.Forms.TextBox();
-            this.labelCorreoProveedor = new System.Windows.Forms.Label();
+            this.textBoxRazonSocialProveedor = new System.Windows.Forms.TextBox();
+            this.labelRazonSocialProveedor = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
             this.labelConsultarProveedor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -46,21 +46,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
             this.dataGridView1.TabIndex = 74;
             // 
-            // textCorreoProveedor
+            // textBoxRazonSocialProveedor
             // 
-            this.textCorreoProveedor.Location = new System.Drawing.Point(240, 40);
-            this.textCorreoProveedor.Name = "textCorreoProveedor";
-            this.textCorreoProveedor.Size = new System.Drawing.Size(329, 22);
-            this.textCorreoProveedor.TabIndex = 73;
+            this.textBoxRazonSocialProveedor.Location = new System.Drawing.Point(240, 40);
+            this.textBoxRazonSocialProveedor.Name = "textBoxRazonSocialProveedor";
+            this.textBoxRazonSocialProveedor.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRazonSocialProveedor.TabIndex = 73;
+            this.textBoxRazonSocialProveedor.Leave += new System.EventHandler(this.textBoxRazonSocialProveedor_Leave);
             // 
-            // labelCorreoProveedor
+            // labelRazonSocialProveedor
             // 
-            this.labelCorreoProveedor.AutoSize = true;
-            this.labelCorreoProveedor.Location = new System.Drawing.Point(12, 40);
-            this.labelCorreoProveedor.Name = "labelCorreoProveedor";
-            this.labelCorreoProveedor.Size = new System.Drawing.Size(216, 17);
-            this.labelCorreoProveedor.TabIndex = 72;
-            this.labelCorreoProveedor.Text = "Correo electrónico del proveedor";
+            this.labelRazonSocialProveedor.AutoSize = true;
+            this.labelRazonSocialProveedor.Location = new System.Drawing.Point(12, 40);
+            this.labelRazonSocialProveedor.Name = "labelRazonSocialProveedor";
+            this.labelRazonSocialProveedor.Size = new System.Drawing.Size(181, 17);
+            this.labelRazonSocialProveedor.TabIndex = 72;
+            this.labelRazonSocialProveedor.Text = "Razón social del proveedor";
             // 
             // botonConsultar
             // 
@@ -86,8 +87,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textCorreoProveedor);
-            this.Controls.Add(this.labelCorreoProveedor);
+            this.Controls.Add(this.textBoxRazonSocialProveedor);
+            this.Controls.Add(this.labelRazonSocialProveedor);
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.labelConsultarProveedor);
             this.Name = "ConsultarRazonSocialProveedor";
@@ -102,8 +103,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textCorreoProveedor;
-        private System.Windows.Forms.Label labelCorreoProveedor;
+        private System.Windows.Forms.TextBox textBoxRazonSocialProveedor;
+        private System.Windows.Forms.Label labelRazonSocialProveedor;
         private System.Windows.Forms.Button botonConsultar;
         private System.Windows.Forms.Label labelConsultarProveedor;
     }

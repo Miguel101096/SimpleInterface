@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textNombreProveedor = new System.Windows.Forms.TextBox();
+            this.textNumeroConvencionalProveedor = new System.Windows.Forms.TextBox();
             this.labelNumeroTelefonoConvencional = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
             this.labelConsultarProveedor = new System.Windows.Forms.Label();
@@ -46,12 +46,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
             this.dataGridView1.TabIndex = 69;
             // 
-            // textNombreProveedor
+            // textNumeroConvencionalProveedor
             // 
-            this.textNombreProveedor.Location = new System.Drawing.Point(240, 40);
-            this.textNombreProveedor.Name = "textNombreProveedor";
-            this.textNombreProveedor.Size = new System.Drawing.Size(329, 22);
-            this.textNombreProveedor.TabIndex = 68;
+            this.textNumeroConvencionalProveedor.Location = new System.Drawing.Point(268, 40);
+            this.textNumeroConvencionalProveedor.Name = "textNumeroConvencionalProveedor";
+            this.textNumeroConvencionalProveedor.Size = new System.Drawing.Size(329, 22);
+            this.textNumeroConvencionalProveedor.TabIndex = 68;
+            this.textNumeroConvencionalProveedor.Leave += new System.EventHandler(this.textNumeroConvencionalProveedor_Leave);
             // 
             // labelNumeroTelefonoConvencional
             // 
@@ -64,7 +65,7 @@
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(240, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(268, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
             this.botonConsultar.TabIndex = 66;
@@ -86,7 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textNombreProveedor);
+            this.Controls.Add(this.textNumeroConvencionalProveedor);
             this.Controls.Add(this.labelNumeroTelefonoConvencional);
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.labelConsultarProveedor);
@@ -102,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textNombreProveedor;
+        private System.Windows.Forms.TextBox textNumeroConvencionalProveedor;
         private System.Windows.Forms.Label labelNumeroTelefonoConvencional;
         private System.Windows.Forms.Button botonConsultar;
         private System.Windows.Forms.Label labelConsultarProveedor;

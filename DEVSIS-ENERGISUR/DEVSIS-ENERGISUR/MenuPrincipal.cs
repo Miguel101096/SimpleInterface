@@ -82,11 +82,6 @@ namespace DEVSIS_ENERGISUR
             new ConsultarRucProveedor().Show();
         }
 
-        private void nombreDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new ConsultarNombreProveedor().Show();
-        }
-
         private void cédulaCiudadaníaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarCedulaCliente().Show();
@@ -135,6 +130,11 @@ namespace DEVSIS_ENERGISUR
         private void fechaDeExpediciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarFechaFinOrdenCompra().Show();
+        }
+
+        private void númeroDeTélefonoCelularToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConsultarTelefonoCelularProveedor().Show();
         }
     }
 }

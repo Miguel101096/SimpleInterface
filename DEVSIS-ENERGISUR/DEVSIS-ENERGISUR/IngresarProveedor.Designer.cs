@@ -42,6 +42,7 @@
             this.labelRazonSocial = new System.Windows.Forms.Label();
             this.textBoxTelefonoCelular = new System.Windows.Forms.TextBox();
             this.labelTelefonoCelular = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxMarca
@@ -97,9 +98,9 @@
             // 
             // botonIngresar
             // 
-            this.botonIngresar.Location = new System.Drawing.Point(241, 514);
+            this.botonIngresar.Location = new System.Drawing.Point(276, 514);
             this.botonIngresar.Name = "botonIngresar";
-            this.botonIngresar.Size = new System.Drawing.Size(329, 27);
+            this.botonIngresar.Size = new System.Drawing.Size(294, 27);
             this.botonIngresar.TabIndex = 39;
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
@@ -165,11 +166,21 @@
             this.labelTelefonoCelular.TabIndex = 52;
             this.labelTelefonoCelular.Text = "Teléfono celular";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(12, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(258, 27);
+            this.botonRegresar.TabIndex = 69;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // IngresarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxTelefonoCelular);
             this.Controls.Add(this.labelTelefonoCelular);
             this.Controls.Add(this.labelRazonSocial);
@@ -207,5 +218,6 @@
         private System.Windows.Forms.Label labelRazonSocial;
         private System.Windows.Forms.TextBox textBoxTelefonoCelular;
         private System.Windows.Forms.Label labelTelefonoCelular;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

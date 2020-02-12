@@ -200,7 +200,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarNumeros(textBoxTelefonoConvencional.Text))
             {
-                if (textBoxTelefonoConvencional.TextLength == 9)
+                if (textBoxTelefonoConvencional.TextLength > 9)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }
@@ -215,7 +215,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (validarNumeros(textBoxTelefonoCelular.Text))
             {
-                if (textBoxTelefonoCelular.TextLength == 10)
+                if (textBoxTelefonoCelular.TextLength > 10)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }

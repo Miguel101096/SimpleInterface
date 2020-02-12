@@ -51,6 +51,7 @@
             this.textRuc.Name = "textRuc";
             this.textRuc.Size = new System.Drawing.Size(329, 22);
             this.textRuc.TabIndex = 38;
+            this.textRuc.Leave += new System.EventHandler(this.textRuc_Leave);
             // 
             // labelRuc
             // 

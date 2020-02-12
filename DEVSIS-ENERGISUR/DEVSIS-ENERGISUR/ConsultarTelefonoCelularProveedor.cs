@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace DEVSIS_ENERGISUR
 {
-    public partial class ConsultarCorreoProveedor : Form
+    public partial class ConsultarTelefonoCelularProveedor : Form
     {
-        public ConsultarCorreoProveedor()
+        public ConsultarTelefonoCelularProveedor()
         {
             InitializeComponent();
         }
 
-        public static bool validarEmail(String cadena)
+        public static bool validarNumeros(String cadena)
         {
-            String rx = "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
+            String rx = "^[0-9]{10}$";
             if (Regex.IsMatch(cadena, rx))
             {
                 if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
@@ -38,11 +38,11 @@ namespace DEVSIS_ENERGISUR
             }
         }
 
-        private void textCorreoProveedor_Leave(object sender, EventArgs e)
+        private void textNumeroCelularProveedor_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(textCorreoProveedor.Text))
+            if (validarNumeros(textNumeroCelularProveedor.Text))
             {
-                if (textCorreoProveedor.TextLength > 60)
+                if (textNumeroCelularProveedor.TextLength > 10)
                 {
                     MessageBox.Show("Formato incorrecto");
                 }

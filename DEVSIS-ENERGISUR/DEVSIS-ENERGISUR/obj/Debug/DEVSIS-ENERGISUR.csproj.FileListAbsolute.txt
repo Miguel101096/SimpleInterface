@@ -37,7 +37,6 @@ C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVS
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarCodigoProducto.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNombreCliente.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNombreProducto.resources
-C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNombreProveedor.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarRucProveedor.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarTelefonoConvProveedor.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.CrearUsuario.resources
@@ -61,3 +60,4 @@ C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVS
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarFechaFinOrdenCompra.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarFechaInicioOrdenCompra.resources
 C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarNumeroOrdenCompra.resources
+C:\Users\DELL\Documents\Github\AppSoftware\SimpleInterface\DEVSIS-ENERGISUR\DEVSIS-ENERGISUR\obj\Debug\DEVSIS_ENERGISUR.ConsultarTelefonoCelularProveedor.resources

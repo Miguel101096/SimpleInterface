@@ -52,6 +52,7 @@
             this.textCorreoProveedor.Name = "textCorreoProveedor";
             this.textCorreoProveedor.Size = new System.Drawing.Size(329, 22);
             this.textCorreoProveedor.TabIndex = 68;
+            this.textCorreoProveedor.Leave += new System.EventHandler(this.textCorreoProveedor_Leave);
             // 
             // labelCorreoProveedor
             // 
