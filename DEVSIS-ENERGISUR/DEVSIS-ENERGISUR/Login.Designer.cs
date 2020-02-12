@@ -70,7 +70,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 178);
+            this.label4.Location = new System.Drawing.Point(9, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 3;
@@ -79,7 +79,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 233);
+            this.label5.Location = new System.Drawing.Point(12, 178);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 17);
             this.label5.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // textCedula
             // 
-            this.textCedula.Location = new System.Drawing.Point(142, 178);
+            this.textCedula.Location = new System.Drawing.Point(142, 126);
             this.textCedula.Name = "textCedula";
             this.textCedula.Size = new System.Drawing.Size(188, 22);
             this.textCedula.TabIndex = 5;
@@ -96,15 +96,16 @@
             // 
             // textContrasena
             // 
-            this.textContrasena.Location = new System.Drawing.Point(142, 233);
+            this.textContrasena.Location = new System.Drawing.Point(142, 178);
             this.textContrasena.Name = "textContrasena";
             this.textContrasena.PasswordChar = '*';
             this.textContrasena.Size = new System.Drawing.Size(188, 22);
             this.textContrasena.TabIndex = 6;
+            this.textContrasena.Leave += new System.EventHandler(this.textContrasena_Leave);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(142, 281);
+            this.button2.Location = new System.Drawing.Point(142, 282);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(188, 26);
             this.button2.TabIndex = 8;
@@ -115,7 +116,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 126);
+            this.label6.Location = new System.Drawing.Point(9, 233);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 17);
             this.label6.TabIndex = 9;
@@ -128,7 +129,7 @@
             "Gerencia",
             "Compras",
             "Ventas"});
-            this.comboBox1.Location = new System.Drawing.Point(142, 126);
+            this.comboBox1.Location = new System.Drawing.Point(142, 233);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(188, 24);
             this.comboBox1.TabIndex = 10;

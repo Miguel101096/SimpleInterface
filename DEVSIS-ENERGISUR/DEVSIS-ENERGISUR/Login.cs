@@ -50,6 +50,7 @@ namespace DEVSIS_ENERGISUR
         private void button2_Click(object sender, EventArgs e)
         {
             new MenuPrincipal().Show();
+            this.Visible = false;
         }
 
         private void textCedula_KeyPress(object sender, KeyPressEventArgs e)
@@ -68,14 +69,23 @@ namespace DEVSIS_ENERGISUR
         {
             if (VerificaCedula(textCedula.Text))
             {
-                if (textCedula.TextLength > 14)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
+                
+            }
+            else if (textCedula.TextLength < 10)
+            {
+                MessageBox.Show("Número de cédula incompleto");
             }
             else
             {
-                MessageBox.Show("Formato incorrecto");
+                MessageBox.Show("Número de cédula no válido");
+            }
+        }
+
+        private void textContrasena_Leave(object sender, EventArgs e)
+        {
+            if (textContrasena.Text == String.Empty)
+            {
+                MessageBox.Show("Entrada de contraseña vacio");
             }
         }
     }
