@@ -61,6 +61,7 @@
             this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
             this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(329, 22);
             this.textBoxTelefonoConvencional.TabIndex = 47;
+            this.textBoxTelefonoConvencional.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoConvencional_KeyPress);
             this.textBoxTelefonoConvencional.Leave += new System.EventHandler(this.textTelefonoConvencional_Leave);
             // 
             // textBoxCorreo
@@ -165,6 +166,7 @@
             this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
             this.textBoxTelefonoCelular.Size = new System.Drawing.Size(329, 22);
             this.textBoxTelefonoCelular.TabIndex = 53;
+            this.textBoxTelefonoCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoCelular_KeyPress);
             this.textBoxTelefonoCelular.Leave += new System.EventHandler(this.textTelefonoCelular_Leave);
             // 
             // labelTelefonoCelular
@@ -185,6 +187,7 @@
             this.botonRegresar.TabIndex = 69;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
             // 
             // IngresarProveedor
             // 

@@ -297,5 +297,21 @@ namespace DEVSIS_ENERGISUR
         {
             v.Nombres(e);
         }
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
+
+        private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            v.Numeros(e);
+        }
+
+        private void textBoxTelefonoCelular_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            v.Numeros(e);
+        }
     }
 }
