@@ -33,12 +33,13 @@
             this.labelCodigo = new System.Windows.Forms.Label();
             this.labelConsultarCliente = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.botonRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(241, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(430, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
             this.botonConsultar.TabIndex = 39;
@@ -80,11 +81,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
             this.dataGridView1.TabIndex = 40;
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(95, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.TabIndex = 41;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // ConsultarCedulaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.textCedula);
@@ -105,5 +116,6 @@
         private System.Windows.Forms.Label labelCodigo;
         private System.Windows.Forms.Label labelConsultarCliente;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

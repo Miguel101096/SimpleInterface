@@ -40,6 +40,7 @@
             this.textCedula = new System.Windows.Forms.TextBox();
             this.labelCodigo = new System.Windows.Forms.Label();
             this.labelActualizarCliente = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textNombreCliente
@@ -108,9 +109,9 @@
             // 
             // botonActualizar
             // 
-            this.botonActualizar.Location = new System.Drawing.Point(241, 514);
+            this.botonActualizar.Location = new System.Drawing.Point(282, 514);
             this.botonActualizar.Name = "botonActualizar";
-            this.botonActualizar.Size = new System.Drawing.Size(329, 27);
+            this.botonActualizar.Size = new System.Drawing.Size(288, 27);
             this.botonActualizar.TabIndex = 39;
             this.botonActualizar.Text = "Actualizar";
             this.botonActualizar.UseVisualStyleBackColor = true;
@@ -140,11 +141,21 @@
             this.labelActualizarCliente.TabIndex = 36;
             this.labelActualizarCliente.Text = "Actualizar cliente";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(12, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(264, 27);
+            this.botonRegresar.TabIndex = 48;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // ActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textNombreCliente);
             this.Controls.Add(this.textDireccion);
             this.Controls.Add(this.textTelefono);
@@ -179,5 +190,6 @@
         private System.Windows.Forms.TextBox textCedula;
         private System.Windows.Forms.Label labelCodigo;
         private System.Windows.Forms.Label labelActualizarCliente;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

@@ -36,13 +36,14 @@
             this.textContrasena = new System.Windows.Forms.TextBox();
             this.textContrasenaConfirmacion = new System.Windows.Forms.TextBox();
             this.labelEliminarUsuario = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 218);
+            this.button1.Location = new System.Drawing.Point(266, 218);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(329, 27);
+            this.button1.Size = new System.Drawing.Size(304, 27);
             this.button1.TabIndex = 0;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,11 +105,21 @@
             this.labelEliminarUsuario.TabIndex = 7;
             this.labelEliminarUsuario.Text = "Eliminar usuario";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(12, 218);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(248, 27);
+            this.botonRegresar.TabIndex = 33;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // EliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 253);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.labelEliminarUsuario);
             this.Controls.Add(this.textContrasenaConfirmacion);
             this.Controls.Add(this.textContrasena);
@@ -135,5 +146,6 @@
         private System.Windows.Forms.TextBox textContrasena;
         private System.Windows.Forms.TextBox textContrasenaConfirmacion;
         private System.Windows.Forms.Label labelEliminarUsuario;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

@@ -42,6 +42,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelRazonSocial = new System.Windows.Forms.Label();
             this.textBoxRazonSocial = new System.Windows.Forms.TextBox();
+            this.botonRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,11 +169,21 @@
             this.textBoxRazonSocial.Size = new System.Drawing.Size(329, 22);
             this.textBoxRazonSocial.TabIndex = 35;
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(306, 801);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(329, 23);
+            this.botonRegresar.TabIndex = 36;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // GenerarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 833);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxRazonSocial);
             this.Controls.Add(this.labelRazonSocial);
             this.Controls.Add(this.comboBox1);
@@ -212,5 +223,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label labelRazonSocial;
         private System.Windows.Forms.TextBox textBoxRazonSocial;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

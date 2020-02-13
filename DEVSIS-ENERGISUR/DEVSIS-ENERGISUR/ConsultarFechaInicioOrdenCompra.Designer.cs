@@ -33,6 +33,7 @@
             this.botonConsultar = new System.Windows.Forms.Button();
             this.labelConsultarFIOrdenCompra = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.botonRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(240, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(375, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
             this.botonConsultar.TabIndex = 66;
@@ -80,11 +81,21 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(329, 22);
             this.dateTimePicker1.TabIndex = 70;
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(40, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.TabIndex = 71;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // ConsultarFechaInicioOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelFechaInicio);
@@ -106,5 +117,6 @@
         private System.Windows.Forms.Button botonConsultar;
         private System.Windows.Forms.Label labelConsultarFIOrdenCompra;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

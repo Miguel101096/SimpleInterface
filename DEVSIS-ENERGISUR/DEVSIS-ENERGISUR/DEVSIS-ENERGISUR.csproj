@@ -76,6 +76,12 @@
     <Compile Include="ConsultarCorreoProveedor.Designer.cs">
       <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarFacturaFechaEmision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFacturaFechaEmision.Designer.cs">
+      <DependentUpon>ConsultarFacturaFechaEmision.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarFechaFinOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarCorreoProveedor.resx">
       <DependentUpon>ConsultarCorreoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFacturaFechaEmision.resx">
+      <DependentUpon>ConsultarFacturaFechaEmision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarFechaFinOrdenCompra.resx">
       <DependentUpon>ConsultarFechaFinOrdenCompra.cs</DependentUpon>

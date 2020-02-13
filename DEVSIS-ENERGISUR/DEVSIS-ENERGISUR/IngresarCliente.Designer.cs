@@ -40,6 +40,7 @@
             this.textCedula = new System.Windows.Forms.TextBox();
             this.labelCodigo = new System.Windows.Forms.Label();
             this.labelIngresarCliente = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textNombreCliente
@@ -108,9 +109,9 @@
             // 
             // botonIngresar
             // 
-            this.botonIngresar.Location = new System.Drawing.Point(241, 514);
+            this.botonIngresar.Location = new System.Drawing.Point(293, 514);
             this.botonIngresar.Name = "botonIngresar";
-            this.botonIngresar.Size = new System.Drawing.Size(329, 27);
+            this.botonIngresar.Size = new System.Drawing.Size(277, 27);
             this.botonIngresar.TabIndex = 21;
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
@@ -140,11 +141,21 @@
             this.labelIngresarCliente.TabIndex = 18;
             this.labelIngresarCliente.Text = "Ingresar cliente";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(15, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(272, 27);
+            this.botonRegresar.TabIndex = 36;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // IngresarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textNombreCliente);
             this.Controls.Add(this.textDireccion);
             this.Controls.Add(this.textTelefono);
@@ -179,5 +190,6 @@
         private System.Windows.Forms.TextBox textCedula;
         private System.Windows.Forms.Label labelCodigo;
         private System.Windows.Forms.Label labelIngresarCliente;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

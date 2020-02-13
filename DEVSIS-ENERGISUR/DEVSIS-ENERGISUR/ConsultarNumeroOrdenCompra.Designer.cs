@@ -33,6 +33,7 @@
             this.labelNumero = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
             this.labelConsultarProveedor = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(240, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(375, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
             this.botonConsultar.TabIndex = 66;
@@ -80,11 +81,21 @@
             this.labelConsultarProveedor.TabIndex = 65;
             this.labelConsultarProveedor.Text = "Consultar proveedor";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(40, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.TabIndex = 70;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // ConsultarNumeroOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textNumeroOrden);
             this.Controls.Add(this.labelNumero);
@@ -106,5 +117,6 @@
         private System.Windows.Forms.Label labelNumero;
         private System.Windows.Forms.Button botonConsultar;
         private System.Windows.Forms.Label labelConsultarProveedor;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

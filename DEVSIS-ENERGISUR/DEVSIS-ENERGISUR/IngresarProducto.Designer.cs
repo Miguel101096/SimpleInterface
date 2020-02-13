@@ -48,6 +48,7 @@
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.labelGarantía = new System.Windows.Forms.Label();
             this.textBoxGarantia = new System.Windows.Forms.TextBox();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelIngresarProducto
@@ -79,9 +80,9 @@
             // 
             // botonIngresar
             // 
-            this.botonIngresar.Location = new System.Drawing.Point(241, 513);
+            this.botonIngresar.Location = new System.Drawing.Point(274, 513);
             this.botonIngresar.Name = "botonIngresar";
-            this.botonIngresar.Size = new System.Drawing.Size(329, 27);
+            this.botonIngresar.Size = new System.Drawing.Size(296, 27);
             this.botonIngresar.TabIndex = 3;
             this.botonIngresar.Text = "Ingresar";
             this.botonIngresar.UseVisualStyleBackColor = true;
@@ -233,11 +234,21 @@
             this.textBoxGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxGarantia_KeyPress);
             this.textBoxGarantia.Leave += new System.EventHandler(this.textBoxGarantia_Leave);
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(15, 513);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(253, 28);
+            this.botonRegresar.TabIndex = 40;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // IngresarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxGarantia);
             this.Controls.Add(this.labelGarantía);
             this.Controls.Add(this.comboBoxTipo);
@@ -288,5 +299,6 @@
         private System.Windows.Forms.ComboBox comboBoxTipo;
         private System.Windows.Forms.Label labelGarantía;
         private System.Windows.Forms.TextBox textBoxGarantia;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

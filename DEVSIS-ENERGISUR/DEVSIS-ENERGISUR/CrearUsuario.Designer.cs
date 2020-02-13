@@ -36,6 +36,7 @@
             this.textContrasena = new System.Windows.Forms.TextBox();
             this.botonCrearUsuario = new System.Windows.Forms.Button();
             this.labelCrearUsuario = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelUsuario
@@ -88,9 +89,9 @@
             // 
             // botonCrearUsuario
             // 
-            this.botonCrearUsuario.Location = new System.Drawing.Point(241, 218);
+            this.botonCrearUsuario.Location = new System.Drawing.Point(282, 218);
             this.botonCrearUsuario.Name = "botonCrearUsuario";
-            this.botonCrearUsuario.Size = new System.Drawing.Size(329, 27);
+            this.botonCrearUsuario.Size = new System.Drawing.Size(288, 27);
             this.botonCrearUsuario.TabIndex = 6;
             this.botonCrearUsuario.Text = "Crear";
             this.botonCrearUsuario.UseVisualStyleBackColor = true;
@@ -104,11 +105,21 @@
             this.labelCrearUsuario.TabIndex = 7;
             this.labelCrearUsuario.Text = "Crear usuario";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(15, 218);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(261, 27);
+            this.botonRegresar.TabIndex = 33;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // CrearUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 253);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.labelCrearUsuario);
             this.Controls.Add(this.botonCrearUsuario);
             this.Controls.Add(this.textContrasena);
@@ -135,5 +146,6 @@
         private System.Windows.Forms.TextBox textContrasena;
         private System.Windows.Forms.Button botonCrearUsuario;
         private System.Windows.Forms.Label labelCrearUsuario;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }

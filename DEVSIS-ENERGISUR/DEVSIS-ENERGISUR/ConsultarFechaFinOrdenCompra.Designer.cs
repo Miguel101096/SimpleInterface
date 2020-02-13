@@ -33,6 +33,7 @@
             this.labelFechaFin = new System.Windows.Forms.Label();
             this.botonConsultar = new System.Windows.Forms.Button();
             this.labelConsultarFIOrdenCompra = new System.Windows.Forms.Label();
+            this.botonRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(240, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(375, 514);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(329, 27);
             this.botonConsultar.TabIndex = 72;
@@ -80,11 +81,21 @@
             this.labelConsultarFIOrdenCompra.TabIndex = 71;
             this.labelConsultarFIOrdenCompra.Text = "Consultar orden de compra";
             // 
+            // botonRegresar
+            // 
+            this.botonRegresar.Location = new System.Drawing.Point(40, 514);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.TabIndex = 76;
+            this.botonRegresar.Text = "Regresar";
+            this.botonRegresar.UseVisualStyleBackColor = true;
+            // 
             // ConsultarFechaFinOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelFechaFin);
@@ -106,5 +117,6 @@
         private System.Windows.Forms.Label labelFechaFin;
         private System.Windows.Forms.Button botonConsultar;
         private System.Windows.Forms.Label labelConsultarFIOrdenCompra;
+        private System.Windows.Forms.Button botonRegresar;
     }
 }
