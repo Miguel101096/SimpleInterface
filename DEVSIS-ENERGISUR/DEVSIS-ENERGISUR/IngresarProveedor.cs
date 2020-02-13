@@ -163,15 +163,15 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxRazonSocial.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de razón social vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
-            else if (textBoxRazonSocial.TextLength > 60)
+            else if (textBoxRazonSocial.TextLength > 50)
             {
-                MessageBox.Show("La razón social excede el límite de caracteres");
+                MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
             }
             else
             {
-                MessageBox.Show("La razón social no cumple con el formato");
+                MessageBox.Show("Razón Social incorrecta");
             }
         }
 
@@ -183,7 +183,7 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxDireccion.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de la dirección vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
             else if (textBoxDireccion.TextLength > 60)
             {
@@ -191,7 +191,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                MessageBox.Show("La dirección no cumple con el formato");
+                MessageBox.Show("Dirección incorrecta");
             }
         }
 
@@ -203,7 +203,7 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxCorreo.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de correo vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
             else if (textBoxCorreo.TextLength > 60)
             {
@@ -211,7 +211,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                MessageBox.Show("El correo no cumple con el formato");
+                MessageBox.Show("Correo electrónico incorrecto");
             }
         }
 
@@ -223,7 +223,7 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxTelefonoConvencional.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de teléfono convencional vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
             else if (textBoxTelefonoConvencional.TextLength < 9)
             {
@@ -231,7 +231,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                MessageBox.Show("Telefono convencional no cumple con el formato");
+                MessageBox.Show("Teléfono convencional incorrecto");
             }
         }
 
@@ -243,7 +243,7 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxTelefonoCelular.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de teléfono celular vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
             else if (textBoxTelefonoCelular.TextLength < 10)
             {
@@ -251,7 +251,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                MessageBox.Show("Telefono celular no cumple con el formato");
+                MessageBox.Show("Teléfono celular incorrecto");
             }
         }
 
@@ -263,7 +263,7 @@ namespace DEVSIS_ENERGISUR
             }
             else if (textBoxRuc.Text == String.Empty)
             {
-                MessageBox.Show("Entrada de RUC vacía");
+                MessageBox.Show("Ingrese un valor para la entrada actual");
             }
             else if (textBoxRuc.TextLength < 13)
             {
@@ -276,7 +276,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                MessageBox.Show("Número de RUC no valido");
+                MessageBox.Show("RUC incorrecto");
             }
         }
 
