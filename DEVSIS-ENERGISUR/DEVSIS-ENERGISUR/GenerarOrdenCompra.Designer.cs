@@ -34,7 +34,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.labelFecha = new System.Windows.Forms.Label();
             this.labelEstado = new System.Windows.Forms.Label();
-            this.labelNumeroCuenta = new System.Windows.Forms.Label();
             this.labelOrdenCompra = new System.Windows.Forms.Label();
             this.textBoxNombreProveedor = new System.Windows.Forms.TextBox();
             this.labelNombre = new System.Windows.Forms.Label();
@@ -43,14 +42,16 @@
             this.labelRazonSocial = new System.Windows.Forms.Label();
             this.textBoxRazonSocial = new System.Windows.Forms.TextBox();
             this.botonRegresar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonGenerarOrdenCompra
             // 
-            this.buttonGenerarOrdenCompra.Location = new System.Drawing.Point(641, 801);
+            this.buttonGenerarOrdenCompra.Location = new System.Drawing.Point(481, 651);
+            this.buttonGenerarOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonGenerarOrdenCompra.Name = "buttonGenerarOrdenCompra";
-            this.buttonGenerarOrdenCompra.Size = new System.Drawing.Size(329, 23);
+            this.buttonGenerarOrdenCompra.Size = new System.Drawing.Size(247, 19);
             this.buttonGenerarOrdenCompra.TabIndex = 32;
             this.buttonGenerarOrdenCompra.Text = "Generar orden de compra";
             this.buttonGenerarOrdenCompra.UseVisualStyleBackColor = true;
@@ -58,87 +59,88 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 321);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 232);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(955, 474);
+            this.dataGridView1.Size = new System.Drawing.Size(714, 261);
             this.dataGridView1.TabIndex = 31;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(203, 240);
+            this.buttonBuscar.Location = new System.Drawing.Point(152, 195);
+            this.buttonBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(329, 23);
+            this.buttonBuscar.Size = new System.Drawing.Size(247, 19);
             this.buttonBuscar.TabIndex = 30;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(203, 200);
+            this.dateTimePicker1.Location = new System.Drawing.Point(152, 162);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(329, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(248, 20);
             this.dateTimePicker1.TabIndex = 29;
             // 
             // labelFecha
             // 
             this.labelFecha.AutoSize = true;
-            this.labelFecha.Location = new System.Drawing.Point(12, 200);
+            this.labelFecha.Location = new System.Drawing.Point(9, 162);
+            this.labelFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFecha.Name = "labelFecha";
-            this.labelFecha.Size = new System.Drawing.Size(47, 17);
+            this.labelFecha.Size = new System.Drawing.Size(37, 13);
             this.labelFecha.TabIndex = 26;
             this.labelFecha.Text = "Fecha";
             // 
             // labelEstado
             // 
             this.labelEstado.AutoSize = true;
-            this.labelEstado.Location = new System.Drawing.Point(12, 120);
+            this.labelEstado.Location = new System.Drawing.Point(9, 98);
+            this.labelEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEstado.Name = "labelEstado";
-            this.labelEstado.Size = new System.Drawing.Size(52, 17);
+            this.labelEstado.Size = new System.Drawing.Size(40, 13);
             this.labelEstado.TabIndex = 22;
             this.labelEstado.Text = "Estado";
-            // 
-            // labelNumeroCuenta
-            // 
-            this.labelNumeroCuenta.AutoSize = true;
-            this.labelNumeroCuenta.Location = new System.Drawing.Point(200, 40);
-            this.labelNumeroCuenta.Name = "labelNumeroCuenta";
-            this.labelNumeroCuenta.Size = new System.Drawing.Size(16, 17);
-            this.labelNumeroCuenta.TabIndex = 21;
-            this.labelNumeroCuenta.Text = "1";
             // 
             // labelOrdenCompra
             // 
             this.labelOrdenCompra.AutoSize = true;
-            this.labelOrdenCompra.Location = new System.Drawing.Point(12, 40);
+            this.labelOrdenCompra.Location = new System.Drawing.Point(5, 35);
+            this.labelOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOrdenCompra.Name = "labelOrdenCompra";
-            this.labelOrdenCompra.Size = new System.Drawing.Size(190, 17);
+            this.labelOrdenCompra.Size = new System.Drawing.Size(142, 13);
             this.labelOrdenCompra.TabIndex = 20;
             this.labelOrdenCompra.Text = "Número de orden de compra";
             // 
             // textBoxNombreProveedor
             // 
-            this.textBoxNombreProveedor.Location = new System.Drawing.Point(203, 80);
+            this.textBoxNombreProveedor.Location = new System.Drawing.Point(152, 65);
+            this.textBoxNombreProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNombreProveedor.Name = "textBoxNombreProveedor";
-            this.textBoxNombreProveedor.Size = new System.Drawing.Size(329, 22);
+            this.textBoxNombreProveedor.Size = new System.Drawing.Size(248, 20);
             this.textBoxNombreProveedor.TabIndex = 19;
             // 
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(12, 80);
+            this.labelNombre.Location = new System.Drawing.Point(9, 65);
+            this.labelNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(150, 17);
+            this.labelNombre.Size = new System.Drawing.Size(112, 13);
             this.labelNombre.TabIndex = 18;
             this.labelNombre.Text = "Nombre del proveedor";
             // 
             // labelGenerarFactura
             // 
             this.labelGenerarFactura.AutoSize = true;
-            this.labelGenerarFactura.Location = new System.Drawing.Point(393, 9);
+            this.labelGenerarFactura.Location = new System.Drawing.Point(295, 7);
+            this.labelGenerarFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGenerarFactura.Name = "labelGenerarFactura";
-            this.labelGenerarFactura.Size = new System.Drawing.Size(173, 17);
+            this.labelGenerarFactura.Size = new System.Drawing.Size(128, 13);
             this.labelGenerarFactura.TabIndex = 17;
             this.labelGenerarFactura.Text = "Generar orden de compra";
             // 
@@ -148,41 +150,53 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.comboBox1.Location = new System.Drawing.Point(203, 120);
+            this.comboBox1.Location = new System.Drawing.Point(152, 98);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(329, 24);
+            this.comboBox1.Size = new System.Drawing.Size(248, 21);
             this.comboBox1.TabIndex = 33;
             // 
             // labelRazonSocial
             // 
             this.labelRazonSocial.AutoSize = true;
-            this.labelRazonSocial.Location = new System.Drawing.Point(12, 160);
+            this.labelRazonSocial.Location = new System.Drawing.Point(9, 130);
+            this.labelRazonSocial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRazonSocial.Name = "labelRazonSocial";
-            this.labelRazonSocial.Size = new System.Drawing.Size(158, 17);
+            this.labelRazonSocial.Size = new System.Drawing.Size(119, 13);
             this.labelRazonSocial.TabIndex = 34;
             this.labelRazonSocial.Text = "Razón social proveedor";
             // 
             // textBoxRazonSocial
             // 
-            this.textBoxRazonSocial.Location = new System.Drawing.Point(203, 160);
+            this.textBoxRazonSocial.Location = new System.Drawing.Point(152, 130);
+            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
-            this.textBoxRazonSocial.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocial.TabIndex = 35;
             // 
             // botonRegresar
             // 
-            this.botonRegresar.Location = new System.Drawing.Point(306, 801);
+            this.botonRegresar.Location = new System.Drawing.Point(230, 651);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRegresar.Name = "botonRegresar";
-            this.botonRegresar.Size = new System.Drawing.Size(329, 23);
+            this.botonRegresar.Size = new System.Drawing.Size(247, 19);
             this.botonRegresar.TabIndex = 36;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(152, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(247, 20);
+            this.textBox1.TabIndex = 37;
+            // 
             // GenerarOrdenCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 833);
+            this.ClientSize = new System.Drawing.Size(736, 550);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxRazonSocial);
             this.Controls.Add(this.labelRazonSocial);
@@ -193,11 +207,11 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.labelFecha);
             this.Controls.Add(this.labelEstado);
-            this.Controls.Add(this.labelNumeroCuenta);
             this.Controls.Add(this.labelOrdenCompra);
             this.Controls.Add(this.textBoxNombreProveedor);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.labelGenerarFactura);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GenerarOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generar orden de compra";
@@ -215,7 +229,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label labelFecha;
         private System.Windows.Forms.Label labelEstado;
-        private System.Windows.Forms.Label labelNumeroCuenta;
         private System.Windows.Forms.Label labelOrdenCompra;
         private System.Windows.Forms.TextBox textBoxNombreProveedor;
         private System.Windows.Forms.Label labelNombre;
@@ -224,5 +237,6 @@
         private System.Windows.Forms.Label labelRazonSocial;
         private System.Windows.Forms.TextBox textBoxRazonSocial;
         private System.Windows.Forms.Button botonRegresar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
