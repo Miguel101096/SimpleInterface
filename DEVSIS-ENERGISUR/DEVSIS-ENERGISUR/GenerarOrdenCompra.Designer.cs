@@ -49,7 +49,7 @@
             // buttonGenerarOrdenCompra
             // 
             this.buttonGenerarOrdenCompra.Location = new System.Drawing.Point(481, 651);
-            this.buttonGenerarOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonGenerarOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerarOrdenCompra.Name = "buttonGenerarOrdenCompra";
             this.buttonGenerarOrdenCompra.Size = new System.Drawing.Size(247, 19);
             this.buttonGenerarOrdenCompra.TabIndex = 32;
@@ -60,7 +60,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 232);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -70,7 +70,7 @@
             // buttonBuscar
             // 
             this.buttonBuscar.Location = new System.Drawing.Point(152, 195);
-            this.buttonBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(247, 19);
             this.buttonBuscar.TabIndex = 30;
@@ -81,7 +81,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(152, 162);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(248, 20);
             this.dateTimePicker1.TabIndex = 29;
@@ -109,7 +109,7 @@
             // labelOrdenCompra
             // 
             this.labelOrdenCompra.AutoSize = true;
-            this.labelOrdenCompra.Location = new System.Drawing.Point(5, 35);
+            this.labelOrdenCompra.Location = new System.Drawing.Point(9, 35);
             this.labelOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOrdenCompra.Name = "labelOrdenCompra";
             this.labelOrdenCompra.Size = new System.Drawing.Size(142, 13);
@@ -119,7 +119,7 @@
             // textBoxNombreProveedor
             // 
             this.textBoxNombreProveedor.Location = new System.Drawing.Point(152, 65);
-            this.textBoxNombreProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombreProveedor.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombreProveedor.Name = "textBoxNombreProveedor";
             this.textBoxNombreProveedor.Size = new System.Drawing.Size(248, 20);
             this.textBoxNombreProveedor.TabIndex = 19;
@@ -151,7 +151,7 @@
             "Activo",
             "Inactivo"});
             this.comboBox1.Location = new System.Drawing.Point(152, 98);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(248, 21);
             this.comboBox1.TabIndex = 33;
@@ -169,7 +169,7 @@
             // textBoxRazonSocial
             // 
             this.textBoxRazonSocial.Location = new System.Drawing.Point(152, 130);
-            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
             this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocial.TabIndex = 35;
@@ -177,7 +177,7 @@
             // botonRegresar
             // 
             this.botonRegresar.Location = new System.Drawing.Point(230, 651);
-            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.botonRegresar.Name = "botonRegresar";
             this.botonRegresar.Size = new System.Drawing.Size(247, 19);
             this.botonRegresar.TabIndex = 36;
@@ -211,7 +211,7 @@
             this.Controls.Add(this.textBoxNombreProveedor);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.labelGenerarFactura);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GenerarOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generar orden de compra";

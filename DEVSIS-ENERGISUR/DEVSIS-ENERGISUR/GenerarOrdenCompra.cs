@@ -20,13 +20,26 @@ namespace DEVSIS_ENERGISUR
         public GenerarOrdenCompra()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            productos tabla_productos = new productos();
+            productos tabla_productos = new productos(this.textBox1.Text, this);
             tabla_productos.Visible = true;
             
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.co.ProductosDetalle(this.textBox1.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
         }
     }
 }

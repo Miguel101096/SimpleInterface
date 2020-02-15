@@ -30,7 +30,7 @@ namespace DEVSIS_ENERGISUR.control
 
         private SqlConnection abrirConexion()
         {
-            String url = "Data Source=.;Initial Catalog=ProyectoSoftware;User ID=sa;Password=1234";
+            String url = "Data Source=.;Initial Catalog=ProyectoSoftware;User ID=sa;Password=P@ssw0rd";
 
 
             if (this.conexion == null)
