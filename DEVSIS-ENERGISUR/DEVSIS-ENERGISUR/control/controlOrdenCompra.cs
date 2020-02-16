@@ -89,5 +89,50 @@ namespace DEVSIS_ENERGISUR.control
             var replaced = temp2.Replace("<TEMP>", ",");
             return replaced;
         }
+
+        public void RregistrarOrdenCompra(String numOrden, String fecha, String estado, String nombrePro)
+        {
+            try
+            {
+                this.c = new Conexion();
+                c.ejecutarSQL("EXECUTE crear_orden_compra '" + numOrden + "', '" + fecha + "', '"
+                    + estado + "', '" + nombrePro + "' ");
+                //MessageBox.Show("Orden generada correctamente.");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al ingresar la orden: " + error);
+            }
+        }
+
+        public void elimarDetalleCompra()
+        {
+            try
+            {
+                this.c = new Conexion();
+                c.ejecutarSQL("EXECUTE eliminar_detalle_compra");
+                //MessageBox.Show("Detalle eliminado con exito");
+            }
+            catch(Exception e)
+            {
+                //MessageBox.Show("No se pudo eliminar detalle");
+
+            }
+        }
+
+        public void elimarOrdenCompra(String numORden)
+        {
+            try
+            {
+                this.c = new Conexion();
+                c.ejecutarSQL("EXECUTE eliminar_orden_compra '"+ numORden +"' ");
+                //MessageBox.Show("Orden eliminado con exito");
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show("No se pudo eliminar orden");
+
+            }
+        }
     }
 }
