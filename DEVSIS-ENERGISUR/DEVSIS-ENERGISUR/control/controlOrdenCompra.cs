@@ -82,12 +82,12 @@ namespace DEVSIS_ENERGISUR.control
             return DT;
         }
 
-        public String cambioTipoDecimal(String valor) {
+        public String cambioTipoDecimal(String valor) 
+        {
             var temp = valor.Replace(".", "<TEMP>");
             var temp2 = temp.Replace(",", ".");
             var replaced = temp2.Replace("<TEMP>", ",");
             return replaced;
         }
-
     }
 }
