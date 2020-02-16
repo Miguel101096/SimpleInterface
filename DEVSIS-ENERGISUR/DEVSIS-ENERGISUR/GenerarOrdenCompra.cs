@@ -78,6 +78,11 @@ namespace DEVSIS_ENERGISUR
             MenuPrincipal menu = new MenuPrincipal();
             this.Visible = false;
             menu.Visible = true;
+            controlOrdenCompra co = new controlOrdenCompra();
+            String numero = this.text_Numero_orden.Text;
+            co.elimarDetalleCompra();
+            co.elimarOrdenCompra(numero);
+            MessageBox.Show("Orden de compra cancelada");
 
         }
 
