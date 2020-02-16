@@ -188,5 +188,53 @@ namespace DEVSIS_ENERGISUR
             new MenuPrincipal().Show();
             this.Visible = false;
         }
+
+        private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxRazonSocial.Focus();
+            }
+        }
+
+        private void textBoxRazonSocial_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxMarca.Focus();
+            }
+        }
+
+        private void textBoxMarca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxCorreo.Focus();
+            }
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxTelefonoConvencional.Focus();
+            }
+        }
+
+        private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxTelefonoCelular.Focus();
+            }
+        }
+
+        private void textBoxTelefonoCelular_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                botonEliminar.Focus();
+            }
+        }
     }
 }

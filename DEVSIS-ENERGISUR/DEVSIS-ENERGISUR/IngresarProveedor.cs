@@ -212,8 +212,7 @@ namespace DEVSIS_ENERGISUR
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
         {
-            v.Numeros(e);
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxRazonSocial.Focus();
             }
@@ -222,7 +221,7 @@ namespace DEVSIS_ENERGISUR
         private void textBoxRazonSocial_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Nombres(e);
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxDireccion.Focus();
             }
@@ -237,7 +236,7 @@ namespace DEVSIS_ENERGISUR
         private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxTelefonoCelular.Focus();
             }
@@ -246,7 +245,7 @@ namespace DEVSIS_ENERGISUR
         private void textBoxTelefonoCelular_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 botonIngresar.Focus();
             }
@@ -259,7 +258,7 @@ namespace DEVSIS_ENERGISUR
 
         private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxCorreo.Focus();
             }
@@ -267,7 +266,7 @@ namespace DEVSIS_ENERGISUR
 
         private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxTelefonoConvencional.Focus();
             }
