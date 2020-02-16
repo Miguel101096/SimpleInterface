@@ -53,6 +53,7 @@
             this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
             this.textBoxTelefonoCelular.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoCelular.TabIndex = 67;
+            this.textBoxTelefonoCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoCelular_KeyPress);
             this.textBoxTelefonoCelular.Leave += new System.EventHandler(this.textBoxTelefonoCelular_Leave);
             // 
             // labelTelefonoCelular
@@ -82,6 +83,7 @@
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
             this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocial.TabIndex = 64;
+            this.textBoxRazonSocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRazonSocial_KeyPress);
             this.textBoxRazonSocial.Leave += new System.EventHandler(this.textBoxRazonSocial_Leave_1);
             // 
             // textBoxMarca
@@ -91,6 +93,7 @@
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(248, 20);
             this.textBoxMarca.TabIndex = 63;
+            this.textBoxMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMarca_KeyPress);
             this.textBoxMarca.Leave += new System.EventHandler(this.textBoxMarca_Leave);
             // 
             // textBoxTelefonoConvencional
@@ -100,6 +103,7 @@
             this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
             this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoConvencional.TabIndex = 62;
+            this.textBoxTelefonoConvencional.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoConvencional_KeyPress);
             this.textBoxTelefonoConvencional.Leave += new System.EventHandler(this.textBoxTelefonoConvencional_Leave);
             // 
             // textBoxCorreo
@@ -109,6 +113,7 @@
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(248, 20);
             this.textBoxCorreo.TabIndex = 61;
+            this.textBoxCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCorreo_KeyPress);
             this.textBoxCorreo.Leave += new System.EventHandler(this.textBoxCorreo_Leave);
             // 
             // labelCorreo
@@ -159,6 +164,7 @@
             this.textBoxRuc.Name = "textBoxRuc";
             this.textBoxRuc.Size = new System.Drawing.Size(248, 20);
             this.textBoxRuc.TabIndex = 56;
+            this.textBoxRuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRuc_KeyPress);
             this.textBoxRuc.Leave += new System.EventHandler(this.textBoxRuc_Leave);
             // 
             // labelRuc
@@ -190,6 +196,7 @@
             this.botonRegresar.TabIndex = 68;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
             // 
             // button1
             // 

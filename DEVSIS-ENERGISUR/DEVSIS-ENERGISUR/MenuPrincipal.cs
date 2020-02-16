@@ -137,5 +137,10 @@ namespace DEVSIS_ENERGISUR
         {
             new ConsultarTelefonoCelularProveedor().Show();
         }
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,16 @@ namespace DEVSIS_ENERGISUR.control
         }
 
 
+
+
+        public String valor(String parametro) {
+
+            String DT = c.ejecutarSQL("select RUC from PROVEEDOR where '" + parametro + "' not in (select RUC from PROVEEDOR)").ToString();
+            return "";
+        }
+        
+
+
         public void RregistrarProveedor(String RUC, String razons, String direcc, String correo, String telfconv, String telfcel)
         {
             try
@@ -105,7 +116,11 @@ namespace DEVSIS_ENERGISUR.control
             try
             {
                 this.c = new Conexion();
+
                 DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_Correo '" + correo + "'").Tables[0];
+
+                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_RUC '" + correo + "'").Tables[0];
+
             }
             catch (Exception error)
             {
@@ -157,6 +172,7 @@ namespace DEVSIS_ENERGISUR.control
                 MessageBox.Show("Error al eliminar nuevo proveedor: " + error);
             }
         }
+
 
     }
 }

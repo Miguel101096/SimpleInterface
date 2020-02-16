@@ -49,13 +49,38 @@ namespace DEVSIS_ENERGISUR
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new MenuPrincipal().Show();
-            this.Visible = false;
+            if (textCedula.Text.Equals(""))
+            {
+
+            }
+            else
+            {
+                if (textContrasena.Text.Equals(""))
+                {
+
+                }
+                else
+                {
+                    if (comboBox1.Equals(""))
+                    {
+
+                    }
+                    else
+                    {
+                        new MenuPrincipal().Show();
+                        this.Visible = false;
+                    }
+                }
+            }
         }
 
         private void textCedula_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textContrasena.Focus();
+            }
         }
 
         
@@ -69,25 +94,11 @@ namespace DEVSIS_ENERGISUR
             else if (textCedula.Text == String.Empty)
             {
                 MessageBox.Show("Entrada de número cédula vacía");
-                //textContrasena.Enabled = false;
-                //comboBox1.Enabled = false;
             }
-            //else if (textCedula.Text != String.Empty)
-            //{
-            //    textContrasena.Enabled = true;
-            //    comboBox1.Enabled = true;
-            //}
             else if (textCedula.TextLength < 10)
             {
                 MessageBox.Show("Número de cédula incompleto");
-                //textContrasena.Enabled = false;
-                //comboBox1.Enabled = false;
             }
-            //else if (textCedula.TextLength == 10)
-            //{
-            //    textContrasena.Enabled = true;
-            //    comboBox1.Enabled = true;
-            //}
             else
             {
                 MessageBox.Show("Número de cédula no válido");
@@ -102,7 +113,22 @@ namespace DEVSIS_ENERGISUR
             if (textContrasena.Text == String.Empty)
             {
                 MessageBox.Show("Entrada de contraseña vacía");
-                //comboBox1.Enabled = false;
+            }
+        }
+
+        private void textContrasena_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                comboBox1.Focus();
+            }
+        }
+
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                button2.Focus();
             }
         }
     }

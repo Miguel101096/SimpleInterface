@@ -96,5 +96,11 @@ namespace DEVSIS_ENERGISUR
             MessageBox.Show("Orden de compra cancelada");
             
         }
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
     }
 }

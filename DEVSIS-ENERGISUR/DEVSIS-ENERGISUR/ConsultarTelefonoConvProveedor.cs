@@ -14,48 +14,46 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoConvProveedor : Form
     {
-
         Conexion c = new Conexion();
         controlProveedor cp = new controlProveedor();
+        static Validaciones v = new Validaciones();
+        
         public ConsultarTelefonoConvProveedor()
         {
             InitializeComponent();
             cargarTabla();
         }
 
-        public static bool validarNumeros(String cadena)
+        private void textNumeroConvencionalProveedor_Leave(object sender, EventArgs e)
         {
-            String rx = "^[0-9]+$";
-            if (Regex.IsMatch(cadena, rx))
+            if (v.validarNumeros(textNumeroConvencionalProveedor.Text))
             {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
+
+            }
+            else
+            {
+                if (textNumeroConvencionalProveedor.Text == String.Empty)
                 {
-                    return true;
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
                 }
                 else
                 {
-                    return false;
+                    if (textNumeroConvencionalProveedor.TextLength < 9)
+                    {
+                        MessageBox.Show("Teléfono convencional incompleto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Teléfono convencional incorrecto");
+                    }
                 }
-            }
-            else
-            {
-                return false;
             }
         }
 
-        private void textNumeroConvencionalProveedor_Leave(object sender, EventArgs e)
+        private void botonRegresar_Click(object sender, EventArgs e)
         {
-            if (validarNumeros(textNumeroConvencionalProveedor.Text))
-            {
-                if (textNumeroConvencionalProveedor.TextLength > 9)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
-            }
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
 
         public void cargarTabla()

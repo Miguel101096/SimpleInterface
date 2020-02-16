@@ -14,48 +14,48 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRazonSocialProveedor : Form
     {
-
         Conexion c = new Conexion();
         controlProveedor cp = new controlProveedor();
+        static Validaciones v = new Validaciones();
+
+
         public ConsultarRazonSocialProveedor()
         {
             InitializeComponent();
             cargarTabla();
         }
 
-        public static bool validarNombre(String cadena)
+        private void textBoxRazonSocialProveedor_Leave(object sender, EventArgs e)
         {
-            String rx = "^[a-zA-Z_]+( [a-zA-Z_]+)*$";
-            if (Regex.IsMatch(cadena, rx))
+            if (v.validarNombre(textBoxRazonSocialProveedor.Text))
             {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
+
+            }
+            else
+            {
+                if (textBoxRazonSocialProveedor.Text == String.Empty)
                 {
-                    return true;
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
                 }
                 else
                 {
-                    return false;
+                    if ((textBoxRazonSocialProveedor.TextLength > 50))
+                    {
+                        MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                    }
+                    else
+                    {
+
+                    }
+
                 }
-            }
-            else
-            {
-                return false;
             }
         }
 
-        private void textBoxRazonSocialProveedor_Leave(object sender, EventArgs e)
+        private void botonRegresar_Click(object sender, EventArgs e)
         {
-            if (validarNombre(textBoxRazonSocialProveedor.Text))
-            {
-                if (textBoxRazonSocialProveedor.TextLength > 60)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
-            }
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
 
         public void cargarTabla()

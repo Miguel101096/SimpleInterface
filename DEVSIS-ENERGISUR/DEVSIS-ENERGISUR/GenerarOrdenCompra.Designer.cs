@@ -167,6 +167,7 @@
             this.botonRegresar.TabIndex = 36;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
             // 
             // text_Numero_orden
             // 
