@@ -215,7 +215,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "IngresarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "IngresarProveedor";
+            this.Text = "Ingresar proveedor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
