@@ -101,6 +101,7 @@
             this.textContrasena.PasswordChar = '*';
             this.textContrasena.Size = new System.Drawing.Size(188, 22);
             this.textContrasena.TabIndex = 6;
+            this.textContrasena.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textContrasena_KeyPress);
             this.textContrasena.Leave += new System.EventHandler(this.textContrasena_Leave);
             // 
             // button2
@@ -134,6 +135,7 @@
             this.comboBox1.Size = new System.Drawing.Size(188, 24);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "Tipo de usuario";
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // Login
             // 

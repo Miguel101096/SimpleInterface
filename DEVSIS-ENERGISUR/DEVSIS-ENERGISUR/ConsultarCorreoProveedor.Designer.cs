@@ -40,68 +40,77 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(750, 325);
             this.dataGridView1.TabIndex = 69;
             // 
             // textCorreoProveedor
             // 
-            this.textCorreoProveedor.Location = new System.Drawing.Point(240, 40);
+            this.textCorreoProveedor.Location = new System.Drawing.Point(180, 32);
+            this.textCorreoProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textCorreoProveedor.Name = "textCorreoProveedor";
-            this.textCorreoProveedor.Size = new System.Drawing.Size(329, 22);
+            this.textCorreoProveedor.Size = new System.Drawing.Size(248, 20);
             this.textCorreoProveedor.TabIndex = 68;
             this.textCorreoProveedor.Leave += new System.EventHandler(this.textCorreoProveedor_Leave);
             // 
             // labelCorreoProveedor
             // 
             this.labelCorreoProveedor.AutoSize = true;
-            this.labelCorreoProveedor.Location = new System.Drawing.Point(12, 40);
+            this.labelCorreoProveedor.Location = new System.Drawing.Point(9, 32);
+            this.labelCorreoProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCorreoProveedor.Name = "labelCorreoProveedor";
-            this.labelCorreoProveedor.Size = new System.Drawing.Size(216, 17);
+            this.labelCorreoProveedor.Size = new System.Drawing.Size(161, 13);
             this.labelCorreoProveedor.TabIndex = 67;
             this.labelCorreoProveedor.Text = "Correo electrónico del proveedor";
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(418, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(314, 418);
+            this.botonConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonConsultar.Name = "botonConsultar";
-            this.botonConsultar.Size = new System.Drawing.Size(329, 27);
+            this.botonConsultar.Size = new System.Drawing.Size(247, 22);
             this.botonConsultar.TabIndex = 66;
             this.botonConsultar.Text = "Consultar";
             this.botonConsultar.UseVisualStyleBackColor = true;
+            this.botonConsultar.Click += new System.EventHandler(this.botonConsultar_Click);
             // 
             // labelConsultarProveedor
             // 
             this.labelConsultarProveedor.AutoSize = true;
-            this.labelConsultarProveedor.Location = new System.Drawing.Point(265, 11);
+            this.labelConsultarProveedor.Location = new System.Drawing.Point(199, 9);
+            this.labelConsultarProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelConsultarProveedor.Name = "labelConsultarProveedor";
-            this.labelConsultarProveedor.Size = new System.Drawing.Size(137, 17);
+            this.labelConsultarProveedor.Size = new System.Drawing.Size(102, 13);
             this.labelConsultarProveedor.TabIndex = 65;
             this.labelConsultarProveedor.Text = "Consultar proveedor";
             // 
             // botonRegresar
             // 
-            this.botonRegresar.Location = new System.Drawing.Point(83, 514);
+            this.botonRegresar.Location = new System.Drawing.Point(62, 418);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRegresar.Name = "botonRegresar";
-            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.Size = new System.Drawing.Size(247, 22);
             this.botonRegresar.TabIndex = 70;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
             // 
             // ConsultarCorreoProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.ClientSize = new System.Drawing.Size(886, 449);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textCorreoProveedor);
             this.Controls.Add(this.labelCorreoProveedor);
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.labelConsultarProveedor);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ConsultarCorreoProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar mediante el correo electrónico del proveedor";

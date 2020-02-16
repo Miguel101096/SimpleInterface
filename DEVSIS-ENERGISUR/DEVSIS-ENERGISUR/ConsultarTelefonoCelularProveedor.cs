@@ -8,48 +8,76 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoCelularProveedor : Form
     {
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
+        static Validaciones v = new Validaciones();
+
         public ConsultarTelefonoCelularProveedor()
         {
             InitializeComponent();
-        }
-
-        public static bool validarNumeros(String cadena)
-        {
-            String rx = "^[0-9]{10}$";
-            if (Regex.IsMatch(cadena, rx))
-            {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
+            cargarTabla();
         }
 
         private void textNumeroCelularProveedor_Leave(object sender, EventArgs e)
         {
-            if (validarNumeros(textNumeroCelularProveedor.Text))
+            if (v.validarNumeros(textNumeroCelularProveedor.Text))
             {
-                if (textNumeroCelularProveedor.TextLength > 10)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
+
             }
             else
             {
-                MessageBox.Show("Formato incorrecto");
+                if (textNumeroCelularProveedor.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textNumeroCelularProveedor.TextLength < 10)
+                    {
+                        MessageBox.Show("Teléfono celular incompleto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Teléfono celular incorrecto");
+                    }
+                }
+            }
+        }
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_Ceularl(this.textNumeroCelularProveedor.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click(object sender, EventArgs e)
+        {
+            if (cp.existeProveedor((this.textNumeroCelularProveedor.Text), "celular").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado");
+                this.textNumeroCelularProveedor.Text = "";
+            }
+            else
+            {
+                cargarTabla();
             }
         }
     }

@@ -251,5 +251,11 @@ namespace DEVSIS_ENERGISUR
         {
 
         }
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
     }
 }

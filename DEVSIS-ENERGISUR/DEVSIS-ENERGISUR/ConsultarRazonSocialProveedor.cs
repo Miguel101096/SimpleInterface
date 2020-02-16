@@ -8,49 +8,79 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRazonSocialProveedor : Form
     {
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
+        static Validaciones v = new Validaciones();
+
+
         public ConsultarRazonSocialProveedor()
         {
             InitializeComponent();
-        }
-
-        public static bool validarNombre(String cadena)
-        {
-            String rx = "^[a-zA-Z_]+( [a-zA-Z_]+)*$";
-            if (Regex.IsMatch(cadena, rx))
-            {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
+            cargarTabla();
         }
 
         private void textBoxRazonSocialProveedor_Leave(object sender, EventArgs e)
         {
-            if (validarNombre(textBoxRazonSocialProveedor.Text))
+            if (v.validarNombre(textBoxRazonSocialProveedor.Text))
             {
-                if (textBoxRazonSocialProveedor.TextLength > 60)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
+
             }
             else
             {
-                MessageBox.Show("Formato incorrecto");
+                if (textBoxRazonSocialProveedor.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if ((textBoxRazonSocialProveedor.TextLength > 50))
+                    {
+                        MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                    }
+                    else
+                    {
+
+                    }
+
+                }
             }
+        }
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_RazonSocial(this.textBoxRazonSocialProveedor.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click(object sender, EventArgs e)
+        {
+            if (cp.existeProveedor((this.textBoxRazonSocialProveedor.Text), "Razon").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado   >" + this.textBoxRazonSocialProveedor.Text);
+                this.textBoxRazonSocialProveedor.Text = "";
+            }
+            else {
+                cargarTabla();
+            }
+            
         }
     }
 }

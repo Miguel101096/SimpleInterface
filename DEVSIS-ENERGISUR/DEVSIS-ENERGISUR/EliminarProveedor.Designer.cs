@@ -43,142 +43,178 @@
             this.labelRuc = new System.Windows.Forms.Label();
             this.labelEliminarProveedor = new System.Windows.Forms.Label();
             this.botonRegresar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxTelefonoCelular
             // 
-            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(241, 240);
+            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(181, 195);
+            this.textBoxTelefonoCelular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
-            this.textBoxTelefonoCelular.Size = new System.Drawing.Size(329, 22);
+            this.textBoxTelefonoCelular.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoCelular.TabIndex = 67;
+            this.textBoxTelefonoCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoCelular_KeyPress);
             this.textBoxTelefonoCelular.Leave += new System.EventHandler(this.textBoxTelefonoCelular_Leave);
             // 
             // labelTelefonoCelular
             // 
             this.labelTelefonoCelular.AutoSize = true;
-            this.labelTelefonoCelular.Location = new System.Drawing.Point(12, 240);
+            this.labelTelefonoCelular.Location = new System.Drawing.Point(9, 195);
+            this.labelTelefonoCelular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTelefonoCelular.Name = "labelTelefonoCelular";
-            this.labelTelefonoCelular.Size = new System.Drawing.Size(110, 17);
+            this.labelTelefonoCelular.Size = new System.Drawing.Size(83, 13);
             this.labelTelefonoCelular.TabIndex = 66;
             this.labelTelefonoCelular.Text = "Teléfono celular";
             // 
             // labelRazonSocial
             // 
             this.labelRazonSocial.AutoSize = true;
-            this.labelRazonSocial.Location = new System.Drawing.Point(12, 80);
+            this.labelRazonSocial.Location = new System.Drawing.Point(9, 65);
+            this.labelRazonSocial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRazonSocial.Name = "labelRazonSocial";
-            this.labelRazonSocial.Size = new System.Drawing.Size(89, 17);
+            this.labelRazonSocial.Size = new System.Drawing.Size(68, 13);
             this.labelRazonSocial.TabIndex = 65;
             this.labelRazonSocial.Text = "Razón social";
             // 
             // textBoxRazonSocial
             // 
-            this.textBoxRazonSocial.Location = new System.Drawing.Point(241, 80);
+            this.textBoxRazonSocial.Location = new System.Drawing.Point(181, 65);
+            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
-            this.textBoxRazonSocial.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocial.TabIndex = 64;
+            this.textBoxRazonSocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRazonSocial_KeyPress);
             this.textBoxRazonSocial.Leave += new System.EventHandler(this.textBoxRazonSocial_Leave_1);
             // 
             // textBoxMarca
             // 
-            this.textBoxMarca.Location = new System.Drawing.Point(241, 120);
+            this.textBoxMarca.Location = new System.Drawing.Point(181, 98);
+            this.textBoxMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxMarca.Name = "textBoxMarca";
-            this.textBoxMarca.Size = new System.Drawing.Size(329, 22);
+            this.textBoxMarca.Size = new System.Drawing.Size(248, 20);
             this.textBoxMarca.TabIndex = 63;
+            this.textBoxMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMarca_KeyPress);
             this.textBoxMarca.Leave += new System.EventHandler(this.textBoxMarca_Leave);
             // 
             // textBoxTelefonoConvencional
             // 
-            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(241, 200);
+            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(181, 162);
+            this.textBoxTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
-            this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(329, 22);
+            this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoConvencional.TabIndex = 62;
+            this.textBoxTelefonoConvencional.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTelefonoConvencional_KeyPress);
             this.textBoxTelefonoConvencional.Leave += new System.EventHandler(this.textBoxTelefonoConvencional_Leave);
             // 
             // textBoxCorreo
             // 
-            this.textBoxCorreo.Location = new System.Drawing.Point(241, 160);
+            this.textBoxCorreo.Location = new System.Drawing.Point(181, 130);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(329, 22);
+            this.textBoxCorreo.Size = new System.Drawing.Size(248, 20);
             this.textBoxCorreo.TabIndex = 61;
+            this.textBoxCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCorreo_KeyPress);
             this.textBoxCorreo.Leave += new System.EventHandler(this.textBoxCorreo_Leave);
             // 
             // labelCorreo
             // 
             this.labelCorreo.AutoSize = true;
-            this.labelCorreo.Location = new System.Drawing.Point(12, 160);
+            this.labelCorreo.Location = new System.Drawing.Point(9, 130);
+            this.labelCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(124, 17);
+            this.labelCorreo.Size = new System.Drawing.Size(93, 13);
             this.labelCorreo.TabIndex = 60;
             this.labelCorreo.Text = "Correo electrónico";
             // 
             // labelTelefonoConvencional
             // 
             this.labelTelefonoConvencional.AutoSize = true;
-            this.labelTelefonoConvencional.Location = new System.Drawing.Point(12, 200);
+            this.labelTelefonoConvencional.Location = new System.Drawing.Point(9, 162);
+            this.labelTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTelefonoConvencional.Name = "labelTelefonoConvencional";
-            this.labelTelefonoConvencional.Size = new System.Drawing.Size(151, 17);
+            this.labelTelefonoConvencional.Size = new System.Drawing.Size(116, 13);
             this.labelTelefonoConvencional.TabIndex = 59;
             this.labelTelefonoConvencional.Text = "Teléfono convencional";
             // 
             // labelDirección
             // 
             this.labelDirección.AutoSize = true;
-            this.labelDirección.Location = new System.Drawing.Point(12, 120);
+            this.labelDirección.Location = new System.Drawing.Point(9, 98);
+            this.labelDirección.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDirección.Name = "labelDirección";
-            this.labelDirección.Size = new System.Drawing.Size(67, 17);
+            this.labelDirección.Size = new System.Drawing.Size(52, 13);
             this.labelDirección.TabIndex = 58;
             this.labelDirección.Text = "Dirección";
             // 
             // botonEliminar
             // 
-            this.botonEliminar.Location = new System.Drawing.Point(276, 514);
+            this.botonEliminar.Location = new System.Drawing.Point(205, 324);
+            this.botonEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonEliminar.Name = "botonEliminar";
-            this.botonEliminar.Size = new System.Drawing.Size(294, 27);
+            this.botonEliminar.Size = new System.Drawing.Size(220, 22);
             this.botonEliminar.TabIndex = 57;
             this.botonEliminar.Text = "Eliminar";
             this.botonEliminar.UseVisualStyleBackColor = true;
+            this.botonEliminar.Click += new System.EventHandler(this.botonEliminar_Click);
             // 
             // textBoxRuc
             // 
-            this.textBoxRuc.Location = new System.Drawing.Point(241, 41);
+            this.textBoxRuc.Location = new System.Drawing.Point(181, 33);
+            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRuc.Name = "textBoxRuc";
-            this.textBoxRuc.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRuc.Size = new System.Drawing.Size(248, 20);
             this.textBoxRuc.TabIndex = 56;
+            this.textBoxRuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRuc_KeyPress);
             this.textBoxRuc.Leave += new System.EventHandler(this.textBoxRuc_Leave);
             // 
             // labelRuc
             // 
             this.labelRuc.AutoSize = true;
-            this.labelRuc.Location = new System.Drawing.Point(12, 41);
+            this.labelRuc.Location = new System.Drawing.Point(9, 33);
+            this.labelRuc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRuc.Name = "labelRuc";
-            this.labelRuc.Size = new System.Drawing.Size(37, 17);
+            this.labelRuc.Size = new System.Drawing.Size(30, 13);
             this.labelRuc.TabIndex = 55;
             this.labelRuc.Text = "RUC";
             // 
             // labelEliminarProveedor
             // 
             this.labelEliminarProveedor.AutoSize = true;
-            this.labelEliminarProveedor.Location = new System.Drawing.Point(200, 11);
+            this.labelEliminarProveedor.Location = new System.Drawing.Point(150, 9);
+            this.labelEliminarProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEliminarProveedor.Name = "labelEliminarProveedor";
-            this.labelEliminarProveedor.Size = new System.Drawing.Size(127, 17);
+            this.labelEliminarProveedor.Size = new System.Drawing.Size(94, 13);
             this.labelEliminarProveedor.TabIndex = 54;
             this.labelEliminarProveedor.Text = "Eliminar proveedor";
             // 
             // botonRegresar
             // 
-            this.botonRegresar.Location = new System.Drawing.Point(12, 514);
+            this.botonRegresar.Location = new System.Drawing.Point(7, 324);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRegresar.Name = "botonRegresar";
-            this.botonRegresar.Size = new System.Drawing.Size(258, 27);
+            this.botonRegresar.Size = new System.Drawing.Size(194, 22);
             this.botonRegresar.TabIndex = 68;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(98, 273);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 22);
+            this.button1.TabIndex = 69;
+            this.button1.Text = "Consultar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EliminarProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 553);
+            this.ClientSize = new System.Drawing.Size(436, 367);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxTelefonoCelular);
             this.Controls.Add(this.labelTelefonoCelular);
@@ -194,6 +230,7 @@
             this.Controls.Add(this.textBoxRuc);
             this.Controls.Add(this.labelRuc);
             this.Controls.Add(this.labelEliminarProveedor);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EliminarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Proveedor";
@@ -219,5 +256,6 @@
         private System.Windows.Forms.Label labelRuc;
         private System.Windows.Forms.Label labelEliminarProveedor;
         private System.Windows.Forms.Button botonRegresar;
+        private System.Windows.Forms.Button button1;
     }
 }
