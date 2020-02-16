@@ -213,11 +213,19 @@ namespace DEVSIS_ENERGISUR
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                textBoxRazonSocial.Focus();
+            }
         }
 
         private void textBoxRazonSocial_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Nombres(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                textBoxDireccion.Focus();
+            }
         }
 
         private void botonRegresar_Click(object sender, EventArgs e)
@@ -229,16 +237,40 @@ namespace DEVSIS_ENERGISUR
         private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                textBoxTelefonoCelular.Focus();
+            }
         }
 
         private void textBoxTelefonoCelular_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.Numeros(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                botonIngresar.Focus();
+            }
         }
 
         private void botonIngresar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                textBoxCorreo.Focus();
+            }
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Tab))
+            {
+                textBoxTelefonoConvencional.Focus();
+            }
         }
     }
 }
