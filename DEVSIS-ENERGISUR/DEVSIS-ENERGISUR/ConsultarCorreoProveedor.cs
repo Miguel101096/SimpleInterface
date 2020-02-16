@@ -18,39 +18,31 @@ namespace DEVSIS_ENERGISUR
             InitializeComponent();
         }
 
-        public static bool validarEmail(String cadena)
-        {
-            String rx = "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
-            if (Regex.IsMatch(cadena, rx))
-            {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
-        }
+        static Validaciones v = new Validaciones();
 
         private void textCorreoProveedor_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(textCorreoProveedor.Text))
+            if (v.validarEmail(textCorreoProveedor.Text))
             {
-                if (textCorreoProveedor.TextLength > 60)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
+
             }
             else
             {
-                MessageBox.Show("Formato incorrecto");
+                if (textCorreoProveedor.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textCorreoProveedor.TextLength > 60)
+                    {
+                        MessageBox.Show("El correo excede el límite de caracteres");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Correo electrónico incorrecto");
+                    }
+                }
             }
         }
-    }
 }

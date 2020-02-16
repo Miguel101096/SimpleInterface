@@ -13,43 +13,36 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoCelularProveedor : Form
     {
+        static Validaciones v = new Validaciones();
+
         public ConsultarTelefonoCelularProveedor()
         {
             InitializeComponent();
         }
 
-        public static bool validarNumeros(String cadena)
+        private void textNumeroCelularProveedor_Leave(object sender, EventArgs e)
         {
-            String rx = "^[0-9]{10}$";
-            if (Regex.IsMatch(cadena, rx))
+            if (v.validarNumeros(textNumeroCelularProveedor.Text))
             {
-                if (Regex.Replace(cadena, rx, String.Empty).Length == 0)
+
+            }
+            else
+            {
+                if (textNumeroCelularProveedor.Text == String.Empty)
                 {
-                    return true;
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
                 }
                 else
                 {
-                    return false;
+                    if (textNumeroCelularProveedor.TextLength < 10)
+                    {
+                        MessageBox.Show("Teléfono celular incompleto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Teléfono celular incorrecto");
+                    }
                 }
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        private void textNumeroCelularProveedor_Leave(object sender, EventArgs e)
-        {
-            if (validarNumeros(textNumeroCelularProveedor.Text))
-            {
-                if (textNumeroCelularProveedor.TextLength > 10)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
             }
         }
     }
