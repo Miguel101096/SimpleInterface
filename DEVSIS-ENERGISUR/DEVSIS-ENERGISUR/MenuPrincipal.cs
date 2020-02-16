@@ -140,7 +140,7 @@ namespace DEVSIS_ENERGISUR
 
         private void botonSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
