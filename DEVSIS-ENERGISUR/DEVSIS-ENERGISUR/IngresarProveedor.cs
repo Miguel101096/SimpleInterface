@@ -222,8 +222,8 @@ namespace DEVSIS_ENERGISUR
 
         private void botonRegresar_Click(object sender, EventArgs e)
         {
-            new MenuPrincipal().Show();
-            this.Visible = false;
+                new MenuPrincipal().Show();
+                this.Visible = false;
         }
 
         private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)

@@ -242,6 +242,7 @@
             this.botonRegresar.TabIndex = 40;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
+            this.botonRegresar.Click += new System.EventHandler(this.botonRegresar_Click);
             // 
             // IngresarProducto
             // 
