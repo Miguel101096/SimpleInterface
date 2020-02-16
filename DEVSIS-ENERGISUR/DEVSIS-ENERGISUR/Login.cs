@@ -49,8 +49,29 @@ namespace DEVSIS_ENERGISUR
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new MenuPrincipal().Show();
-            this.Visible = false;
+            if (textCedula.Text.Equals(""))
+            {
+
+            }
+            else
+            {
+                if (textContrasena.Text.Equals(""))
+                {
+
+                }
+                else
+                {
+                    if (comboBox1.Equals(""))
+                    {
+
+                    }
+                    else
+                    {
+                        new MenuPrincipal().Show();
+                        this.Visible = false;
+                    }
+                }
+            }
         }
 
         private void textCedula_KeyPress(object sender, KeyPressEventArgs e)

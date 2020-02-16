@@ -24,38 +24,67 @@ namespace DEVSIS_ENERGISUR
 
         }
 
-
-        
-
        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-
-        private void textBoxRazonSocial_Leave(object sender, EventArgs e)
+        private void textRuc_Leave(object sender, EventArgs e)
         {
-
-            if (textBoxRazonSocial.Text == String.Empty)
+            if (v.RucPersonaNatural(textBoxRuc.Text))
             {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
+
             }
             else
             {
-                if((textBoxRazonSocial.TextLength > 50))
+                if (textBoxRuc.Text == String.Empty)
                 {
-                    MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
                 }
                 else
                 {
-                    v.validarNombre(textBoxRazonSocial.Text);
+                    if (textBoxRuc.TextLength < 13)
+                    {
+                        MessageBox.Show("Número de RUC incompleto");
+                        textBoxTelefonoCelular.Enabled = false;
+                        textBoxTelefonoConvencional.Enabled = false;
+                        textBoxRazonSocial.Enabled = false;
+                        textBoxCorreo.Enabled = false;
+                        textBoxDireccion.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("RUC incorrecto");
+                    }
                 }
-                
             }
+        }
 
-            
+        private void textBoxRazonSocial_Leave(object sender, EventArgs e)
+        {
+            if (v.validarNombre(textBoxRazonSocial.Text))
+            {
 
-            
+            }
+            else
+            {
+                if (textBoxRazonSocial.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if ((textBoxRazonSocial.TextLength > 50))
+                    {
+                        MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                    }
+                    else
+                    {
+
+                    }
+
+                }
+            }
         }
 
         private void textMarca_Leave(object sender, EventArgs e)
@@ -64,17 +93,23 @@ namespace DEVSIS_ENERGISUR
             {
 
             }
-            else if (textBoxDireccion.Text == String.Empty)
-            {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
-            }
-            else if (textBoxDireccion.TextLength > 60)
-            {
-                MessageBox.Show("La dirección excede el límite de caracteres");
-            }
             else
             {
-                MessageBox.Show("Dirección incorrecta");
+                if (textBoxDireccion.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textBoxDireccion.TextLength > 60)
+                    {
+                        MessageBox.Show("La dirección excede el límite de caracteres");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dirección incorrecta");
+                    }
+                }
             }
         }
 
@@ -84,17 +119,23 @@ namespace DEVSIS_ENERGISUR
             {
 
             }
-            else if (textBoxCorreo.Text == String.Empty)
-            {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
-            }
-            else if (textBoxCorreo.TextLength > 60)
-            {
-                MessageBox.Show("El correo excede el límite de caracteres");
-            }
             else
             {
-                MessageBox.Show("Correo electrónico incorrecto");
+                if (textBoxCorreo.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textBoxCorreo.TextLength > 60)
+                    {
+                        MessageBox.Show("El correo excede el límite de caracteres");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Correo electrónico incorrecto");
+                    }
+                }
             }
         }
 
@@ -104,17 +145,23 @@ namespace DEVSIS_ENERGISUR
             {
 
             }
-            else if (textBoxTelefonoConvencional.Text == String.Empty)
-            {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
-            }
-            else if (textBoxTelefonoConvencional.TextLength < 9)
-            {
-                MessageBox.Show("Teléfono convencional incompleto");
-            }
             else
             {
-                MessageBox.Show("Teléfono convencional incorrecto");
+                if (textBoxTelefonoConvencional.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textBoxTelefonoConvencional.TextLength < 9)
+                    {
+                        MessageBox.Show("Teléfono convencional incompleto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Teléfono convencional incorrecto");
+                    }
+                }
             }
         }
 
@@ -124,45 +171,25 @@ namespace DEVSIS_ENERGISUR
             {
 
             }
-            else if (textBoxTelefonoCelular.Text == String.Empty)
-            {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
-            }
-            else if (textBoxTelefonoCelular.TextLength < 10)
-            {
-                MessageBox.Show("Teléfono celular incompleto");
-            }
             else
             {
-                MessageBox.Show("Teléfono celular incorrecto");
+                if (textBoxTelefonoCelular.Text == String.Empty)
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textBoxTelefonoCelular.TextLength < 10)
+                    {
+                        MessageBox.Show("Teléfono celular incompleto");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Teléfono celular incorrecto");
+                    }
+                }
             }
         }
-
-        private void textRuc_Leave(object sender, EventArgs e)
-        {
-            if (v.RucPersonaNatural(textBoxRuc.Text))
-            {
-
-            }
-            else if (textBoxRuc.Text == String.Empty)
-            {
-                MessageBox.Show("Ingrese un valor para la entrada actual");
-            }
-            else if (textBoxRuc.TextLength < 13)
-            {
-                MessageBox.Show("Número de RUC incompleto");
-                textBoxTelefonoCelular.Enabled = false;
-                textBoxTelefonoConvencional.Enabled = false;
-                textBoxRazonSocial.Enabled = false;
-                textBoxCorreo.Enabled = false;
-                textBoxDireccion.Enabled = false;
-            }
-            else
-            {
-                MessageBox.Show("RUC incorrecto");
-            }
-        }
-
 
         private void botonIngresar_MouseClick_1(object sender, MouseEventArgs e)
         {
