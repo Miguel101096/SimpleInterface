@@ -149,5 +149,50 @@ namespace DEVSIS_ENERGISUR.control
             }
             return DT;
         }
+
+        public DataTable ConsultarOrdenModificar(String numorden)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("select * from ORDEN_COMPRA where numOrden = '" + numorden + "'").Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar orden compra: " + error);
+            }
+            return DT;
+        }
+
+        public void ModificarORden(String cambio, String numorden)
+        {
+            try
+            {
+                this.c = new Conexion();
+                this.c.ejecutarSQL("execute modificar_estado_orden '" + cambio + "', '" + numorden + "'");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al modificar la orden de compra: " + error);
+            }
+        }
+
+        public String OrdenExiste(String numorden)
+        {
+            DataTable DT = new DataTable();
+            String aux = "";
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("execute existe_Orden_numero '" + numorden + "'").Tables[0];
+                aux = Convert.ToString(DT.Rows[0].ItemArray[0]);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar orden compra: " + error);
+            }
+            return aux;
+        }
     }
 }

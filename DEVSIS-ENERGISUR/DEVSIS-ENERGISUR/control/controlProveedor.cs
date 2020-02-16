@@ -119,8 +119,6 @@ namespace DEVSIS_ENERGISUR.control
 
                 DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_Correo '" + correo + "'").Tables[0];
 
-                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_RUC '" + correo + "'").Tables[0];
-
             }
             catch (Exception error)
             {

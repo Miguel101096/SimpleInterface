@@ -19,6 +19,7 @@ namespace DEVSIS_ENERGISUR
 
         private void crearUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //this.Close();
             new CrearUsuario().Show();
         }
 
@@ -60,12 +61,14 @@ namespace DEVSIS_ENERGISUR
         private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new IngresarProveedor().Show();
+            //this.Close();
             this.Visible = false;
         }
 
         private void eliminarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new EliminarProveedor().Show();
+            this.Visible = false;
         }
 
         private void nombreDelProductoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,16 +109,19 @@ namespace DEVSIS_ENERGISUR
         private void númeroDeTeléfonoConvencionalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarTelefonoConvProveedor().Show();
+            this.Visible = false;
         }
 
         private void razónSocialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarRazonSocialProveedor().Show();
+            this.Visible = false;
         }
 
         private void correoElectrónicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarCorreoProveedor().Show();
+            this.Visible = false;
         }
 
         private void fechaDeIncioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -136,11 +142,18 @@ namespace DEVSIS_ENERGISUR
         private void númeroDeTélefonoCelularToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ConsultarTelefonoCelularProveedor().Show();
+            this.Visible = false;
         }
 
         private void botonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void cambiarEstadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ModificarOrdenCompra().Show();
+            this.Visible = false;
         }
     }
 }

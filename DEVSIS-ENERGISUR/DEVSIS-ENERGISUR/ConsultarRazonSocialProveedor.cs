@@ -33,21 +33,28 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                if (textBoxRazonSocialProveedor.Text == String.Empty)
+                if (this.botonRegresar.Focused)
                 {
-                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                    this.Visible = false;
                 }
                 else
                 {
-                    if ((textBoxRazonSocialProveedor.TextLength > 50))
+                    if (textBoxRazonSocialProveedor.Text == String.Empty)
                     {
-                        MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
                     }
                     else
                     {
+                        if ((textBoxRazonSocialProveedor.TextLength > 50))
+                        {
+                            MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                        }
+                        else
+                        {
+
+                        }
 
                     }
-
                 }
             }
         }

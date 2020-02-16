@@ -14,6 +14,7 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class IngresarProveedor : Form
     {
+        MenuPrincipal mp = new MenuPrincipal();
         private controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
@@ -37,24 +38,32 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                if (textBoxRuc.Text == String.Empty)
+                if (this.botonRegresar.Focused)
                 {
-                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                    this.Visible = false;
+                    mp.Visible = true;
                 }
                 else
                 {
-                    if (textBoxRuc.TextLength < 13)
+                    if (textBoxRuc.Text == String.Empty)
                     {
-                        MessageBox.Show("Número de RUC incompleto");
-                        textBoxTelefonoCelular.Enabled = false;
-                        textBoxTelefonoConvencional.Enabled = false;
-                        textBoxRazonSocial.Enabled = false;
-                        textBoxCorreo.Enabled = false;
-                        textBoxDireccion.Enabled = false;
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
                     }
                     else
                     {
-                        MessageBox.Show("RUC incorrecto");
+                        if (textBoxRuc.TextLength < 13)
+                        {
+                            MessageBox.Show("Número de RUC incompleto");
+                            textBoxTelefonoCelular.Enabled = false;
+                            textBoxTelefonoConvencional.Enabled = false;
+                            textBoxRazonSocial.Enabled = false;
+                            textBoxCorreo.Enabled = false;
+                            textBoxDireccion.Enabled = false;
+                        }
+                        else
+                        {
+                            MessageBox.Show("RUC incorrecto");
+                        }
                     }
                 }
             }
@@ -229,8 +238,8 @@ namespace DEVSIS_ENERGISUR
 
         private void botonRegresar_Click(object sender, EventArgs e)
         {
-                new MenuPrincipal().Show();
-                this.Visible = false;
+            mp.Visible = true;
+            this.Visible = false;
         }
 
         private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
@@ -253,7 +262,6 @@ namespace DEVSIS_ENERGISUR
 
         private void botonIngresar_Click(object sender, EventArgs e)
         {
-
         }
 
         private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)

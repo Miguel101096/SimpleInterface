@@ -15,6 +15,7 @@ namespace DEVSIS_ENERGISUR
     public partial class EliminarProveedor : Form
     {
         Conexion c = new Conexion();
+        MenuPrincipal mp = new MenuPrincipal();
         controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
@@ -37,24 +38,32 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
-                if (textBoxRuc.Text == String.Empty)
+                if (this.botonRegresar.Focused)
                 {
-                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                    this.Visible = false;
+                    mp.Visible = true;
                 }
                 else
                 {
-                    if (textBoxRuc.TextLength < 13)
+                    if (textBoxRuc.Text == String.Empty)
                     {
-                        MessageBox.Show("Número de RUC incompleto");
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
                     }
                     else
                     {
-                        MessageBox.Show("RUC incorrecto");
-                        textBoxTelefonoCelular.Enabled = false;
-                        textBoxTelefonoConvencional.Enabled = false;
-                        textBoxRazonSocial.Enabled = false;
-                        textBoxCorreo.Enabled = false;
-                        textBoxMarca.Enabled = false;
+                        if (textBoxRuc.TextLength < 13)
+                        {
+                            MessageBox.Show("Número de RUC incompleto");
+                        }
+                        else
+                        {
+                            MessageBox.Show("RUC incorrecto");
+                            textBoxTelefonoCelular.Enabled = false;
+                            textBoxTelefonoConvencional.Enabled = false;
+                            textBoxRazonSocial.Enabled = false;
+                            textBoxCorreo.Enabled = false;
+                            textBoxMarca.Enabled = false;
+                        }
                     }
                 }
             }
@@ -194,7 +203,7 @@ namespace DEVSIS_ENERGISUR
 
         private void botonRegresar_Click(object sender, EventArgs e)
         {
-            new MenuPrincipal().Show();
+            mp.Visible = true;
             this.Visible = false;
         }
 
