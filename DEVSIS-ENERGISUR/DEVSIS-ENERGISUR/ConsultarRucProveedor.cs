@@ -99,7 +99,15 @@ namespace DEVSIS_ENERGISUR
 
         private void botonConsultar_Click(object sender, EventArgs e)
         {
-            cargarTabla();
+            if (cp.existeProveedor((this.textRuc.Text), "RUC").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado");
+                this.textRuc.Text = "";
+            }
+            else
+            {
+                cargarTabla();
+            }
         }
     }
 }

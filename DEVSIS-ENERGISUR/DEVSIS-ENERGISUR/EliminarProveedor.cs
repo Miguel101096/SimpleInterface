@@ -8,14 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class EliminarProveedor : Form
     {
+
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
+
         public EliminarProveedor()
         {
             InitializeComponent();
+            this.textBoxRazonSocial.Enabled = false;
+            this.textBoxCorreo.Enabled = false;
+            this.textBoxMarca.Enabled = false;
+            this.textBoxTelefonoConvencional.Enabled = false;
+            this.textBoxTelefonoCelular.Enabled = false;
+            this.botonEliminar.Enabled = false;
         }
 
         public static bool validarNombre(String cadena)
@@ -232,6 +243,40 @@ namespace DEVSIS_ENERGISUR
             else
             {
                 MessageBox.Show("Formato incorrecto");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataTable DT = new DataTable();
+            DT = this.cp.Proveedores_RUC(textBoxRuc.Text);
+            if (cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado");
+                this.textBoxRuc.Text = "";
+            }
+            else {
+                this.textBoxRazonSocial.Text = DT.Rows[0].ItemArray[1].ToString();
+                this.textBoxMarca.Text = DT.Rows[0].ItemArray[2].ToString();
+                this.textBoxCorreo.Text = DT.Rows[0].ItemArray[3].ToString();
+                this.textBoxTelefonoConvencional.Text = DT.Rows[0].ItemArray[4].ToString();
+                this.textBoxTelefonoCelular.Text = DT.Rows[0].ItemArray[5].ToString();
+                this.botonEliminar.Enabled = true;
+            }
+        }
+
+        private void botonEliminar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de eliminar este Proveedor?", "Aviso", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                this.cp.EliminarProveedor(textBoxRuc.Text);
+                this.textBoxRuc.Text = "";
+                this.textBoxRazonSocial.Text = "";
+                this.textBoxMarca.Text = "";
+                this.textBoxCorreo.Text = "";
+                this.textBoxTelefonoConvencional.Text = "";
+                this.textBoxTelefonoCelular.Text = "";
             }
         }
     }

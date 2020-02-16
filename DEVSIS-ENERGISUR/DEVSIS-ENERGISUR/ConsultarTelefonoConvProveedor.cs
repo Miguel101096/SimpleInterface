@@ -8,14 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoConvProveedor : Form
     {
+
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
         public ConsultarTelefonoConvProveedor()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         public static bool validarNumeros(String cadena)
@@ -50,6 +55,31 @@ namespace DEVSIS_ENERGISUR
             else
             {
                 MessageBox.Show("Formato incorrecto");
+            }
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_Convencional(this.textNumeroConvencionalProveedor.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click_1(object sender, EventArgs e)
+        {
+            if (cp.existeProveedor((this.textNumeroConvencionalProveedor.Text), "convencional").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado");
+                this.textNumeroConvencionalProveedor.Text = "";
+            }
+            else
+            {
+                cargarTabla();
             }
         }
     }
