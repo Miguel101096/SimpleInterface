@@ -51,7 +51,6 @@ namespace DEVSIS_ENERGISUR
         }
         private void botonConsultar_Click(object sender, EventArgs e)
         {
-
             llenardatos();
             cargarTabla();
         }

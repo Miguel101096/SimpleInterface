@@ -40,6 +40,35 @@ namespace DEVSIS_ENERGISUR.control
             }
             return DT;
         }
+
+        public DataTable consultardosfechas(String fechaini, String fechafin)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("EXECUTE consultarordendosfechas '" + fechaini + "', '" + fechafin + "'").Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar productos: " + error);
+            }
+            return DT;
+        }
+        public DataTable consultarfechaexpedicion(String fechaini)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("EXECUTE consultarfechaexp '" + fechaini + "'").Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar productos: " + error);
+            }
+            return DT;
+        }
     }
 }
 
