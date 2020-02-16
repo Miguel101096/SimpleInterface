@@ -263,6 +263,12 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Proveedor no se encuentra registrado");
                 this.textBoxRuc.Text = "";
+                this.textBoxRuc.Text = "";
+                this.textBoxRazonSocial.Text = "";
+                this.textBoxMarca.Text = "";
+                this.textBoxCorreo.Text = "";
+                this.textBoxTelefonoConvencional.Text = "";
+                this.textBoxTelefonoCelular.Text = "";
             }
             else {
                 this.textBoxRazonSocial.Text = DT.Rows[0].ItemArray[1].ToString();
