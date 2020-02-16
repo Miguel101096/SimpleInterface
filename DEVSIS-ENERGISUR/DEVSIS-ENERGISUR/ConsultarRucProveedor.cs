@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRucProveedor : Form
     {
+
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
+
         public ConsultarRucProveedor()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         public bool RucPersonaNatural(string ruc)
@@ -77,6 +83,23 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Formato incorrecto");
             }
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_RUC(this.textRuc.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click(object sender, EventArgs e)
+        {
+            cargarTabla();
         }
     }
 }

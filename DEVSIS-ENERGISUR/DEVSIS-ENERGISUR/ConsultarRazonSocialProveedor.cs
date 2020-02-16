@@ -8,14 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRazonSocialProveedor : Form
     {
+
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
         public ConsultarRazonSocialProveedor()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         public static bool validarNombre(String cadena)
@@ -51,6 +56,34 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Formato incorrecto");
             }
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_RazonSocial(this.textBoxRazonSocialProveedor.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click(object sender, EventArgs e)
+        {
+
+            /*if (this.cp.provedorRegistro("Razon"))
+            {
+                cargarTabla();
+            }
+            else {
+                MessageBox.Show("Proveedor no Registrado");
+            } */
+            //cargarTabla();
+            cargarTabla();
+            
+            
         }
     }
 }
