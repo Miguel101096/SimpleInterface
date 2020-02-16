@@ -7,20 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRucProveedor : Form
     {
-        Conexion c = new Conexion();
-        controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
         public ConsultarRucProveedor()
         {
             InitializeComponent();
-            cargarTabla();
         }
 
         private void textRuc_Leave(object sender, EventArgs e)
@@ -53,31 +49,6 @@ namespace DEVSIS_ENERGISUR
         {
             new MenuPrincipal().Show();
             this.Visible = false;
-        }
-
-        public void cargarTabla()
-        {
-            try
-            {
-                this.dataGridView1.DataSource = this.cp.Proveedores_RUC(this.textRuc.Text);
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("Ocurrió un error: " + error);
-            }
-        }
-
-        private void botonConsultar_Click(object sender, EventArgs e)
-        {
-            if (cp.existeProveedor((this.textRuc.Text), "RUC").Equals("vacio"))
-            {
-                MessageBox.Show("Proveedor no se encuentra registrado");
-                this.textRuc.Text = "";
-            }
-            else
-            {
-                cargarTabla();
-            }
         }
     }
 }

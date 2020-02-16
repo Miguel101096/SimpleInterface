@@ -136,7 +136,6 @@
     <Compile Include="ConsultarTelefonoConvProveedor.Designer.cs">
       <DependentUpon>ConsultarTelefonoConvProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="control\controlOrdenCompra.cs" />
     <Compile Include="control\controlProveedor.cs" />
     <Compile Include="control\Conexion.cs" />
     <Compile Include="CrearUsuario.cs">
@@ -210,12 +209,6 @@
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="productos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="productos.Designer.cs">
-      <DependentUpon>productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -300,9 +293,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="productos.resx">
-      <DependentUpon>productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
