@@ -17,35 +17,42 @@ namespace DEVSIS_ENERGISUR.control
 
         ~controlProveedor() { }
 
-        /*public Boolean provedorRegistro(String parametro) {
-            Boolean bandera = true;
+        public String existeProveedor (String valor, String Parametro)
+        {
             DataTable DT = new DataTable();
-            switch (parametro)
+            String aux = "";
+            try
             {
-                case "RUC":
-                    DT = c.ejecutarSQL("select RUC from PROVEEDOR where '" + parametro + "' not in (select RUC from PROVEEDOR)").Tables[0];
-                    if (Convert.ToString(DT.Rows[0].ItemArray[0]) == "") {
-                        bandera = false;
-                    }      
-                    break;
-                case "Razon":
+                this.c = new Conexion();
+                if (Parametro == "RUC") {
+                    DT = c.ejecutarSQL("EXECUTE existe_Proveedor_RUC '" + valor + "'").Tables[0];
+                }
+                else if (Parametro == "Razon")
+                {
+                    DT = c.ejecutarSQL("EXECUTE existe_Proveedor_RazonSocial '" + valor + "'").Tables[0];                   
+                }
+                else if (Parametro == "correo")
+                {
+                    DT = c.ejecutarSQL("EXECUTE existe_Proveedor_Correo '" + valor + "'").Tables[0];
+                }
+                else if (Parametro == "convencional")
+                {
+                    DT = c.ejecutarSQL("EXECUTE existe_Proveedor_TelfConv '" + valor + "'").Tables[0];
+                }
+                else if (Parametro == "celular")
+                {
+                    DT = c.ejecutarSQL("EXECUTE existe_Proveedor_TelfCel '" + valor + "'").Tables[0];
+                }
 
-                    DT = c.ejecutarSQL("select RUC from PROVEEDOR where '" + parametro + "' not in (select razonSocial from PROVEEDOR)").Tables[0];
-                    if (Convert.ToString(DT.Rows[0].ItemArray[0].ToString()).Equals(null))
-                    {
-                        bandera = false;
-                    }
-                    break;
+                aux = Convert.ToString(DT.Rows[0].ItemArray[0]);
             }
-            return bandera;
-        }*/
-
-        public String valor(String parametro) {
-
-            String DT = c.ejecutarSQL("select RUC from PROVEEDOR where '" + parametro + "' not in (select RUC from PROVEEDOR)").ToString();
-            return "";
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar Presupuesto: " + error);
+            }
+            return aux;
         }
-        
+
 
         public void RregistrarProveedor(String RUC, String razons, String direcc, String correo, String telfconv, String telfcel)
         {
@@ -98,7 +105,7 @@ namespace DEVSIS_ENERGISUR.control
             try
             {
                 this.c = new Conexion();
-                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_RUC '" + correo + "'").Tables[0];
+                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_Correo '" + correo + "'").Tables[0];
             }
             catch (Exception error)
             {
@@ -106,5 +113,50 @@ namespace DEVSIS_ENERGISUR.control
             }
             return DT;
         }
+
+        public DataTable Proveedores_Convencional(String telfconve)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_Convencional '" + telfconve + "'").Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar proveedor por su Correo: " + error);
+            }
+            return DT;
+        }
+
+        public DataTable Proveedores_Ceularl(String telfconve)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                this.c = new Conexion();
+                DT = this.c.ejecutarSQL("EXECUTE consulta_proveedor_Celular '" + telfconve + "'").Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al consultar proveedor por su Correo: " + error);
+            }
+            return DT;
+        }
+
+        public void EliminarProveedor(String RUC)
+        {
+            try
+            {
+                this.c = new Conexion();
+                c.ejecutarSQL("EXECUTE eliminar_Proveedor '" + RUC + "'");
+                MessageBox.Show("Proveedor Eliminado correctamente.");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error al eliminar nuevo proveedor: " + error);
+            }
+        }
+
     }
 }

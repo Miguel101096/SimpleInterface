@@ -72,17 +72,14 @@ namespace DEVSIS_ENERGISUR
 
         private void botonConsultar_Click(object sender, EventArgs e)
         {
-
-            /*if (this.cp.provedorRegistro("Razon"))
+            if (cp.existeProveedor((this.textBoxRazonSocialProveedor.Text), "Razon").Equals("vacio"))
             {
-                cargarTabla();
+                MessageBox.Show("Proveedor no se encuentra registrado   >" + this.textBoxRazonSocialProveedor.Text);
+                this.textBoxRazonSocialProveedor.Text = "";
             }
             else {
-                MessageBox.Show("Proveedor no Registrado");
-            } */
-            //cargarTabla();
-            cargarTabla();
-            
+                cargarTabla();
+            }
             
         }
     }
