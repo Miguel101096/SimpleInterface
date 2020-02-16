@@ -8,16 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using DEVSIS_ENERGISUR.control;
 
 namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoCelularProveedor : Form
     {
+        Conexion c = new Conexion();
+        controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
         public ConsultarTelefonoCelularProveedor()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         private void textNumeroCelularProveedor_Leave(object sender, EventArgs e)
@@ -50,6 +54,31 @@ namespace DEVSIS_ENERGISUR
         {
             new MenuPrincipal().Show();
             this.Visible = false;
+        }
+
+        public void cargarTabla()
+        {
+            try
+            {
+                this.dataGridView1.DataSource = this.cp.Proveedores_Ceularl(this.textNumeroCelularProveedor.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error: " + error);
+            }
+        }
+
+        private void botonConsultar_Click(object sender, EventArgs e)
+        {
+            if (cp.existeProveedor((this.textNumeroCelularProveedor.Text), "celular").Equals("vacio"))
+            {
+                MessageBox.Show("Proveedor no se encuentra registrado");
+                this.textNumeroCelularProveedor.Text = "";
+            }
+            else
+            {
+                cargarTabla();
+            }
         }
     }
 }

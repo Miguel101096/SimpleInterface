@@ -40,53 +40,60 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1000, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(750, 325);
             this.dataGridView1.TabIndex = 74;
             // 
             // textBoxRazonSocialProveedor
             // 
-            this.textBoxRazonSocialProveedor.Location = new System.Drawing.Point(240, 40);
+            this.textBoxRazonSocialProveedor.Location = new System.Drawing.Point(180, 32);
+            this.textBoxRazonSocialProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRazonSocialProveedor.Name = "textBoxRazonSocialProveedor";
-            this.textBoxRazonSocialProveedor.Size = new System.Drawing.Size(329, 22);
+            this.textBoxRazonSocialProveedor.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocialProveedor.TabIndex = 73;
             this.textBoxRazonSocialProveedor.Leave += new System.EventHandler(this.textBoxRazonSocialProveedor_Leave);
             // 
             // labelRazonSocialProveedor
             // 
             this.labelRazonSocialProveedor.AutoSize = true;
-            this.labelRazonSocialProveedor.Location = new System.Drawing.Point(12, 40);
+            this.labelRazonSocialProveedor.Location = new System.Drawing.Point(9, 32);
+            this.labelRazonSocialProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRazonSocialProveedor.Name = "labelRazonSocialProveedor";
-            this.labelRazonSocialProveedor.Size = new System.Drawing.Size(181, 17);
+            this.labelRazonSocialProveedor.Size = new System.Drawing.Size(136, 13);
             this.labelRazonSocialProveedor.TabIndex = 72;
             this.labelRazonSocialProveedor.Text = "Razón social del proveedor";
             // 
             // botonConsultar
             // 
-            this.botonConsultar.Location = new System.Drawing.Point(375, 514);
+            this.botonConsultar.Location = new System.Drawing.Point(281, 418);
+            this.botonConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonConsultar.Name = "botonConsultar";
-            this.botonConsultar.Size = new System.Drawing.Size(329, 27);
+            this.botonConsultar.Size = new System.Drawing.Size(247, 22);
             this.botonConsultar.TabIndex = 71;
             this.botonConsultar.Text = "Consultar";
             this.botonConsultar.UseVisualStyleBackColor = true;
+            this.botonConsultar.Click += new System.EventHandler(this.botonConsultar_Click);
             // 
             // labelConsultarProveedor
             // 
             this.labelConsultarProveedor.AutoSize = true;
-            this.labelConsultarProveedor.Location = new System.Drawing.Point(330, 11);
+            this.labelConsultarProveedor.Location = new System.Drawing.Point(248, 9);
+            this.labelConsultarProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelConsultarProveedor.Name = "labelConsultarProveedor";
-            this.labelConsultarProveedor.Size = new System.Drawing.Size(137, 17);
+            this.labelConsultarProveedor.Size = new System.Drawing.Size(102, 13);
             this.labelConsultarProveedor.TabIndex = 70;
             this.labelConsultarProveedor.Text = "Consultar proveedor";
             // 
             // botonRegresar
             // 
-            this.botonRegresar.Location = new System.Drawing.Point(40, 514);
+            this.botonRegresar.Location = new System.Drawing.Point(30, 418);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRegresar.Name = "botonRegresar";
-            this.botonRegresar.Size = new System.Drawing.Size(329, 27);
+            this.botonRegresar.Size = new System.Drawing.Size(247, 22);
             this.botonRegresar.TabIndex = 75;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
@@ -94,15 +101,16 @@
             // 
             // ConsultarRazonSocialProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.ClientSize = new System.Drawing.Size(886, 449);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxRazonSocialProveedor);
             this.Controls.Add(this.labelRazonSocialProveedor);
             this.Controls.Add(this.botonConsultar);
             this.Controls.Add(this.labelConsultarProveedor);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ConsultarRazonSocialProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar por medio de la razón social del proveedor";
