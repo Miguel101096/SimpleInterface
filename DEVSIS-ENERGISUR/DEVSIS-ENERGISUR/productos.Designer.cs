@@ -100,7 +100,7 @@
             this.Controls.Add(this.bt_buscar);
             this.Controls.Add(this.bt_regresar);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "productos";
             this.Text = "productos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -43,6 +43,9 @@
             this.textBoxRazonSocial = new System.Windows.Forms.TextBox();
             this.botonRegresar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt_generar_orden = new System.Windows.Forms.Button();
+            this.bt_regresar = new System.Windows.Forms.Button();
+            this.bt_cancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +67,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(714, 261);
+            this.dataGridView1.Size = new System.Drawing.Size(714, 224);
             this.dataGridView1.TabIndex = 31;
             // 
             // buttonBuscar
@@ -191,11 +194,44 @@
             this.textBox1.Size = new System.Drawing.Size(247, 20);
             this.textBox1.TabIndex = 37;
             // 
+            // bt_generar_orden
+            // 
+            this.bt_generar_orden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_generar_orden.Location = new System.Drawing.Point(525, 473);
+            this.bt_generar_orden.Name = "bt_generar_orden";
+            this.bt_generar_orden.Size = new System.Drawing.Size(174, 23);
+            this.bt_generar_orden.TabIndex = 38;
+            this.bt_generar_orden.Text = "Generer Orden";
+            this.bt_generar_orden.UseVisualStyleBackColor = true;
+            // 
+            // bt_regresar
+            // 
+            this.bt_regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_regresar.Location = new System.Drawing.Point(152, 473);
+            this.bt_regresar.Name = "bt_regresar";
+            this.bt_regresar.Size = new System.Drawing.Size(171, 23);
+            this.bt_regresar.TabIndex = 39;
+            this.bt_regresar.Text = "Regresar";
+            this.bt_regresar.UseVisualStyleBackColor = true;
+            // 
+            // bt_cancelar
+            // 
+            this.bt_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_cancelar.Location = new System.Drawing.Point(339, 473);
+            this.bt_cancelar.Name = "bt_cancelar";
+            this.bt_cancelar.Size = new System.Drawing.Size(171, 23);
+            this.bt_cancelar.TabIndex = 40;
+            this.bt_cancelar.Text = "Cancelar";
+            this.bt_cancelar.UseVisualStyleBackColor = true;
+            // 
             // GenerarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 550);
+            this.Controls.Add(this.bt_cancelar);
+            this.Controls.Add(this.bt_regresar);
+            this.Controls.Add(this.bt_generar_orden);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxRazonSocial);
@@ -238,5 +274,8 @@
         private System.Windows.Forms.TextBox textBoxRazonSocial;
         private System.Windows.Forms.Button botonRegresar;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button bt_generar_orden;
+        private System.Windows.Forms.Button bt_regresar;
+        private System.Windows.Forms.Button bt_cancelar;
     }
 }
