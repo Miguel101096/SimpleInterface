@@ -39,6 +39,7 @@ namespace DEVSIS_ENERGISUR
         {
             InitializeComponent();
             cargarTabla();
+            cargarnumeroOrden();
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -51,7 +52,6 @@ namespace DEVSIS_ENERGISUR
             String estado = this.comboBox1.Text;
             controlOrdenCompra co = new controlOrdenCompra();
             co.RregistrarOrdenCompra(numOrden, fecha, estado, razonSocial);
-
         }
 
         public void cargarTabla()
@@ -99,8 +99,32 @@ namespace DEVSIS_ENERGISUR
 
         private void botonRegresar_Click(object sender, EventArgs e)
         {
-            new MenuPrincipal().Show();
+            MenuPrincipal menu = new MenuPrincipal();
             this.Visible = false;
+            menu.Visible = true;
+            controlOrdenCompra co = new controlOrdenCompra();
+            String numero = this.text_Numero_orden.Text;
+            co.elimarDetalleCompra();
+            co.elimarOrdenCompra(numero);
+            MessageBox.Show("Orden de compra cancelada");
+        }
+
+        public void cargarnumeroOrden()
+        {
+            DataTable DT = new DataTable();
+            DT = this.co.traernumorden();
+            String numorden = Convert.ToString(DT.Rows[0].ItemArray[0]);
+            int num = 1 + Convert.ToInt32(numorden);
+            String ordennueva = Convert.ToString(num);
+            String final = "";
+            for (int i = 0; i < (6 - ordennueva.Length); i++)
+            {
+                final = final + "0";
+            }
+            final = final + ordennueva;
+            this.text_Numero_orden.Text = final;
+            this.text_Numero_orden.Enabled = false;
+            //MessageBox.Show("" + final + "");
         }
     }
 }
