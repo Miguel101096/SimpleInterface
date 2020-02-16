@@ -40,7 +40,7 @@
             // botonConsultar
             // 
             this.botonConsultar.Location = new System.Drawing.Point(281, 418);
-            this.botonConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonConsultar.Margin = new System.Windows.Forms.Padding(2);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(247, 22);
             this.botonConsultar.TabIndex = 39;
@@ -51,7 +51,7 @@
             // textRuc
             // 
             this.textRuc.Location = new System.Drawing.Point(181, 33);
-            this.textRuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textRuc.Margin = new System.Windows.Forms.Padding(2);
             this.textRuc.Name = "textRuc";
             this.textRuc.Size = new System.Drawing.Size(248, 20);
             this.textRuc.TabIndex = 38;
@@ -81,7 +81,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(30, 81);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -91,7 +91,7 @@
             // botonRegresar
             // 
             this.botonRegresar.Location = new System.Drawing.Point(30, 418);
-            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.botonRegresar.Name = "botonRegresar";
             this.botonRegresar.Size = new System.Drawing.Size(247, 22);
             this.botonRegresar.TabIndex = 62;
@@ -110,7 +110,7 @@
             this.Controls.Add(this.textRuc);
             this.Controls.Add(this.labelRuc);
             this.Controls.Add(this.labelConsultarProveedor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ConsultarRucProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultarProveedor";

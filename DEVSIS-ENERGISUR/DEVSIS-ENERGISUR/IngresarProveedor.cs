@@ -34,7 +34,11 @@ namespace DEVSIS_ENERGISUR
         {
             if (v.RucPersonaNatural(textBoxRuc.Text))
             {
-
+                if (!cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio"))
+                {
+                    MessageBox.Show("Proveedor ya se encuentra registrado");
+                    return;
+                }
             }
             else
             {
@@ -152,7 +156,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (v.validarNumeros(textBoxTelefonoConvencional.Text))
             {
-
+                
             }
             else
             {
@@ -209,14 +213,20 @@ namespace DEVSIS_ENERGISUR
             String telfconv = this.textBoxTelefonoConvencional.Text;
             String telfCel = this.textBoxTelefonoCelular.Text;
             controlProveedor cp = new controlProveedor();
-            cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
-            // MessageBox.Show("Proveedor registrado correctamente");
-            textBoxCorreo.Text = "";
-            textBoxRazonSocial.Text = "";
-            textBoxDireccion.Text = "";
-            textBoxRuc.Text = "";
-            textBoxTelefonoCelular.Text = "";
-            textBoxTelefonoConvencional.Text = "";
+            if (cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio")) {
+                cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
+                MessageBox.Show("Proveedor registrado correctamente");
+                textBoxCorreo.Text = "";
+                textBoxRazonSocial.Text = "";
+                textBoxDireccion.Text = "";
+                textBoxRuc.Text = "";
+                textBoxTelefonoCelular.Text = "";
+                textBoxTelefonoConvencional.Text = "";
+            } 
+            else {
+                MessageBox.Show("Proveedor ya se encuentra registrado");
+            }
+            
         }
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
