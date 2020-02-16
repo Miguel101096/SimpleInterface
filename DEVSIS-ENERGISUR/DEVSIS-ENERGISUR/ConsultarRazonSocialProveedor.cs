@@ -81,7 +81,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (cp.existeProveedor((this.textBoxRazonSocialProveedor.Text), "Razon").Equals("vacio"))
             {
-                MessageBox.Show("Proveedor no se encuentra registrado   >" + this.textBoxRazonSocialProveedor.Text);
+                MessageBox.Show("Proveedor no se encuentra registrado");
                 this.textBoxRazonSocialProveedor.Text = "";
             }
             else {
