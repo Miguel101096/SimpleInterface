@@ -211,7 +211,7 @@ namespace DEVSIS_ENERGISUR
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                textBoxRazonSocial.Focus();
+                button1.Focus();
             }
         }
 
@@ -286,6 +286,14 @@ namespace DEVSIS_ENERGISUR
                 this.textBoxCorreo.Text = "";
                 this.textBoxTelefonoConvencional.Text = "";
                 this.textBoxTelefonoCelular.Text = "";
+            }
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                botonEliminar.Focus();
             }
         }
     }
