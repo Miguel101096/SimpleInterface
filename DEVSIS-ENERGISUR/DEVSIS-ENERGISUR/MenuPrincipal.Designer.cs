@@ -299,8 +299,8 @@
             // consultarOrdenDeCompraToolStripMenuItem
             // 
             this.consultarOrdenDeCompraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fechaDeIncioToolStripMenuItem,
             this.númeroDeOrdenToolStripMenuItem,
+            this.fechaDeIncioToolStripMenuItem,
             this.fechaDeExpediciónToolStripMenuItem});
             this.consultarOrdenDeCompraToolStripMenuItem.Name = "consultarOrdenDeCompraToolStripMenuItem";
             this.consultarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
@@ -309,22 +309,22 @@
             // fechaDeIncioToolStripMenuItem
             // 
             this.fechaDeIncioToolStripMenuItem.Name = "fechaDeIncioToolStripMenuItem";
-            this.fechaDeIncioToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.fechaDeIncioToolStripMenuItem.Text = "Fecha de incio";
+            this.fechaDeIncioToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.fechaDeIncioToolStripMenuItem.Text = "Fecha de emisión";
             this.fechaDeIncioToolStripMenuItem.Click += new System.EventHandler(this.fechaDeIncioToolStripMenuItem_Click);
             // 
             // númeroDeOrdenToolStripMenuItem
             // 
             this.númeroDeOrdenToolStripMenuItem.Name = "númeroDeOrdenToolStripMenuItem";
-            this.númeroDeOrdenToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.númeroDeOrdenToolStripMenuItem.Text = "Número de orden";
+            this.númeroDeOrdenToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.númeroDeOrdenToolStripMenuItem.Text = "Número de orden de compra";
             this.númeroDeOrdenToolStripMenuItem.Click += new System.EventHandler(this.númeroDeOrdenToolStripMenuItem_Click);
             // 
             // fechaDeExpediciónToolStripMenuItem
             // 
             this.fechaDeExpediciónToolStripMenuItem.Name = "fechaDeExpediciónToolStripMenuItem";
-            this.fechaDeExpediciónToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.fechaDeExpediciónToolStripMenuItem.Text = "Fecha de expedición";
+            this.fechaDeExpediciónToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.fechaDeExpediciónToolStripMenuItem.Text = "Entre dos fechas";
             this.fechaDeExpediciónToolStripMenuItem.Click += new System.EventHandler(this.fechaDeExpediciónToolStripMenuItem_Click);
             // 
             // cambiarEstadoToolStripMenuItem
