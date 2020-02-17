@@ -136,6 +136,7 @@
     <Compile Include="ConsultarTelefonoConvProveedor.Designer.cs">
       <DependentUpon>ConsultarTelefonoConvProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="control\consultarordencompra.cs" />
     <Compile Include="control\controlOrdenCompra.cs" />
     <Compile Include="control\controlProveedor.cs" />
     <Compile Include="control\Conexion.cs" />
