@@ -158,9 +158,9 @@
             this.labelRazonSocial.Location = new System.Drawing.Point(11, 68);
             this.labelRazonSocial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRazonSocial.Name = "labelRazonSocial";
-            this.labelRazonSocial.Size = new System.Drawing.Size(119, 13);
+            this.labelRazonSocial.Size = new System.Drawing.Size(84, 13);
             this.labelRazonSocial.TabIndex = 34;
-            this.labelRazonSocial.Text = "Razón social proveedor";
+            this.labelRazonSocial.Text = "RUC  proveedor";
             // 
             // botonRegresar
             // 

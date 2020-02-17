@@ -12,6 +12,10 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class Login : Form
     {
+
+        String contrasena = "MiguelReina08";
+        String usuario = "1751680974";
+
         Validaciones v = new Validaciones();
         public Login()
         {
@@ -49,29 +53,32 @@ namespace DEVSIS_ENERGISUR
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textCedula.Text.Equals(""))
+            if(textCedula.Text != usuario)
             {
-
+                MessageBox.Show("Usuario no registrado");
             }
             else
             {
-                if (textContrasena.Text.Equals(""))
+                if(textContrasena.Text != contrasena)
                 {
-
+                    MessageBox.Show("Contraseña incorrecta");
+                    textContrasena.Text = "";
                 }
                 else
                 {
-                    if (comboBox1.Equals(""))
+                    if(comboBox1.Text != "Compras")
                     {
-
+                        MessageBox.Show("Usuario no registrado");
                     }
                     else
                     {
-                        new MenuPrincipal().Show();
+                        MenuPrincipal menu = new MenuPrincipal();
+                        menu.Show();
                         this.Visible = false;
                     }
                 }
             }
+                
         }
 
         private void textCedula_KeyPress(object sender, KeyPressEventArgs e)
@@ -108,9 +115,11 @@ namespace DEVSIS_ENERGISUR
             
         }
 
+
+        
         private void textContrasena_Leave(object sender, EventArgs e)
         {
-            if (textContrasena.Text == String.Empty)
+            if (textContrasena.Text == String.Empty || textContrasena.Text != contrasena)
             {
                 MessageBox.Show("Entrada de contraseña vacía");
             }
