@@ -15,6 +15,7 @@ namespace DEVSIS_ENERGISUR
     public partial class ConsultarCorreoProveedor : Form
     {
 
+        MenuPrincipal mp = new MenuPrincipal();
         Conexion c = new Conexion();
         controlProveedor cp = new controlProveedor();
 
@@ -25,7 +26,6 @@ namespace DEVSIS_ENERGISUR
         }
 
         static Validaciones v = new Validaciones();
-
         private void textCorreoProveedor_Leave(object sender, EventArgs e)
         {
             if (v.validarEmail(textCorreoProveedor.Text))
@@ -34,6 +34,7 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
+
                 if (textCorreoProveedor.Text == String.Empty)
                 {
                     MessageBox.Show("Ingrese un valor para la entrada actual");
@@ -47,6 +48,28 @@ namespace DEVSIS_ENERGISUR
                     else
                     {
                         MessageBox.Show("Correo electrónico incorrecto");
+
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                }
+                else
+                {
+                    if (textCorreoProveedor.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if (textCorreoProveedor.TextLength > 60)
+                        {
+                            MessageBox.Show("El correo excede el límite de caracteres");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Correo electrónico incorrecto");
+                        }
+
                     }
                 }
             }
@@ -55,6 +78,7 @@ namespace DEVSIS_ENERGISUR
         private void botonRegresar_Click(object sender, EventArgs e)
         {
             new MenuPrincipal().Show();
+            mp.Visible = true;
             this.Visible = false;
         }
 

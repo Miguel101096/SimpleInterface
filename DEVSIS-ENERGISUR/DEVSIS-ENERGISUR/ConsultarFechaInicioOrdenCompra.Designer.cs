@@ -121,6 +121,7 @@
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 72;
             this.label1.Text = "Fecha de inicio";
+
             // 
             // ConsultarFechaInicioOrdenCompra
             // 

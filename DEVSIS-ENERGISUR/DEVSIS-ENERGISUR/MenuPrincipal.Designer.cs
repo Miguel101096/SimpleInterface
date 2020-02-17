@@ -67,6 +67,7 @@
             this.crearUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.botonSalir = new System.Windows.Forms.Button();
+            this.cambiarEstadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -283,7 +284,8 @@
             // 
             this.compToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generarOrdenDeCompraToolStripMenuItem,
-            this.consultarOrdenDeCompraToolStripMenuItem});
+            this.consultarOrdenDeCompraToolStripMenuItem,
+            this.cambiarEstadoToolStripMenuItem});
             this.compToolStripMenuItem.Name = "compToolStripMenuItem";
             this.compToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.compToolStripMenuItem.Text = "Orden de Compra";
@@ -310,6 +312,7 @@
             this.fechaDeIncioToolStripMenuItem.Name = "fechaDeIncioToolStripMenuItem";
             this.fechaDeIncioToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.fechaDeIncioToolStripMenuItem.Text = "Fecha de expedición";
+            this.fechaDeIncioToolStripMenuItem.Text = "Fecha de incio";
             this.fechaDeIncioToolStripMenuItem.Click += new System.EventHandler(this.fechaDeIncioToolStripMenuItem_Click);
             // 
             // númeroDeOrdenToolStripMenuItem
@@ -324,6 +327,7 @@
             this.fechaDeExpediciónToolStripMenuItem.Name = "fechaDeExpediciónToolStripMenuItem";
             this.fechaDeExpediciónToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.fechaDeExpediciónToolStripMenuItem.Text = "Entre dos fechas";
+            this.fechaDeExpediciónToolStripMenuItem.Text = "Fecha de expedición";
             this.fechaDeExpediciónToolStripMenuItem.Click += new System.EventHandler(this.fechaDeExpediciónToolStripMenuItem_Click);
             // 
             // facturaToolStripMenuItem
@@ -390,6 +394,13 @@
             this.botonSalir.UseVisualStyleBackColor = true;
             this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
+            // cambiarEstadoToolStripMenuItem
+            // 
+            this.cambiarEstadoToolStripMenuItem.Name = "cambiarEstadoToolStripMenuItem";
+            this.cambiarEstadoToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.cambiarEstadoToolStripMenuItem.Text = "Cambiar Estado";
+            this.cambiarEstadoToolStripMenuItem.Click += new System.EventHandler(this.cambiarEstadoToolStripMenuItem_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,5 +462,6 @@
         private System.Windows.Forms.ToolStripMenuItem fechaDeExpediciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem númeroDeTélefonoCelularToolStripMenuItem;
         private System.Windows.Forms.Button botonSalir;
+        private System.Windows.Forms.ToolStripMenuItem cambiarEstadoToolStripMenuItem;
     }
 }

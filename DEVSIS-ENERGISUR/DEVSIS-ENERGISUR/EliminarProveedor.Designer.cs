@@ -50,6 +50,8 @@
             // 
             this.textBoxTelefonoCelular.Location = new System.Drawing.Point(181, 195);
             this.textBoxTelefonoCelular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTelefonoCelular.Location = new System.Drawing.Point(241, 240);
+            this.textBoxTelefonoCelular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTelefonoCelular.Name = "textBoxTelefonoCelular";
             this.textBoxTelefonoCelular.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoCelular.TabIndex = 67;
@@ -80,6 +82,8 @@
             // 
             this.textBoxRazonSocial.Location = new System.Drawing.Point(181, 65);
             this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRazonSocial.Location = new System.Drawing.Point(241, 80);
+            this.textBoxRazonSocial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRazonSocial.Name = "textBoxRazonSocial";
             this.textBoxRazonSocial.Size = new System.Drawing.Size(248, 20);
             this.textBoxRazonSocial.TabIndex = 64;
@@ -90,6 +94,8 @@
             // 
             this.textBoxMarca.Location = new System.Drawing.Point(181, 98);
             this.textBoxMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxMarca.Location = new System.Drawing.Point(241, 121);
+            this.textBoxMarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(248, 20);
             this.textBoxMarca.TabIndex = 63;
@@ -100,6 +106,8 @@
             // 
             this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(181, 162);
             this.textBoxTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTelefonoConvencional.Location = new System.Drawing.Point(241, 199);
+            this.textBoxTelefonoConvencional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTelefonoConvencional.Name = "textBoxTelefonoConvencional";
             this.textBoxTelefonoConvencional.Size = new System.Drawing.Size(248, 20);
             this.textBoxTelefonoConvencional.TabIndex = 62;
@@ -110,6 +118,8 @@
             // 
             this.textBoxCorreo.Location = new System.Drawing.Point(181, 130);
             this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCorreo.Location = new System.Drawing.Point(241, 160);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(248, 20);
             this.textBoxCorreo.TabIndex = 61;
@@ -131,6 +141,7 @@
             this.labelTelefonoConvencional.AutoSize = true;
             this.labelTelefonoConvencional.Location = new System.Drawing.Point(9, 162);
             this.labelTelefonoConvencional.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTelefonoConvencional.Location = new System.Drawing.Point(12, 199);
             this.labelTelefonoConvencional.Name = "labelTelefonoConvencional";
             this.labelTelefonoConvencional.Size = new System.Drawing.Size(116, 13);
             this.labelTelefonoConvencional.TabIndex = 59;
@@ -141,6 +152,7 @@
             this.labelDirección.AutoSize = true;
             this.labelDirección.Location = new System.Drawing.Point(9, 98);
             this.labelDirección.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDirección.Location = new System.Drawing.Point(12, 121);
             this.labelDirección.Name = "labelDirección";
             this.labelDirección.Size = new System.Drawing.Size(52, 13);
             this.labelDirección.TabIndex = 58;
@@ -152,6 +164,10 @@
             this.botonEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonEliminar.Name = "botonEliminar";
             this.botonEliminar.Size = new System.Drawing.Size(220, 22);
+            this.botonEliminar.Location = new System.Drawing.Point(273, 399);
+            this.botonEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.botonEliminar.Name = "botonEliminar";
+            this.botonEliminar.Size = new System.Drawing.Size(293, 27);
             this.botonEliminar.TabIndex = 57;
             this.botonEliminar.Text = "Eliminar";
             this.botonEliminar.UseVisualStyleBackColor = true;
@@ -161,6 +177,8 @@
             // 
             this.textBoxRuc.Location = new System.Drawing.Point(181, 33);
             this.textBoxRuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRuc.Location = new System.Drawing.Point(241, 41);
+            this.textBoxRuc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRuc.Name = "textBoxRuc";
             this.textBoxRuc.Size = new System.Drawing.Size(248, 20);
             this.textBoxRuc.TabIndex = 56;
@@ -193,6 +211,10 @@
             this.botonRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRegresar.Name = "botonRegresar";
             this.botonRegresar.Size = new System.Drawing.Size(194, 22);
+            this.botonRegresar.Location = new System.Drawing.Point(9, 399);
+            this.botonRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.botonRegresar.Name = "botonRegresar";
+            this.botonRegresar.Size = new System.Drawing.Size(259, 27);
             this.botonRegresar.TabIndex = 68;
             this.botonRegresar.Text = "Regresar";
             this.botonRegresar.UseVisualStyleBackColor = true;
@@ -204,16 +226,22 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 22);
+            this.button1.Location = new System.Drawing.Point(131, 336);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(293, 27);
             this.button1.TabIndex = 69;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button1_KeyPress);
             // 
             // EliminarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 367);
+            this.ClientSize = new System.Drawing.Size(581, 452);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.botonRegresar);
             this.Controls.Add(this.textBoxTelefonoCelular);
@@ -231,6 +259,7 @@
             this.Controls.Add(this.labelRuc);
             this.Controls.Add(this.labelEliminarProveedor);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EliminarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Proveedor";

@@ -47,7 +47,28 @@ namespace DEVSIS_ENERGISUR
                     {
 
                     }
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                }
+                else
+                {
+                    if (textBoxRazonSocialProveedor.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if ((textBoxRazonSocialProveedor.TextLength > 50))
+                        {
+                            MessageBox.Show("La razón social excede el límite de cincuenta caracteres");
+                        }
+                        else
+                        {
 
+                        }
+
+                    }
                 }
             }
         }
@@ -75,6 +96,7 @@ namespace DEVSIS_ENERGISUR
             if (cp.existeProveedor((this.textBoxRazonSocialProveedor.Text), "Razon").Equals("vacio"))
             {
                 MessageBox.Show("Proveedor no se encuentra registrado   >" + this.textBoxRazonSocialProveedor.Text);
+                MessageBox.Show("Proveedor no se encuentra registrado");
                 this.textBoxRazonSocialProveedor.Text = "";
             }
             else {

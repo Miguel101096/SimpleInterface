@@ -21,9 +21,8 @@ namespace DEVSIS_ENERGISUR
 
         private void botonRegresar_Click(object sender, EventArgs e)
         {
-            //new MenuPrincipal().Show();
-            //this.Visible = false;
-            this.Close();
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
         public void cargarTabla()
         {
@@ -72,6 +71,8 @@ namespace DEVSIS_ENERGISUR
                 }
             }
 
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
     }
 }
