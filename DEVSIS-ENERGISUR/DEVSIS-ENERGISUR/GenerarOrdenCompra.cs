@@ -20,6 +20,7 @@ namespace DEVSIS_ENERGISUR
             textBoxNombreProveedor.Text = "";
             text_Numero_orden.Text = "";
             comboBox1.Text = "";
+            textPrecioTotal.Text = "";
             
             try {
 
@@ -64,10 +65,25 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Ocurrió un error: " + error);
             }
+            precioTotalOrden();
+        }
+
+
+        
+        public void precioTotalOrden()
+        {
+            double precioTotal = 0.0;
+            for (int i =0; i < dataGridView1.RowCount -1; i++)
+            {
+                precioTotal += double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
+                String precio = Convert.ToString(precioTotal);
+                textPrecioTotal.Text = precio;
+            }
         }
 
         private void bt_generar_orden_Click(object sender, EventArgs e)
         {
+
             MessageBox.Show("Orden de compra generada y almacenada correctamente");
             limpiarCampos();
 

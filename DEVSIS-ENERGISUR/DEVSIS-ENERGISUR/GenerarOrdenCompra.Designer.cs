@@ -44,6 +44,8 @@
             this.bt_generar_orden = new System.Windows.Forms.Button();
             this.bt_regresar = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textPrecioTotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +61,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 206);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
@@ -140,8 +144,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
+            "Emitida",
+            "Archivada"});
             this.comboBox1.Location = new System.Drawing.Point(152, 98);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
@@ -209,11 +213,30 @@
             this.bt_cancelar.UseVisualStyleBackColor = true;
             this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(517, 451);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Precio total";
+            // 
+            // textPrecioTotal
+            // 
+            this.textPrecioTotal.Enabled = false;
+            this.textPrecioTotal.Location = new System.Drawing.Point(583, 451);
+            this.textPrecioTotal.Name = "textPrecioTotal";
+            this.textPrecioTotal.Size = new System.Drawing.Size(111, 20);
+            this.textPrecioTotal.TabIndex = 42;
+            // 
             // GenerarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 550);
+            this.Controls.Add(this.textPrecioTotal);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.bt_regresar);
             this.Controls.Add(this.bt_generar_orden);
@@ -258,5 +281,7 @@
         private System.Windows.Forms.Button bt_generar_orden;
         private System.Windows.Forms.Button bt_regresar;
         private System.Windows.Forms.Button bt_cancelar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textPrecioTotal;
     }
 }
