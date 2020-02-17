@@ -54,6 +54,26 @@ namespace DEVSIS_ENERGISUR
             llenardatos();
             cargarTabla();
         }
+
+        private void text_Numero_orden_Leave(object sender, EventArgs e)
+        {
+            if (text_Numero_orden.Text == String.Empty || text_Numero_orden.TextLength != 6)
+                MessageBox.Show("Número de orden de compra incorrecto");
+            else if (text_Numero_orden.TextLength == 6)
+            {
+                try
+                {
+                    Convert.ToInt32(text_Numero_orden.Text.Trim());
+                }
+                catch
+                {
+                    MessageBox.Show("Número de orden de compra incorrecto");
+                }
+            }
+
+            new MenuPrincipal().Show();
+            this.Visible = false;
+        }
     }
 }
 

@@ -41,6 +41,11 @@ namespace DEVSIS_ENERGISUR
         private void botonConsultar_Click(object sender, EventArgs e)
         {
             cargarTabla();
+
+        private void botonRegresar_Click(object sender, EventArgs e)
+        {
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
     }
 }
