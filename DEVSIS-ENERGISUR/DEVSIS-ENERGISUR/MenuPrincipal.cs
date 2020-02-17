@@ -136,7 +136,7 @@ namespace DEVSIS_ENERGISUR
 
         private void fechaDeExpediciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ConsultarFechaFinOrdenCompra().Show();
+            new ConsultarFechaInicioOrdenCompra().Show();
         }
 
         private void númeroDeTélefonoCelularToolStripMenuItem_Click(object sender, EventArgs e)

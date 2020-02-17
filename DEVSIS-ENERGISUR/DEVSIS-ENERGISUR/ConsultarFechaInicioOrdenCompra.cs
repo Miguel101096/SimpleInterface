@@ -34,7 +34,7 @@ namespace DEVSIS_ENERGISUR
             }
             catch (Exception error)
             {
-                MessageBox.Show("No exitsen registros"+ error);
+                MessageBox.Show("No exitsen registros");
             }
         }
         private void botonConsultar_Click(object sender, EventArgs e)
