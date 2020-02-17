@@ -15,6 +15,7 @@ namespace DEVSIS_ENERGISUR
     public partial class EliminarProveedor : Form
     {
         Conexion c = new Conexion();
+        MenuPrincipal mp = new MenuPrincipal();
         controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
@@ -55,6 +56,37 @@ namespace DEVSIS_ENERGISUR
                         textBoxRazonSocial.Enabled = false;
                         textBoxCorreo.Enabled = false;
                         textBoxMarca.Enabled = false;
+            {
+
+            }
+            else
+            {
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                    mp.Visible = true;
+                }
+                else
+                {
+                    if (textBoxRuc.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if (textBoxRuc.TextLength < 13)
+                        {
+                            MessageBox.Show("Número de RUC incompleto");
+                        }
+                        else
+                        {
+                            MessageBox.Show("RUC incorrecto");
+                            textBoxTelefonoCelular.Enabled = false;
+                            textBoxTelefonoConvencional.Enabled = false;
+                            textBoxRazonSocial.Enabled = false;
+                            textBoxCorreo.Enabled = false;
+                            textBoxMarca.Enabled = false;
+                        }
                     }
                 }
             }
@@ -148,6 +180,11 @@ namespace DEVSIS_ENERGISUR
             }
             else
             {
+            {
+
+            }
+            else
+            {
                 if (textBoxTelefonoConvencional.Text == String.Empty)
                 {
                     MessageBox.Show("Ingrese un valor para la entrada actual");
@@ -186,6 +223,17 @@ namespace DEVSIS_ENERGISUR
                     }
                     else
                     {
+                {
+                    MessageBox.Show("Ingrese un valor para la entrada actual");
+                }
+                else
+                {
+                    if (textBoxTelefonoCelular.TextLength < 10)
+                    {
+                        MessageBox.Show("Teléfono celular incompleto");
+                    }
+                    else
+                    {
                         MessageBox.Show("Teléfono celular incorrecto");
                     }
                 }
@@ -195,6 +243,7 @@ namespace DEVSIS_ENERGISUR
         private void botonRegresar_Click(object sender, EventArgs e)
         {
             new MenuPrincipal().Show();
+            mp.Visible = true;
             this.Visible = false;
         }
 
@@ -203,6 +252,7 @@ namespace DEVSIS_ENERGISUR
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 textBoxRazonSocial.Focus();
+                button1.Focus();
             }
         }
 
@@ -254,6 +304,12 @@ namespace DEVSIS_ENERGISUR
             {
                 MessageBox.Show("Proveedor no se encuentra registrado");
                 this.textBoxRuc.Text = "";
+                this.textBoxRuc.Text = "";
+                this.textBoxRazonSocial.Text = "";
+                this.textBoxMarca.Text = "";
+                this.textBoxCorreo.Text = "";
+                this.textBoxTelefonoConvencional.Text = "";
+                this.textBoxTelefonoCelular.Text = "";
             }
             else {
                 this.textBoxRazonSocial.Text = DT.Rows[0].ItemArray[1].ToString();
@@ -277,6 +333,22 @@ namespace DEVSIS_ENERGISUR
                 this.textBoxCorreo.Text = "";
                 this.textBoxTelefonoConvencional.Text = "";
                 this.textBoxTelefonoCelular.Text = "";
+            {
+                this.cp.EliminarProveedor(textBoxRuc.Text);
+                this.textBoxRuc.Text = "";
+                this.textBoxRazonSocial.Text = "";
+                this.textBoxMarca.Text = "";
+                this.textBoxCorreo.Text = "";
+                this.textBoxTelefonoConvencional.Text = "";
+                this.textBoxTelefonoCelular.Text = "";
+            }
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                botonEliminar.Focus();
             }
         }
     }

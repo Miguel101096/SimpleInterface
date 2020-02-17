@@ -13,6 +13,7 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarRucProveedor : Form
     {
+        MenuPrincipal mp = new MenuPrincipal();
         Conexion c = new Conexion();
         controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
@@ -44,6 +45,25 @@ namespace DEVSIS_ENERGISUR
                     else
                     {
                         MessageBox.Show("RUC incorrecto");
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                }
+                else {
+                    if (textRuc.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if (textRuc.TextLength > 60)
+                        {
+                            MessageBox.Show("El RUC excede el límite de caracteres");
+                        }
+                        else
+                        {
+                            MessageBox.Show("RUC incorrecto");
+                        }
                     }
                 }
             }
@@ -52,6 +72,7 @@ namespace DEVSIS_ENERGISUR
         private void botonRegresar_Click(object sender, EventArgs e)
         {
             new MenuPrincipal().Show();
+            mp.Visible = true;
             this.Visible = false;
         }
 

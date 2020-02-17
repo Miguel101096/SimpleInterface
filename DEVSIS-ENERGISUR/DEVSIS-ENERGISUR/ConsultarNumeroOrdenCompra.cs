@@ -72,6 +72,8 @@ namespace DEVSIS_ENERGISUR
                 }
             }
 
+            new MenuPrincipal().Show();
+            this.Visible = false;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class IngresarProveedor : Form
     {
+        MenuPrincipal mp = new MenuPrincipal();
         private controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
 
@@ -55,6 +56,40 @@ namespace DEVSIS_ENERGISUR
                     else
                     {
                         MessageBox.Show("RUC incorrecto");
+                if (!cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio"))
+                {
+                    MessageBox.Show("Proveedor ya se encuentra registrado");
+                    return;
+                }
+            }
+            else
+            {
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                    mp.Visible = true;
+                }
+                else
+                {
+                    if (textBoxRuc.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if (textBoxRuc.TextLength < 13)
+                        {
+                            MessageBox.Show("Número de RUC incompleto");
+                            textBoxTelefonoCelular.Enabled = false;
+                            textBoxTelefonoConvencional.Enabled = false;
+                            textBoxRazonSocial.Enabled = false;
+                            textBoxCorreo.Enabled = false;
+                            textBoxDireccion.Enabled = false;
+                        }
+                        else
+                        {
+                            MessageBox.Show("RUC incorrecto");
+                        }
                     }
                 }
             }
@@ -144,6 +179,7 @@ namespace DEVSIS_ENERGISUR
             if (v.validarNumeros(textBoxTelefonoConvencional.Text))
             {
 
+                
             }
             else
             {
@@ -200,14 +236,20 @@ namespace DEVSIS_ENERGISUR
             String telfconv = this.textBoxTelefonoConvencional.Text;
             String telfCel = this.textBoxTelefonoCelular.Text;
             controlProveedor cp = new controlProveedor();
-            cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
-            // MessageBox.Show("Proveedor registrado correctamente");
-            textBoxCorreo.Text = "";
-            textBoxRazonSocial.Text = "";
-            textBoxDireccion.Text = "";
-            textBoxRuc.Text = "";
-            textBoxTelefonoCelular.Text = "";
-            textBoxTelefonoConvencional.Text = "";
+            if (cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio")) {
+                cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
+                MessageBox.Show("Proveedor registrado correctamente");
+                textBoxCorreo.Text = "";
+                textBoxRazonSocial.Text = "";
+                textBoxDireccion.Text = "";
+                textBoxRuc.Text = "";
+                textBoxTelefonoCelular.Text = "";
+                textBoxTelefonoConvencional.Text = "";
+            } 
+            else {
+                MessageBox.Show("Proveedor ya se encuentra registrado");
+            }
+            
         }
 
         private void textBoxRuc_KeyPress(object sender, KeyPressEventArgs e)
@@ -231,6 +273,8 @@ namespace DEVSIS_ENERGISUR
         {
                 new MenuPrincipal().Show();
                 this.Visible = false;
+            mp.Visible = true;
+            this.Visible = false;
         }
 
         private void textBoxTelefonoConvencional_KeyPress(object sender, KeyPressEventArgs e)
@@ -253,7 +297,22 @@ namespace DEVSIS_ENERGISUR
 
         private void botonIngresar_Click(object sender, EventArgs e)
         {
+        }
 
+        private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxCorreo.Focus();
+            }
+        }
+
+        private void textBoxCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                textBoxTelefonoConvencional.Focus();
+            }
         }
 
         private void textBoxDireccion_KeyPress(object sender, KeyPressEventArgs e)

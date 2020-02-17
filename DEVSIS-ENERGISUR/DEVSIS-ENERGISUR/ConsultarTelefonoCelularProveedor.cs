@@ -14,6 +14,7 @@ namespace DEVSIS_ENERGISUR
 {
     public partial class ConsultarTelefonoCelularProveedor : Form
     {
+        MenuPrincipal mp = new MenuPrincipal();
         Conexion c = new Conexion();
         controlProveedor cp = new controlProveedor();
         static Validaciones v = new Validaciones();
@@ -45,6 +46,26 @@ namespace DEVSIS_ENERGISUR
                     else
                     {
                         MessageBox.Show("Teléfono celular incorrecto");
+                if (this.botonRegresar.Focused)
+                {
+                    this.Visible = false;
+                }
+                else
+                {
+                    if (textNumeroCelularProveedor.Text == String.Empty)
+                    {
+                        MessageBox.Show("Ingrese un valor para la entrada actual");
+                    }
+                    else
+                    {
+                        if (textNumeroCelularProveedor.TextLength < 10)
+                        {
+                            MessageBox.Show("Teléfono celular incompleto");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Teléfono celular incorrecto");
+                        }
                     }
                 }
             }
@@ -53,6 +74,7 @@ namespace DEVSIS_ENERGISUR
         private void botonRegresar_Click(object sender, EventArgs e)
         {
             new MenuPrincipal().Show();
+            mp.Visible = true;
             this.Visible = false;
         }
 
