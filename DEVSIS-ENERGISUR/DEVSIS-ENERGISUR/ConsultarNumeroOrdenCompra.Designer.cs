@@ -49,15 +49,13 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(76, 218);
+            this.dataGridView1.Location = new System.Drawing.Point(154, 218);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(688, 183);
+            this.dataGridView1.Size = new System.Drawing.Size(538, 158);
             this.dataGridView1.TabIndex = 69;
             // 
             // botonConsultar
@@ -98,7 +96,6 @@
             this.text_Numero_orden.Name = "text_Numero_orden";
             this.text_Numero_orden.Size = new System.Drawing.Size(247, 20);
             this.text_Numero_orden.TabIndex = 78;
-            this.text_Numero_orden.Leave += new System.EventHandler(this.text_Numero_orden_Leave);
             // 
             // labelRazonSocial
             // 
