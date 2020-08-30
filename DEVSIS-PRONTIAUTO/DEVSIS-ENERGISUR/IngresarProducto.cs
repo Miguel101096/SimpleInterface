@@ -145,20 +145,20 @@ namespace DEVSIS_ENERGISUR
             v.Numeros(e);
         }
 
-        private void textBoxGarantia_Leave(object sender, EventArgs e)
-        {
-            if (validarNumeros(textBoxGarantia.Text))
-            {
-                if (textBoxGarantia.TextLength > 10)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
-            }
-        }
+        //private void textBoxGarantia_Leave(object sender, EventArgs e)
+        //{
+        //    if (validarNumeros(textBoxGarantia.Text))
+        //    {
+        //        if (textBoxGarantia.TextLength > 10)
+        //        {
+        //            MessageBox.Show("Formato incorrecto");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Formato incorrecto");
+        //    }
+        //}
 
         private void textMarca_Leave(object sender, EventArgs e)
         {
@@ -190,35 +190,35 @@ namespace DEVSIS_ENERGISUR
             }
         }
 
-        private void textAmperaje_Leave(object sender, EventArgs e)
-        {
-            if (validarNumeros(textAmperaje.Text))
-            {
-                if (textAmperaje.TextLength > 3)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
-            }
-        }
+        //private void textAmperaje_Leave(object sender, EventArgs e)
+        //{
+        //    if (validarNumeros(textAmperaje.Text))
+        //    {
+        //        if (textAmperaje.TextLength > 3)
+        //        {
+        //            MessageBox.Show("Formato incorrecto");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Formato incorrecto");
+        //    }
+        //}
 
-        private void textCantidad_TextChanged(object sender, EventArgs e)
-        {
-            if (validarNumeros(textCantidad.Text))
-            {
-                if (textCantidad.TextLength > 4)
-                {
-                    MessageBox.Show("Formato incorrecto");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Formato incorrecto");
-            }
-        }
+        //private void textCantidad_TextChanged(object sender, EventArgs e)
+        //{
+        //    if (validarNumeros(textCantidad.Text))
+        //    {
+        //        if (textCantidad.TextLength > 4)
+        //        {
+        //            MessageBox.Show("Formato incorrecto");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Formato incorrecto");
+        //    }
+        //}
 
         private void textPrecio_Leave(object sender, EventArgs e)
         {

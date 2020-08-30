@@ -13,8 +13,8 @@ namespace DEVSIS_ENERGISUR
     public partial class Login : Form
     {
 
-        String contrasena = "MiguelReina08";
-        String usuario = "1751680974";
+        String contrasena = "Grupo-2";
+        String usuario = "1725996365";
 
         Validaciones v = new Validaciones();
         public Login()
@@ -139,6 +139,16 @@ namespace DEVSIS_ENERGISUR
             {
                 button2.Focus();
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textCedula_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

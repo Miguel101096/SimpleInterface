@@ -215,7 +215,7 @@ namespace DEVSIS_ENERGISUR
             controlProveedor cp = new controlProveedor();
             if (cp.existeProveedor((this.textBoxRuc.Text), "RUC").Equals("vacio")) {
                 cp.RregistrarProveedor(ruc, razonSocial, direccion, correo, telfconv, telfCel);
-                MessageBox.Show("Proveedor registrado correctamente");
+                //MessageBox.Show("Proveedor registrado correctamente");
                 textBoxCorreo.Text = "";
                 textBoxRazonSocial.Text = "";
                 textBoxDireccion.Text = "";

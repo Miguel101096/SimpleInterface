@@ -30,7 +30,7 @@ namespace DEVSIS_ENERGISUR
 
         private void ingresarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new IngresarProducto().Show();
+           // new IngresarProducto().Show();
         }
 
         private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -154,6 +154,16 @@ namespace DEVSIS_ENERGISUR
         {
             new ModificarOrdenCompra().Show();
             this.Visible = false;
+        }
+
+        private void vehículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new IngresarProducto().Show();
+        }
+
+        private void manteniientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new IngresarProductoMantenimiento().Show();
         }
     }
 }
